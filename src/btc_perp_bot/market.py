@@ -76,6 +76,10 @@ class Market:
     def order_status(self, account_address, oid):
         return self.info({"type": "orderStatus", "user": address(account_address), "oid": oid})
 
+    def fills_since(self, account_address, start_time):
+        return self.info({"type": "userFillsByTime", "user": address(account_address),
+                          "startTime": start_time, "aggregateByTime": False})
+
 
 def btc_position(state):
     for item in state["assetPositions"]:

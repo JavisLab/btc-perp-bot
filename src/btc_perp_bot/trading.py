@@ -206,14 +206,14 @@ class ExchangeBroker:
         if (position > 0) - (position < 0) == direction:
             return
         if position:
-            self._ioc(-position, quote, reduce_only=True)
+            self.ioc(-position, quote, reduce_only=True)
             remaining = btc_position(self.state())
             if remaining:
                 raise BotError("Close incomplete; position remains, no reversal entry sent")
             self.expected_position = Decimal(0)
         if direction and self.order_count < self.max_orders:
             qty = direction * size_for(number(notional) / (1 + self.slippage), quote, decimals)
-            result = self._ioc(qty, quote)
+            result = self.ioc(qty, quote)
             status = result["status"]
             if "filled" not in status:
                 raise BotError("Entry was not filled; inspect the order before restarting")
@@ -222,7 +222,7 @@ class ExchangeBroker:
                 raise BotError("Fill/position mismatch; stop and reconcile")
             self.expected_position = actual
 
-    def _ioc(self, signed_size, quote, reduce_only=False):
+    def ioc(self, signed_size, quote, reduce_only=False):
         quote.validate()
         buy = signed_size > 0
         raw_price = (quote.ask * (1 + self.slippage)) if buy else (quote.bid * (1 - self.slippage))

@@ -1,0 +1,76 @@
+{
+  "date_utc": "2026-09-29",
+  "account_observation": {
+    "checked_at": "2026-09-29T15:37:08.818300+00:00",
+    "wallet": "existing test-only-1402; public address omitted",
+    "mainnet": {
+      "account_value": "0.0",
+      "open_orders": 0,
+      "positions": 0,
+      "non_funding_ledger_entries": 0,
+      "deposit_entries_seen": 0
+    },
+    "testnet": {
+      "account_value": "0.0",
+      "open_orders": 0,
+      "positions": 0
+    },
+    "signed_requests": 0
+  },
+  "new_cli_readiness": {
+    "status": "blocked",
+    "network": "testnet",
+    "execution_requested": false,
+    "run_dir": "runs/20260929-154358-smoke-9b4d9c61",
+    "precheck": {
+      "network": "testnet",
+      "ready": false,
+      "blockers": [
+        "insufficient_testnet_collateral"
+      ],
+      "account_value": "0.0",
+      "open_order_count": 0,
+      "btc_position": "0",
+      "btc_asset_id": 3,
+      "bid": "83297.0",
+      "ask": "83298.0",
+      "quote_time": 1790696638062,
+      "notional_cap": "25",
+      "size": "0.00029",
+      "maker_price": "82464"
+    },
+    "signed_requests": 0,
+    "events": [
+      {
+        "step": "precheck",
+        "network": "testnet",
+        "ready": false,
+        "blockers": [
+          "insufficient_testnet_collateral"
+        ],
+        "account_value": "0.0",
+        "open_order_count": 0,
+        "btc_position": "0",
+        "btc_asset_id": 3,
+        "bid": "83297.0",
+        "ask": "83298.0",
+        "quote_time": 1790696638062,
+        "notional_cap": "25",
+        "size": "0.00029",
+        "maker_price": "82464"
+      }
+    ],
+    "exit_code": 2
+  },
+  "tests": {
+    "total_passed": 36,
+    "added_passed": 10,
+    "signed_exchange_transport": "offline model, not Hyperliquid exchange acceptance"
+  },
+  "testnet_exchange_orders_sent": 0,
+  "mainnet_transactions_sent": 0,
+  "faucet_claim_sent": false,
+  "actual_order_acceptance_proved": false,
+  "blocker": "New test account has no mock collateral; faucet requires same-address mainnet deposit history",
+  "faucet_source": "https://hyperliquid.gitbook.io/hyperliquid-docs/onboarding/testnet-faucet"
+}

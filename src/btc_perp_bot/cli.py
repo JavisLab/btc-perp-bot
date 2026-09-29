@@ -10,6 +10,7 @@ from pathlib import Path
 from .core import BotError, number, positive, private_dir, signal, write_private_json
 from .market import Market, address
 from .paper import PaperBroker
+from .smoke import execute as execute_smoke, prepare as prepare_smoke
 from .trading import ExchangeBroker, Journal, account_lock, execution_guard, reconcile
 from .wallet import create_wallet, load_wallet, password_from_file, verify_wallet
 
@@ -86,6 +87,13 @@ def make_parser():
     bot.add_argument("--threshold", type=number, default=number("0.0002"))
     bot.add_argument("--flatten-on-exit", action="store_true", help="Paper always flattens; opt in for exchange mode")
     bot.add_argument("--output-dir", type=Path, default=Path("runs"))
+    smoke = commands.add_parser("testnet-smoke", help="Readiness check; opt in to a bounded testnet order/cancel/roundtrip")
+    smoke.add_argument("--account", required=True, type=address)
+    smoke.add_argument("--keystore", type=Path)
+    smoke.add_argument("--password-file", type=Path)
+    smoke.add_argument("--execute-testnet-orders", action="store_true")
+    smoke.add_argument("--notional", type=positive, default=number("25"))
+    smoke.add_argument("--output-dir", type=Path, default=Path("runs"))
     return parser
 
 
@@ -101,6 +109,50 @@ def unlock(args, network):
 def journal_for(network, owner):
     root = private_dir(Path.home() / ".local/share/btc-perp-bot/journals")
     return Journal(root / f"{network}-{owner.lower()}.jsonl")
+
+
+def run_testnet_smoke(args):
+    market = Market("testnet")
+    run_dir = private_dir(private_dir(args.output_dir) / (time.strftime("%Y%m%d-%H%M%S") + "-smoke-" + uuid.uuid4().hex[:8]))
+    events = []
+    report = {"status": "failed", "network": "testnet", "account": args.account,
+              "execution_requested": args.execute_testnet_orders, "run_dir": str(run_dir)}
+
+    def record(event):
+        write_private_json(run_dir / f"step-{len(events):02}.json", event)
+        events.append(event)
+
+    with account_lock("testnet", args.account):
+        try:
+            journal = journal_for("testnet", args.account)
+            precheck = prepare_smoke(market, args.account, args.notional)
+            if journal.unresolved():
+                precheck["blockers"].append("unresolved_order_journal")
+                precheck["ready"] = False
+            report["precheck"] = precheck
+            record({"step": "precheck", **precheck})
+            if not precheck["ready"]:
+                report.update(status="blocked", signed_requests=0)
+            elif not args.execute_testnet_orders:
+                report.update(status="ready_check_only", signed_requests=0)
+            else:
+                if not args.keystore:
+                    raise BotError("Executing testnet orders requires --keystore")
+                signer = load_wallet(args.keystore, password(args), "testnet")
+                broker = ExchangeBroker(market, signer, args.account, journal,
+                                        max_notional=args.notional, max_orders=3)
+                report.update(execute_smoke(broker, record))
+        except BotError as exc:
+            report["error"] = str(exc)
+        except KeyboardInterrupt:
+            report["error"] = "Interrupted; inspect account before restarting"
+        except (OSError, ValueError, KeyError, TypeError) as exc:
+            report["error"] = f"{type(exc).__name__}: check failed; inspect account before restarting"
+        # Deliberately no mutation in cleanup/finally: an outcome may be uncertain.
+        report["events"] = events
+        write_private_json(run_dir / "summary.json", report)
+    output(report)
+    return 0 if report["status"] in {"ready_check_only", "completed"} else 2
 
 
 def run_bot(args):
@@ -167,6 +219,8 @@ def run_bot(args):
 def main(argv=None):
     try:
         args = make_parser().parse_args(argv)
+        if args.command == "testnet-smoke":
+            return run_testnet_smoke(args)
         if args.command == "wallet":
             if args.wallet_command == "create":
                 output(create_wallet(args.keystore, password(args, True), args.purpose))
