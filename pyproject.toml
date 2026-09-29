@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools==80.9.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "btc-perp-bot"
+version = "0.1.0"
+description = "BTC perpetual wallet, paper trading and operator-run Hyperliquid client"
+requires-python = ">=3.12"
+dependencies = ["hyperliquid-python-sdk==0.24.0", "eth-account==0.13.7"]
+
+[project.optional-dependencies]
+dev = ["pytest==8.4.2"]
+
+[project.scripts]
+btc-bot = "btc_perp_bot.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

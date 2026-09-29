@@ -1,0 +1,92 @@
+{
+  "date_utc": "2026-09-29",
+  "scope": "Implementation smoke verification; not profitability or exchange fill proof",
+  "unit_tests": {
+    "passed": 26,
+    "command": ".venv/bin/python -m pytest -q"
+  },
+  "dependency_check": "No broken requirements found",
+  "wallet": {
+    "purpose": "testnet",
+    "encrypted_v3_keystore": true,
+    "local_signature_recovery": true,
+    "directory_mode": "0700",
+    "keystore_mode": "0600",
+    "password_file_mode": "0600",
+    "secrets_outside_repository": true,
+    "real_funds_requested": false
+  },
+  "sdk_signing": {
+    "real_sdk_signatures_checked_offline": true,
+    "transport_mocked": true,
+    "exchange_acceptance_proved": false
+  },
+  "paper": {
+    "command": ".venv/bin/btc-bot bot --mode paper --steps 3 --interval 1 --threshold 0",
+    "summary": {
+      "mode": "paper",
+      "initial_equity": "1000",
+      "equity": "999.972789111486950",
+      "net_pnl": "-0.027210888513050",
+      "fees": "0.022026181513050",
+      "position_btc": "0.00000",
+      "fill_count": 2,
+      "funding_modelled": false,
+      "liquidation_modelled": false,
+      "disclaimer": "Execution smoke test, not a profitability backtest; no real fills",
+      "error": null,
+      "ticks": 3,
+      "run_dir": "runs/20260929-135632-86f9836d",
+      "strategy": {
+        "fast": 3,
+        "slow": 8,
+        "threshold": "0"
+      },
+      "notional": "25",
+      "max_loss": "20"
+    },
+    "fills": [
+      {
+        "mode": "paper",
+        "time": 1790690192226,
+        "side": "buy",
+        "size": "0.00029",
+        "price": "84400.43920",
+        "fee": "0.011014257315600",
+        "realized_pnl_before_fee": "0",
+        "position_after": "0.00029"
+      },
+      {
+        "mode": "paper",
+        "time": 1790690194897,
+        "side": "sell",
+        "size": "0.00029",
+        "price": "84382.56090",
+        "fee": "0.011011924197450",
+        "realized_pnl_before_fee": "-0.0051847070",
+        "position_after": "0.00000"
+      }
+    ]
+  },
+  "testnet_preflight": {
+    "exit_code": 2,
+    "http_requests": [
+      {
+        "method": "POST",
+        "url": "https://api.hyperliquid-testnet.xyz/info"
+      },
+      {
+        "method": "POST",
+        "url": "https://api.hyperliquid-testnet.xyz/info"
+      }
+    ],
+    "exchange_requests": 0,
+    "expected": "unfunded testnet account blocked before order submission"
+  },
+  "mainnet": {
+    "default_activation_gate_checked": true,
+    "orders_sent": 0,
+    "transfers_sent": 0
+  },
+  "daemon_started": false
+}

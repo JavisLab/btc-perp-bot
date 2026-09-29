@@ -7,6 +7,8 @@ credentials/
 *.pem
 *.key
 *keystore*
+wallets/
+*.pass
 
 # Python environments and generated files
 .venv/
