@@ -1,0 +1,38 @@
+# Secrets and local account configuration
+.env
+.env.*
+!.env.example
+secrets/
+credentials/
+*.pem
+*.key
+*keystore*
+
+# Python environments and generated files
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+*.egg-info/
+build/
+dist/
+.coverage
+htmlcov/
+
+# Local datasets, account state, logs and experiment output
+data/
+logs/
+runs/
+artifacts/
+*.log
+*.db
+*.sqlite
+*.sqlite3
+
+# Editor and OS files
+.DS_Store
+.idea/
+.vscode/
