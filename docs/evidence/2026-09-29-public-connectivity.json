@@ -1,0 +1,174 @@
+{
+  "purpose": "Read-only public connectivity check; not authenticated trading validation",
+  "http_api": {
+    "checked_at_utc": "2026-09-29T11:44:28.838090+00:00",
+    "read_only": true,
+    "signed_requests": 0,
+    "wallets_created": 0,
+    "results": [
+      {
+        "network": "mainnet",
+        "url": "https://api.hyperliquid.xyz/info",
+        "type": "metaAndAssetCtxs",
+        "http_status": 200,
+        "market": "BTC",
+        "market_index": 0,
+        "is_delisted": false,
+        "mark_px": "84201.1",
+        "funding": "0.000008391",
+        "ok": true,
+        "elapsed_ms": 134
+      },
+      {
+        "network": "mainnet",
+        "url": "https://api.hyperliquid.xyz/info",
+        "type": "l2Book",
+        "http_status": 200,
+        "coin": "BTC",
+        "book_timestamp_ms": 1790682268682,
+        "bid_count": 20,
+        "ask_count": 20,
+        "best_bid": "84203.0",
+        "best_ask": "84204.0",
+        "ok": true,
+        "elapsed_ms": 46
+      },
+      {
+        "network": "testnet",
+        "url": "https://api.hyperliquid-testnet.xyz/info",
+        "type": "metaAndAssetCtxs",
+        "http_status": 200,
+        "market": "BTC",
+        "market_index": 3,
+        "is_delisted": false,
+        "mark_px": "84650.0",
+        "funding": "0.0004586228",
+        "ok": true,
+        "elapsed_ms": 457
+      },
+      {
+        "network": "testnet",
+        "url": "https://api.hyperliquid-testnet.xyz/info",
+        "type": "l2Book",
+        "http_status": 200,
+        "coin": "BTC",
+        "book_timestamp_ms": 1790682268609,
+        "bid_count": 20,
+        "ask_count": 20,
+        "best_bid": "84650.0",
+        "best_ask": "84651.0",
+        "ok": true,
+        "elapsed_ms": 48
+      }
+    ]
+  },
+  "websocket": {
+    "checkedAt": "2026-09-29T11:47:52.106Z",
+    "results": [
+      {
+        "network": "mainnet",
+        "url": "wss://api.hyperliquid.xyz/ws",
+        "readOnly": true,
+        "bookUpdates": [
+          {
+            "time": 1790682463328,
+            "bid": "84300.0",
+            "ask": "84301.0"
+          },
+          {
+            "time": 1790682465524,
+            "bid": "84302.0",
+            "ask": "84303.0"
+          },
+          {
+            "time": 1790682470830,
+            "bid": "84302.0",
+            "ask": "84303.0"
+          }
+        ],
+        "streamErrors": [],
+        "closeErrors": [
+          "WebSocket error"
+        ],
+        "connected": true,
+        "ack": true,
+        "closeCode": 1006,
+        "closeWasClean": false,
+        "stream_received_successfully": true,
+        "lifecycle_passed": false
+      },
+      {
+        "network": "testnet",
+        "url": "wss://api.hyperliquid-testnet.xyz/ws",
+        "readOnly": true,
+        "bookUpdates": [
+          {
+            "time": 1790682463244,
+            "bid": "84699.0",
+            "ask": "84700.0"
+          },
+          {
+            "time": 1790682466361,
+            "bid": "84699.0",
+            "ask": "84700.0"
+          },
+          {
+            "time": 1790682471736,
+            "bid": "84699.0",
+            "ask": "84700.0"
+          }
+        ],
+        "streamErrors": [],
+        "closeErrors": [
+          "WebSocket error"
+        ],
+        "connected": true,
+        "ack": true,
+        "closeCode": 1006,
+        "closeWasClean": false,
+        "stream_received_successfully": true,
+        "lifecycle_passed": false
+      }
+    ]
+  },
+  "browser": {
+    "checked_at": "2026-09-29T11:46:04.145Z",
+    "pages": [
+      {
+        "name": "mainnet",
+        "url": "https://app.hyperliquid.xyz/trade",
+        "http_status": 200,
+        "page_errors": []
+      },
+      {
+        "name": "testnet-faucet",
+        "url": "https://app.hyperliquid-testnet.xyz/drip",
+        "http_status": 200,
+        "page_errors": []
+      },
+      {
+        "name": "api-wallets",
+        "url": "https://app.hyperliquid.xyz/API",
+        "http_status": 200,
+        "page_errors": []
+      }
+    ]
+  },
+  "connect_dialog": {
+    "checked_at": "2026-09-29T11:47:47.166Z",
+    "url": "https://app.hyperliquid.xyz/trade",
+    "action": "Opened Connect chooser only; no login, wallet, signature or order",
+    "choices": [
+      "Log in with Email",
+      "Default Wallet",
+      "WalletConnect",
+      "OKX Wallet",
+      "Coinbase Wallet"
+    ]
+  },
+  "wallet_created": false,
+  "wallet_connected": false,
+  "signed_request_count": 0,
+  "orders_sent": 0,
+  "funds_moved": false
+}
