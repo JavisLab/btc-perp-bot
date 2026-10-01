@@ -13,6 +13,7 @@
 
 ## 현재 상태 — 2026-10-01
 
+- **[최신 전략 비교 연구소 ↗](https://arcadot.com/btc-perp-bot/strategy-lab.html)** — 13개 전략군 조사·9개 고정 후보·120개 비교 실행. 다중기간 현물 추세는 2022~2025 +52.84% / 낙폭13.56%, 최근2026.01~08 +0.89%. **후속 연구 1순위이지만 사전 기준 미달, 실전 채택0개.** 기존 가격 경로를 사용한 탐색 비교이며 새 미사용 OOS/Hyperliquid 실적이 아니다. [비교·선정 보고서](docs/STRATEGY_COMPARISON.md) · [최신 문헌 검토](docs/STRATEGY_SOURCE_AUDIT.md)
 - **[대화형 백테스트 결과 보기 ↗](https://javislab.github.io/btc-perp-bot/)** — GitHub Pages. 기간 선택·자산/낙폭 차트·전략 비교·비용/지연 진단·CSV 다운로드를 제공한다. 정적 연구 스냅샷이며 실시간 거래 화면이 아니다.
 - **일봉 추세 사전 고정 검증 완료:** 외부2022~2025 평가의 T1 +6.99%, 관측 낙폭11.97%, 수익 분기7/16. 2026.01~05는−2.81%. **사전 채택 기준 미달·전진 모의운영 미시작.** 외부USDT·HL기존표본USDC는 분리. [전체 해석·자료·재현](docs/LONGITUDINAL_RESULTS.md)
 - **전략 재조사:** 일봉 추세와 현물/선물 펀딩 수취 후보의 근거·한계·탈락 기준을 먼저 정리했다. 위 결과는 그 후속 실험이며 캐리는 자료/경제성 단계에서 보류했다. [원래 조사와 계획](docs/STRATEGY_RESEARCH.md)
@@ -69,6 +70,10 @@ Ubuntu에서 `venv` 생성 시 `ensurepip` 오류가 나면 `python3-venv` 지�
 
 ## 문서
 
+- [전략 비교 연구소 — 2026-10-01](https://arcadot.com/btc-perp-bot/strategy-lab.html)
+- [9개 후보 비교·선정·재현](docs/STRATEGY_COMPARISON.md)
+- [13개 전략군·15개 연구 원문/초록 검토](docs/STRATEGY_SOURCE_AUDIT.md)
+- [전략군 비교 사전 명세](docs/EXPERIMENT_1458.md)
 - [GitHub Pages 백테스트 탐색](https://javislab.github.io/btc-perp-bot/)
 - [일봉 추세 후속 결과·재현 — 2026-10-01](docs/LONGITUDINAL_RESULTS.md)
 - [결과 계산 전 고정한 실험 장부](docs/EXPERIMENT_1448.md)

@@ -1,0 +1,139 @@
+{
+  "recorded_at_utc": "2026-10-01T03:33:31.937063+00:00",
+  "source_selection_sha256": "b38b24af778dd02957e2c885ec47742fb27239d90047138b4be5ff7a945d289b",
+  "source_file_written_utc": "2026-10-01T03:28:35.058214+00:00",
+  "selection": {
+    "decisions": {
+      "B_SPOT": {
+        "checks": {
+          "cagr_ge_10": false,
+          "cost_x2_positive": true,
+          "drawdown_le_25": true,
+          "excluding_best_quarter_positive": true,
+          "margin_ok": true,
+          "positive_years_ge_3": false,
+          "sharpe_ge_08": false
+        },
+        "ex_best_quarter_pct": 9.351902648653866,
+        "pass": false,
+        "score": 0.41599206113219045
+      },
+      "C_ALWAYS": {
+        "checks": {
+          "cagr_ge_10": false,
+          "cost_x2_positive": true,
+          "drawdown_le_25": true,
+          "excluding_best_quarter_positive": true,
+          "margin_ok": true,
+          "positive_years_ge_3": true,
+          "sharpe_ge_08": true
+        },
+        "ex_best_quarter_pct": 9.476263499265958,
+        "pass": false,
+        "score": 3.2833515589469426
+      },
+      "C_FILTER": {
+        "checks": {
+          "cagr_ge_10": false,
+          "cost_x2_positive": true,
+          "drawdown_le_25": true,
+          "excluding_best_quarter_positive": true,
+          "margin_ok": true,
+          "positive_years_ge_3": true,
+          "sharpe_ge_08": true
+        },
+        "ex_best_quarter_pct": 6.9088424145986815,
+        "pass": false,
+        "score": 1.5323061298535956
+      },
+      "E_LS": {
+        "checks": {
+          "cagr_ge_10": false,
+          "cost_x2_positive": true,
+          "drawdown_le_25": true,
+          "excluding_best_quarter_positive": true,
+          "margin_ok": true,
+          "positive_years_ge_3": false,
+          "sharpe_ge_08": false
+        },
+        "ex_best_quarter_pct": 0.20220281991323308,
+        "pass": false,
+        "score": 0.16665359918574377
+      },
+      "E_PERP": {
+        "checks": {
+          "cagr_ge_10": false,
+          "cost_x2_positive": true,
+          "drawdown_le_25": true,
+          "excluding_best_quarter_positive": true,
+          "margin_ok": true,
+          "positive_years_ge_3": false,
+          "sharpe_ge_08": false
+        },
+        "ex_best_quarter_pct": 14.338296198228285,
+        "pass": false,
+        "score": 0.578436477055162
+      },
+      "E_SPOT": {
+        "checks": {
+          "cagr_ge_10": true,
+          "cost_x2_positive": true,
+          "drawdown_le_25": true,
+          "excluding_best_quarter_positive": true,
+          "margin_ok": true,
+          "positive_years_ge_3": false,
+          "sharpe_ge_08": true
+        },
+        "ex_best_quarter_pct": 19.45828443686286,
+        "pass": false,
+        "score": 0.7042778674869647
+      },
+      "M_GBDT": {
+        "checks": {
+          "cagr_ge_10": false,
+          "cost_x2_positive": false,
+          "drawdown_le_25": true,
+          "excluding_best_quarter_positive": false,
+          "margin_ok": true,
+          "positive_years_ge_3": false,
+          "sharpe_ge_08": false
+        },
+        "ex_best_quarter_pct": -10.255313618519502,
+        "pass": false,
+        "score": -0.12029165461932789
+      },
+      "M_RIDGE": {
+        "checks": {
+          "cagr_ge_10": false,
+          "cost_x2_positive": false,
+          "drawdown_le_25": false,
+          "excluding_best_quarter_positive": false,
+          "margin_ok": true,
+          "positive_years_ge_3": false,
+          "sharpe_ge_08": false
+        },
+        "ex_best_quarter_pct": -18.298551629781446,
+        "pass": false,
+        "score": -0.09128305710406684
+      },
+      "P_PAIR": {
+        "checks": {
+          "cagr_ge_10": false,
+          "cost_x2_positive": false,
+          "drawdown_le_25": true,
+          "excluding_best_quarter_positive": false,
+          "margin_ok": true,
+          "positive_years_ge_3": false,
+          "sharpe_ge_08": false
+        },
+        "ex_best_quarter_pct": -11.62841814410861,
+        "pass": false,
+        "score": -0.11544545753453753
+      }
+    },
+    "ranking": [],
+    "scope": "research screening only; prior price knowledge; not trading approval",
+    "selected_for_recent_review": null
+  },
+  "provenance": "main-stage writes selection before the separate recent-stage process; selected_for_recent_review was null before recent evaluation. Evidence-copy attempt before recent failed because directory was absent; this copy was made after recent process launch."
+}

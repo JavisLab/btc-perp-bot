@@ -112,7 +112,7 @@ ETF 옵션·보유량·CME 자료의 시장 간 차이를 분석한다. 개인�
 - [청산](https://hyperliquid.gitbook.io/hyperliquid-docs/trading/liquidations), [ADL](https://hyperliquid.gitbook.io/hyperliquid-docs/trading/auto-deleveraging): 현물 보유만으로 별도 선물 담보가 보호되지 않음.
 - [프로토콜 vault](https://hyperliquid.gitbook.io/hyperliquid-docs/hypercore/vaults/protocol-vaults): HLP의 복수 수익원·4일 잠금. 외부 예치 상품과 자체 전략 연구를 구분.
 - [공식 Binance 데이터](https://github.com/binance/binance-public-data): 공개 zip+체크섬, 현물 마이크로초 전환 등. 새 원자료의 실제 검사는 수집 manifest에 기록.
-- [Hummingbot fixed grid](https://hummingbot.org/strategies/fixed-grid/): 범위·재고를 사용하는 규칙 설명이지 미래 수익 보장 아님.
+- [Hummingbot fixed grid 공식 도입 설명](https://hummingbot.org/release-notes/1.5.0/#new-fixed-grid-strategy): 2022년 기능 설명으로 범위·재고를 확인한 것이며, 최신 수익 근거나 현재 버전의 지원 보장이 아님.
 
 ## 이 조사에서 하지 않은 일
 

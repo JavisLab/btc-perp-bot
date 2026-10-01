@@ -12,6 +12,7 @@ wallets/
 
 # Python environments and generated files
 .venv/
+.venv-research/
 venv/
 __pycache__/
 *.py[cod]
