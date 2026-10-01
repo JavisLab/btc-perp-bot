@@ -102,6 +102,7 @@ def test_daily_equity_reconciles_mark_to_market_not_just_closed_trades():
     assert d['equity']==pytest.approx(d['cash']+t['qty']*(100-t['fill']))
     assert result['daily'][-1]['qty']==0
     assert result['summary']['net']==pytest.approx(t['price_gross']-t['fees']-t['impact']+t['funding'])
+    assert st.canonical(result)  # All summaries must be strict portable JSON.
 
 
 def test_future_bars_do_not_change_past_signals_or_trails():

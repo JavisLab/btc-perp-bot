@@ -136,12 +136,12 @@ def metrics(daily,trades,maxdd,start,end):
     for d,r in zip(daily,ret):
         date=utc(d['time']-1); year=date[:4]; q=year+'Q'+str((int(date[5:7])-1)//3+1)
         annual[year]=annual.get(year,1.)*(1+r);quarter[q]=quarter.get(q,1.)*(1+r)
-    annual={k:(v-1)*100 for k,v in annual.items()};quarter={k:(v-1)*100 for k,v in quarter.items()}
+    annual={k:float((v-1)*100) for k,v in annual.items()};quarter={k:float((v-1)*100) for k,v in quarter.items()}
     all_growth=math.prod(1+v/100 for v in quarter.values())
     exbest=(all_growth/(1+max(quarter.values())/100)-1)*100 if quarter else 0.
     profits=[t['net'] for t in trades]; wins=math.fsum(max(0,x) for x in profits);losses=-math.fsum(min(0,x) for x in profits)
     sides={s:{'trades':sum(t['side']==sign for t in trades),'net':math.fsum(t['net'] for t in trades if t['side']==sign)} for s,sign in [('long',1),('short',-1)]}
-    return {'net':net,'return_pct':net/10,'cagr_pct':((equities[-1]/1000)**(1/years)-1)*100 if equities[-1]>0 else -100.,
+    return {'net':float(net),'return_pct':float(net/10),'cagr_pct':float(((equities[-1]/1000)**(1/years)-1)*100) if equities[-1]>0 else -100.,
         'sharpe':sharpe,'dd_pct':maxdd,'trades':len(trades),'profit_factor':wins/losses if losses>0 else None,
         'win_rate':sum(x>0 for x in profits)/len(profits)*100 if profits else 0.,'annual':annual,'quarterly':quarter,
         'positive_years':sum(v>0 for v in annual.values()),'ex_best_quarter_pct':exbest,'sides':sides,
