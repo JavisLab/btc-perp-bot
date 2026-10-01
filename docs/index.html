@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f6f8">
+  <meta name="description" content="고정 규칙 BTC 전략의 비용 포함 백테스트. 수익·낙폭·비교군·탈락 기준과 재현 자료를 투명하게 확인합니다.">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <title>BTC Research — 백테스트 연구 노트</title>
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/site.css?v=1001r1">
+  <script defer src="assets/site.js?v=1001r1"></script>
+</head>
+<body>
+<a class="skip" href="#results">결과로 건너뛰기</a>
+<header class="topbar"><a class="brand" href="./" aria-label="BTC Research 홈"><img class="brand-mark" src="assets/icon.svg" alt=""> BTC <b>RESEARCH</b></a><nav aria-label="주 메뉴"><a href="#results">백테스트</a><a href="#method">검증 방법</a><a href="https://github.com/JavisLab/btc-perp-bot" target="_blank" rel="noopener">GitHub ↗</a></nav></header>
+<main>
+  <section class="hero">
+    <div><p class="eyebrow">RESEARCH NOTE 002 <span>2026.10.01</span></p><h1>수익률 너머의<br><em>검증 가능한 결과.</em></h1><p class="intro">규칙을 먼저 고정하고, 비용을 빼고, 실패도 남깁니다.<br>BTC 일봉 추세 전략의 과거 검증 기록입니다.</p></div>
+    <aside class="decision"><span class="status-dot"></span><span class="eyebrow">현재 판단</span><h2>채택 보류</h2><p>장기 평가에 이익은 있었지만,<br>수익의 일관성과 비교군 대비 우위가 부족합니다.</p><div class="decision-foot"><span>실거래 없음</span><span>전진 모의운영 미시작</span></div></aside>
+  </section>
+  <div class="journey" aria-label="연구 진행 상황"><span><b>01</b> 규칙 고정 <i>완료</i></span><span><b>02</b> 원자료 검증 <i>완료</i></span><span><b>03</b> 역사 평가 <i>완료</i></span><span class="paused"><b>04</b> 전진 검증 <i>기준 미달로 보류</i></span></div>
+  <noscript><p class="notice">대화형 차트는 JavaScript가 필요합니다. <a href="https://github.com/JavisLab/btc-perp-bot/blob/main/docs/LONGITUDINAL_RESULTS.md">텍스트 결과 보고서</a>를 확인하세요.</p></noscript>
+  <div id="error" class="notice hidden" role="alert"></div>
+  <section id="results" class="section">
+    <div class="section-heading"><div><p class="eyebrow">BACKTEST EXPLORER</p><h2>같은 조건, 다른 결과</h2></div><label class="select-label" for="study">시장 · 검증 구간<select id="study" disabled aria-describedby="study-note"><option>결과 불러오는 중…</option></select></label></div>
+    <div id="study-note" class="study-note" aria-live="polite">2022~2025년 역사 평가를 불러옵니다.</div>
+    <div class="metric-grid" id="metrics" aria-live="polite"></div>
+    <article class="panel chart-panel">
+      <div class="panel-heading"><div><h3 id="chart-title">가상 자산의 변화</h3><p id="chart-subtitle">각 전략은 1,000 USDT에서 시작합니다.</p></div><div class="segmented" aria-label="차트 표시"><button class="active" data-chart="equity" aria-pressed="true">자산</button><button data-chart="drawdown" aria-pressed="false">낙폭</button></div></div>
+      <div id="legend" class="legend" aria-label="표시할 전략 선택"></div>
+      <div class="chart-wrap"><svg id="chart" role="img" aria-label="전략별 날짜에 따른 가상 자산 비교" tabindex="0"></svg><div id="tooltip" class="chart-tooltip hidden" role="status"></div></div>
+      <p class="chart-help">범례로 전략을 켜고 끌 수 있습니다. 차트를 터치하거나, 포커스 후 ← → 키로 날짜를 확인하세요.</p>
+    </article>
+    <div class="two-col">
+      <article class="panel"><div class="panel-heading"><div><p class="eyebrow">T1 ONLY</p><h3>수익이 남는 과정</h3></div><span class="small-badge">비용 포함</span></div><div id="waterfall" class="cost-list"></div><p class="fine">같은 체결·수량의 손익 분해입니다. 비용 0으로 재운용한 결과와는 다릅니다.</p></article>
+      <article class="panel"><div class="panel-heading"><div><p class="eyebrow">ROBUSTNESS</p><h3>불리해져도 버티는가</h3></div></div><label class="sr-only" for="stress">T1 스트레스 조건</label><select id="stress"><option value="base">기본 비용 · 정상 시점</option><option value="cost_x2">체결 비용 전체 2배</option><option value="delay_1h">추가 1시간 체결 지연</option><option value="delay_24h">추가 24시간 체결 지연</option><option value="funding_price_minus1pct">펀딩 기준가격 −1%</option><option value="funding_price_plus1pct">펀딩 기준가격 +1%</option></select><div id="stress-result" class="stress-result" aria-live="polite"></div><p class="fine">이 선택은 T1 진단 수치만 변경합니다. 위 차트와 아래 비교표는 기본 조건을 유지합니다. 비용 2배에도 펀딩률은 그대로입니다.</p></article>
+    </div>
+    <article class="panel compare-panel"><div class="panel-heading"><div><p class="eyebrow">NO WINNER PICKING</p><h3>모든 후보와 비교 기준</h3></div><span class="fine">기본 조건 · 주 후보는 T1로 고정</span></div><div class="table-scroll" tabindex="0" aria-label="전략 비교표, 작은 화면에서 좌우 스크롤"><table id="comparison"><caption class="sr-only">전략별 순수익, 낙폭, 샤프, 노출과 거래 횟수</caption><thead><tr><th>전략</th><th>순수익률</th><th>최대 낙폭</th><th>샤프</th><th>평균 노출</th><th>체결 수</th></tr></thead><tbody></tbody></table></div><p class="fine">T2~T5가 더 좋아도 사후에 주 후보로 바꾸지 않습니다. 현물/선물 보유는 초기 50% 매수 후 비중을 재조정하지 않습니다. 낙폭은 시간별 관측 기준입니다.</p></article>
+    <article class="panel"><div class="panel-heading"><div><p class="eyebrow">CONSISTENCY</p><h3>T1 · 분기마다 어땠나</h3></div><div id="quarters-summary" class="fine"></div></div><div id="quarters" class="quarters"></div><p class="fine">분기 경계에서 포지션을 청산·재진입하거나 자본을 리셋하지 않습니다. 부분 분기는 별도로 표시합니다.</p></article>
+    <details class="panel detail-panel"><summary>거래·위험 지표 더 보기 <span>최악 기간, 노출, 롱·숏 손익</span></summary><div id="extra-metrics" class="extra-grid"></div></details>
+    <div class="download-row"><span>이 화면의 근거를 직접 확인하세요.</span><a id="csv-link" href="downloads/evaluation.csv" download>일별 결과 CSV ↓</a><a id="json-link" href="downloads/evaluation.json.gz" download>전체 결과 JSON.gz ↓</a></div>
+  </section>
+  <section class="section" id="verdict">
+    <div class="section-heading"><div><p class="eyebrow">DECISION, NOT A SALES PITCH</p><h2>왜 아직 채택하지 않았나</h2></div><span class="pill">판정 기준: 2022~2025 주 평가</span></div>
+    <div class="two-col"><article class="panel"><h3>결과 전에 정한 기준</h3><ul id="gates" class="gates"></ul><p class="fine">연구용 선별 기준입니다. 실제 투자 한도나 손실 보장선이 아닙니다.</p></article><article class="panel"><h3>수익의 우위는 아직 불확실합니다</h3><p class="body-copy">평균 일간 수익과 위험조절 보유 대비 샤프 차이의 95% 구간이 모두 0을 포함합니다. 현재 표본만으로 양의 기대수익이나 우월성을 입증했다고 보기 어렵습니다.</p><div id="confidence" class="confidence"></div><p class="fine">14일 블록·2,000회 동시 재표집. 7일/28일 및 후보 5개×지표 2개 보수적 보정 결과는 전체 JSON에 포함합니다. 보정 구간의 꼬리 표본은 작아 거친 진단이며, DSR 확률로 대체하지 않았습니다.</p></article></div>
+    <div class="takeaway"><b>다음 단계</b><p>실거래나 상시 모의운영으로 자동 전환하지 않습니다. 더 나은 전략을 찾으려면 이번 결과를 개발 자료로 인정한 <strong>새 가설과 별도 평가 계획</strong>이 필요합니다. 이미 본 구간을 다시 미사용 평가라고 부르지 않습니다.</p></div>
+  </section>
+  <section class="section" id="method"><div class="section-heading"><div><p class="eyebrow">METHOD & DATA</p><h2>결과를 읽는 데 필요한 것</h2></div></div>
+    <div class="method-grid"><article class="panel"><span class="step-number">01</span><h3>단순한 고정 규칙</h3><p>63일 수익이 양수면 롱, 아니면 현금. 최근 20일 변동성으로 목표 비중을 조절하며 조정 목표는 최대 50%입니다.</p><p>완료 일봉 이후 UTC 01시에 체결. 목표와 현재 비중 차이가 5%p 이상일 때 재조정합니다. 준비 기간은 85개 완료 일봉입니다.</p></article><article class="panel"><span class="step-number">02</span><h3>무료 공식 자료</h3><p>월별 308개 + 일별 23개 원본의 SHA256를 확인했습니다. 선물 56,232봉, 마크가격 56,232봉, 펀딩 7,029회입니다.</p><p>마크가격 공백 192시간은 공식 일별 자료로 복구했습니다. 현물 누락 32시간·축약 봉 7개·잘못된 행 1개·월/일 자료 상충 1개는 숨기지 않았습니다.</p></article><article class="panel"><span class="step-number">03</span><h3>시장과 통화를 분리</h3><p>주 평가는 Binance BTCUSDT의 과거 가격·펀딩입니다. 현재 기본 수수료와 주문 단위를 과거에 고정 적용한 모형이며 당시 운용의 완전한 재현은 아닙니다.</p><p>Hyperliquid의 USDC 결과와 합산하지 않습니다. HL 회귀 확인은 과거 오라클 대신 거래 종가로 펀딩 금액을 추정한 34일 검사입니다.</p></article></div>
+    <details class="panel detail-panel"><summary>모형의 가정과 한계 <span>수수료·펀딩·청산·자료 공백</span></summary><div class="prose"><ul><li>외부 기본 선물: 수수료 5bp + 반스프레드 0.5bp + 슬리피지 1bp, 편도. 현물 수수료는 10bp. 과거 할인·수수료 제도 변경은 반영하지 않았습니다.</li><li>현재 공개 주문 단위: 선물 0.001 BTC·최소 50 USDT, 현물 0.00001 BTC·최소 5 USDT. 당시 규칙을 복원한 것이 아닙니다. 최소 단위 때문에 작은 계좌의 목표 노출과 실제 노출에 차이가 납니다.</li><li>외부 펀딩은 실제 정산률과 정산 시간의 마크가격 봉 시가를 사용합니다. 원래 정산 밀리초를 보존하되 시간 경계에서 기존 포지션에 정산합니다. 순간 오차는 남으며 ±1% 기준가격 진단을 함께 제공합니다.</li><li>과거 호가·대기열·봉 안의 체결 순서·정확한 강제청산·ADL은 복원하지 않습니다. 시간별 낙폭은 순간 최대 손실이 아닙니다. 5% 담보완충 검사는 설명용 보수적 진단이지 거래소 청산 공식이 아닙니다.</li><li>현물 공백은 보간하지 않았습니다. 없는 시각에는 체결을 만들지 않고 다음 관측을 기다리며 누락을 기록합니다. 월/일 자료 상충은 월별 원본을 유지하고 모두 목록에 남겼습니다. 현물 관측 낙폭에는 이 공백의 한계가 있습니다.</li><li>세금·서버 운영비·환율·스테이블코인 위험은 미반영입니다. 각 구간의 시작금은 1,000이며 최종 정리 비용을 포함합니다. 현재 페이지는 정적 결과 스냅샷이고 실시간 자동매매 화면이 아닙니다.</li></ul></div></details>
+    <details class="panel detail-panel"><summary>현물 롱 + 선물 숏 캐리 검토 <span>왜 별도 보류인가</span></summary><div class="prose"><p>가상 1,000 중 현물 400·선물 담보 400·잔여 200. 기존 120일 평균 펀딩률을 <b>고정 명목 400</b>에 적용하면 30일 수입은 약 2.66, 왕복 수수료 0.92를 빼면 약 1.74 USDC입니다. 다른 비용은 아직 빼지 않은 <b>산술 예시</b>이며 미래 예측이나 캐리 백테스트가 아닙니다.</p><div id="carry-shocks" class="table-scroll"></div><p>BTC가 100% 오르면 별도 선물 담보 400은 숏 손실만으로 소진됩니다. 현물 이익이 있어도 적시에 담보로 옮기지 못하면 헤지가 깨질 수 있습니다. 동시 현물·선물 호가, 역사 오라클, 실제 담보·부분체결 경로가 부족해 성과 전략으로 승격하지 않았습니다.</p></div></details>
+    <div class="source-links"><a href="downloads/data-manifest.json" download>원자료·누락·체크섬 목록 ↓</a><a href="downloads/accounting-audit.json" download>독립 회계 대조 결과 ↓</a><a href="https://github.com/JavisLab/btc-perp-bot/blob/main/docs/EXPERIMENT_1448.md">사전 고정 실험 장부 ↗</a><a href="https://github.com/JavisLab/btc-perp-bot/blob/main/docs/LONGITUDINAL_RESULTS.md">해석·재현 방법 ↗</a></div>
+  </section>
+</main>
+<footer><div class="brand">BTC <b>RESEARCH</b><span>수익을 약속하지 않고, 근거를 공개합니다.</span></div><p>BUILD 1001r1 · 정적 연구 스냅샷 · 지갑 연결 / 실주문 기능 없음</p></footer>
+</body>
+</html>
