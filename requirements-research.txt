@@ -1,0 +1,5 @@
+# Optional, isolated research environment; not needed by the trading CLI.
+numpy==2.5.3
+scipy==1.18.1
+scikit-learn==1.9.1
+xgboost-cpu==3.4.1
