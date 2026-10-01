@@ -1,0 +1,112 @@
+{
+  "task": "1462",
+  "type": "exploratory_price_volume_event_study",
+  "preregistered_commit": "78480d7",
+  "pre_results_code_commit": "aef0840",
+  "frozen_rules_changed_after_results": false,
+  "tests_passed": 98,
+  "audit": {
+    "independent_raw_signal_sets_equal": true,
+    "max_component_error_bp": 3.950617610826157e-12,
+    "raw_funding_rows_checked": 7305,
+    "raw_price_files_checked": 80,
+    "real_account_or_orders": false,
+    "rows": 3048,
+    "summary_groups": 54
+  },
+  "offline_reproduction": {
+    "files": {
+      "data-audit.json": {
+        "equal": true,
+        "sha256": "e42473f45ecde2b1f413ade5005433f28aefd9b0a5f5486f8ecbe0f5bfadc240"
+      },
+      "events.csv": {
+        "equal": true,
+        "sha256": "a82494dd901fe69ef1ec3297934fe871ff9c1e5b40818e65f5fdf486ce48c260"
+      },
+      "events.json.gz": {
+        "equal": true,
+        "sha256": "3dce3e9960f003d1d83ba2853f0e7f73d3077bf3a81e3038dddf268013245fd8"
+      },
+      "ohlcv.json.gz": {
+        "equal": true,
+        "sha256": "ec0c2923afd4715641c51d3ac8a69d53d9a4606a9b34ccf5db08377460448e7a"
+      },
+      "results.json": {
+        "equal": true,
+        "sha256": "578b62135cc5274b53ec8d503ca4cefdf71fae4ee7948561ac7e588ec93cb3cf"
+      }
+    },
+    "network_disabled": true
+  },
+  "selection": [
+    {
+      "eligible_for_next_study": false,
+      "family": "B",
+      "gates": [
+        {
+          "adjusted_difference_positive": false,
+          "cost_x2_positive": false,
+          "net_positive": true,
+          "period": "main",
+          "sufficient_events": true
+        },
+        {
+          "adjusted_difference_positive": false,
+          "cost_x2_positive": false,
+          "net_positive": false,
+          "period": "recent",
+          "sufficient_events": true
+        }
+      ]
+    },
+    {
+      "eligible_for_next_study": false,
+      "family": "F",
+      "gates": [
+        {
+          "adjusted_difference_positive": false,
+          "cost_x2_positive": false,
+          "net_positive": false,
+          "period": "main",
+          "sufficient_events": false
+        },
+        {
+          "adjusted_difference_positive": false,
+          "cost_x2_positive": false,
+          "net_positive": true,
+          "period": "recent",
+          "sufficient_events": false
+        }
+      ]
+    },
+    {
+      "eligible_for_next_study": false,
+      "family": "P",
+      "gates": [
+        {
+          "adjusted_difference_positive": false,
+          "cost_x2_positive": true,
+          "net_positive": true,
+          "period": "main",
+          "sufficient_events": false
+        },
+        {
+          "adjusted_difference_positive": false,
+          "cost_x2_positive": false,
+          "net_positive": false,
+          "period": "recent",
+          "sufficient_events": false
+        }
+      ]
+    }
+  ],
+  "scope": {
+    "real_account_access": false,
+    "wallet_opened": false,
+    "live_orders": false,
+    "daemon_started": false,
+    "game_changes": false
+  },
+  "page": "https://arcadot.com/btc-perp-bot/price-action.html"
+}
