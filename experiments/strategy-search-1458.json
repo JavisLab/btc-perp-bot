@@ -1,0 +1,22 @@
+{
+  "id": "strategy-family-search-1458-v1",
+  "date": "2026-10-01",
+  "scope": "offline exploratory research; not new blind OOS; no live or persistent paper",
+  "specification": "docs/EXPERIMENT_1458.md",
+  "candidates": ["E_SPOT", "E_PERP", "E_LS", "B_SPOT", "C_ALWAYS", "C_FILTER", "P_PAIR", "M_GBDT", "M_RIDGE"],
+  "benchmarks": ["V_SPOT", "V_PERP", "H_SPOT", "T1_OLD", "T1_RISK20", "CASH"],
+  "initial": 1000,
+  "main_period": ["2022-01-01", "2026-01-01"],
+  "recent_start": "2026-01-01",
+  "max_archive_month": "2026-09",
+  "volatility_target": 0.2,
+  "target_cap": 1.0,
+  "rebalance_band": 0.05,
+  "main_gate": {"min_cagr_pct": 10, "min_sharpe": 0.8, "max_drawdown_pct": 25, "min_positive_years": 3, "double_cost_positive": true, "ex_best_quarter_positive": true, "margin_breaches": 0},
+  "ranking": "descending min(base Calmar, doubled-cost Calmar); turnover then simplicity",
+  "stress": ["cost_x2", "extra_delay_1h", "extra_delay_24h"],
+  "risk_sensitivity": [0.1, 0.3],
+  "bootstrap": {"seed": 1458, "resamples": 2000, "block_days": [14, 7, 28], "candidate_count": 9},
+  "no_post_result_rule_change": true,
+  "forward_evidence": false
+}
