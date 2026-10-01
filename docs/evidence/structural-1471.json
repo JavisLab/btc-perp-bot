@@ -1,0 +1,53 @@
+{
+  "scope": "offline public-data research only",
+  "preregistered_commit": "c176e5d",
+  "implementation_commit": "acd6296",
+  "serialization_fix_commit": "1b3e497",
+  "candidates": 5,
+  "scenarios": 7,
+  "periods": 2,
+  "accounts": 70,
+  "adopted": 0,
+  "ranked_passes": [],
+  "fine_data_sha256": "027edb1a22e540dfda734b31b23fe59daf63c163e44b927b554a758ab47775e3",
+  "official_zip_checksums": 69,
+  "fine_rows": 517248,
+  "tests_passed": 110,
+  "verification": {
+    "checks": "original archive hashes; independent raw signal enumeration; every held 5m exit path; Decimal double-entry inventory ledger; funding inventory boundaries; all day-end equities and fine-close drawdowns",
+    "daily_equities": 59640,
+    "events": 15174,
+    "experiments": 70,
+    "held_bars_rechecked": 1166617,
+    "independent_raw_signals": 722,
+    "max_cash_error": 3.02079799745e-12,
+    "max_daily_error": 3.183231456205249e-12,
+    "max_dd_percentage_point_error": 7.815970093361102e-14,
+    "not_proven": "actual fills, intrabar path, liquidation, future edge or out-of-sample superiority",
+    "original_funding_records": 7305,
+    "trades": 1661
+  },
+  "reproduction": {
+    "network_blocked": true,
+    "files_equal": 74,
+    "experiments": 70
+  },
+  "local_browser": {
+    "viewports": [
+      1280,
+      390,
+      320,
+      844
+    ],
+    "all70conditions_each": true,
+    "csv_bytes_equal": true,
+    "errors": 0,
+    "physical_phone": false
+  },
+  "prior_results_preserved": true,
+  "live_trading": false,
+  "continuous_paper": false,
+  "wallet_secrets_opened": false,
+  "page_url": "https://arcadot.com/btc-perp-bot/structure-lab.html",
+  "publication_verification": "performed after deployment; current file contains pre-deployment evidence only"
+}

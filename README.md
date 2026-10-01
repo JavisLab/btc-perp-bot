@@ -1,5 +1,7 @@
 # BTC Perp Bot
 
+**가격 구조·손절·청산 계좌 연구:** [후속 대화형 비교](https://arcadot.com/btc-perp-bot/structure-lab.html). 5개 후보·70개 조건별 계좌. 채널 후보는 과거4개 연도 플러스였으나 누적+13.42%/36거래로 기준 미달, 실전 채택0개. [전체 보고서](docs/STRUCTURAL_RESULTS.md)
+
 **가격·거래량 후속 조사:** [공개 원칙과 세 가설 검사](https://arcadot.com/btc-perp-bot/price-action.html). 58,440시간 원자료 복구·검증, 거래량 필터의 일관된 우위는 미확인. 계좌 백테스트가 아닌 24시간 사건 연구입니다.
 
 비트코인 무기한 선물 자동매매를 연구하고 검증하는 프로젝트.
