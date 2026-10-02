@@ -158,3 +158,7 @@
 - 실제OpenAlex질문 bitcoin trend following carry strategy capital allocation / bitcoin network transaction fees predictive returns / Q37exacttitle. 첫검색다자산포트폴리오·무관공급망·RETRACTED bubble논문은우리BTC결합근거로쓰지않음. title.search:bitcoin 추가제한. Q37MDPI본문도403,DOAJ는초록경로만현재확인(전문읽음아님). 현재목록끝을작업끝으로보지않음.
 - Q38 DeAngelis외,Betting on bitcoin: a profitable trading between directional and shielding strategies(2021-03-13,10.1007/s10203-021-00324-z),Springer공식21쪽PDF SHA fe85c54ece0e2acde3cae1d0ddaa14437f9dc64f3d6535f06201f036143c664d. 초록/서론·짧은표본Hurst해석·방법및검증4부분읽음. 2019말1분180/360/720개점 80/20분할,grid search **testing set 최저오차**로신경망선택;독립미사용검증이라고할수없음. CFD가예측가격과장벽의차이를지급한다고설계한사례는우리거래소에서그가격으로가입가능한펀딩/비용현금흐름과다름. 추세+실제perp캐리결합의실증근거로채택안함. 전체증명재현/거래계좌독립검산아님.
 - Q29/Q32의carry자본제약/리스크프리미엄과기존E_SPOT의현금구간을합치는별도질문은아직명세/성과없음. 같은가격경로의기존성공부분을새OOS로포장하지않고,총명목/분리담보/순delta·최소수량·자본점유를같은계좌에서검정해야한다. 별도원가회귀실패를변형하는가설이아님.
+
+
+## 2026-10-02 09:40 UTC 비교군 이름 정정 (수치·기각 기준 불변)
+RC_TREND 대조를저장원장에대조하자E_SPOT주+52.8387132247115%/DD13.561952026088653%,최근+0.8908120204031755%/DD1.6833175521597465%의경로가정확동일했다. 앞선frontier/capacity/valuation세페이지에서최근+4.62839056986033%/DD10.450945997063743%의 **E_LS** 기준을E_SPOT이라고통칭한본문오류를발견했다. 원래persistence명세는주E_SPOT/최근E_LS로종합관문을고정했고그숫자는모든새명세에서그대로유지됐다. 해당세페이지본문/생성기와눈에보이는정정문구만수정한다. 원시·원장·대조별bootstrap·사전기준·결과/실패는변경없으며완료자료불필요재계산안함. 기준을최근E_SPOT의낮은수익으로완화하지않는다.
