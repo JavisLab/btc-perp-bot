@@ -16,3 +16,7 @@
 - Q1 Crossref30개참고문헌에서Q2 Wen(2022)와Shen/Urquhart/Wang `Bitcoin intraday time series momentum`(2022,10.1111/fire.12290)를확인. Q1과Q2는독립중복성과로개수를부풀리지않음.
 - 실제검색 `Wen 2022 intraday return predictability cryptocurrency momentum reversal pdf`: 출판사/SSRN4080253/ResearchGate두중복레코드/공개학생동아리PDF https://www.cuats.co.uk/wp-content/uploads/2026/02/ssrn-4080253.pdf 발견;후자직접403,전문확보아님. 다음은출판사preview/저자·기관경로.
 - 실제검색 `Bitcoin intraday time series momentum 2022 Elaut Zhang Gao pdf`: 검색어의저자추정은틀렸고실제저자는Shen,Urquhart,Wang. University of Reading 원문 https://centaur.reading.ac.uk/100181/3/21Sep2021Bitcoin%20Intraday%20Time-Series%20Momentum.R2.pdf 200/41쪽/SHA299f51695b1071b16166138b0643d43b30c527e684b39e872f3a7bba06eec803. 확보후읽기진행,수익기전검증완료아님. 초록은거래량으로첫거래세션을정의하고첫30분→마지막30분예측을주장;시간대전체표본선택/비용먼저감사할것.
+
+## Q1 실행/검산 이력
+- 기본40계좌계산완료. 첫synthetic 최소금액검사는1%목표가비용후수량0으로내림되는데minimum event를기대한테스트오류(IndexError). 테스트를3%목표(양의수량이지만50USDT미달)로고치고0수량은무거래로별도해석. 연구규칙/계좌성과변경없음. 최초셸이테스트실패후실험을계속한이력도보존;이후검사는실패즉시중지형으로실행.
+- 첫독립검산은40계좌의수량/원장/DD숫자가통과했으나12정산의mark원시월자료없음에서정지. 기존공식daily복구4일을검산기에서빠뜨린것을확인,기존파일만연결하여원시검증재시도(원본가격/성과수정없음).
