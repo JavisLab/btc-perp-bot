@@ -53,3 +53,8 @@
 
 - Q12 대체원문 확보: Southampton https://eprints.soton.ac.uk/id/eprint/501151/2/1-s2.0-S0378426625000317-main.pdf (18쪽,출판본,SHA76dd5fb7303d9f27e2165ce32b615c91aa45ff32bd22e3bc40b86ba1121a9224).초록·서론·자료/방법2절·예측검정/한계읽음.2017~2022,122생존코인5m,결측최대20%허용후forwardfill,시장평균대비반전포트폴리오/50%margin정규화;BTC1종이면동일수식분모0.실제maker체결원장/우리편도비용후BTC수익증거아님.수식가중치표기에i항의합이남는모호함도있음.유동성충격에대한보상기전은살리되성과이식기각.인용Bianchi/Babiak/Dickerson2022 거래량·유동성논문으로추적.
 - 위험검산 보강:3810개재조정수량을12회반복solver와다른폐형식으로검산하고21744개무거래(밴드/최소금액등)를검사.실제spot체결시간원시거래량>0확인.모든30계좌수익변경없음.보강후소켓차단49파일재현은일치했으나기존reproduction.json보호장치가덮어쓰기를거부;기존증명을보존하고reproduction-v2.json으로새검산SHA증명기록(실패가성과오류를의미하지않음).
+
+## Q13 — 거래량 충격과 조건부 반전/지속
+- Q12인용에서제목을얻어실제OpenAlex검색 `Trading volume and liquidity provision in cryptocurrency markets`(2026-10-02 05:31UTC). 2018SSRN3239670/2022저널10.1016/j.jbankfin.2022.106547은같은논문계열,독립2건아님.Lancaster PDF/랜딩timeout,Riksbank403,대체 https://www.cerge-ei.cz/pdf/wp/Wp730.pdf 성공(46쪽,2022-06 WP730,SHA c294b4f81a23e8413a8d6b803f73515a8939e2fd102b50616f7386dff84ff588).최종저널과같다고단정안함.초록·서론·자료2.1·방법2.2·비용·회귀4.2읽음,전체부록표재현아님.
+- 2017-03~2022-03 CryptoCompare80+거래소 USDpair OHLCV,300+코인;매월직전Amihud100개선택,회귀는전체기간평균유동성100개선택.고정표본/365일생존요건/거래량대시총제거선택을명시.우리BTC/USDTperp와다름.대형·고유동성의반전수익은거의0/유의하지않다는반증중요.
+- v=ln(Q_d/mean직전30일Q),return×volume 상호작용은양수라는패널회귀;1일후수익을BTCrolling학습으로별도검사할경제기전.전체기간고정효과는실시간미래시각에쓸수없음.원문의logstd정규화표현/시점표기모호함을우리명세에서해소.본문편도long30/short40bp vsTable5caption20/30bp상충,이종목선택비용을우리순수익증거로사용안함.현재레버리지/비용/신호창최적화없음.
