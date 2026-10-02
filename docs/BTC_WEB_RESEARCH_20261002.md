@@ -78,3 +78,4 @@
 - 공식 https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm 전체직접읽음(2026-09-16갱신),정례8회·3주후minutes. 실제성명 https://www.federalreserve.gov/newsevents/pressreleases/monetary20220316a.htm 14:00EDT 확인. Python직접403이어도web_fetch정상내용확보,두경로결과구분.
 - ALFRED 공개CSV https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=DGS2&cosd=2022-01-24&coed=2022-01-28&vintage_date=2022-01-27 성공. 같은범위01-26빈티지는25일까지,01-27은26일까지,현재빈티지는28일까지반환됨. 당시원자료가용경계를재현가능;정확한분수신시각은없어전체미국날짜완료후보수지연고정. FRED본문/도움말timeout은CSV빈티지불가라는뜻아님. 세CSV보존. Q19동일제목2021SSRN3947979확인(2022저널과독립2건아님).
 - 다음구체가설 M_RATE: 정례FOMC일금리변화와BTC반대방향 지속이d+3UTC부터남는가. 단순일별변화를'예상외충격'으로명명안함;M_INV/M_PRICE/M_CASH·기존E_SPOT대조/비용·위험·지연·37빈티지검산을성과전에명세. Q20왜도전문/후속은병행조사큐,현재끝아님.
+- M_RATE 최초원형은성과전자료감사에서36/37:2025-06-18회의의익일06-19는공휴일,빈티지에당일관측없음. 수집파일/코드커밋 보존,계좌성과미계산. 별도MB_RATE가설은d+1~d+7중실제로처음관측되는빈티지v와v+2일00UTC가용지연을사용하도록새명세. 37회완전성/수익·위험기준을낮춘것이아니며공휴일자료수신을결과전에정의한변경이다.
