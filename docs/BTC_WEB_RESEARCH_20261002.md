@@ -42,3 +42,11 @@
 - Q10 PMC공개전문 https://pmc.ncbi.nlm.nih.gov/articles/PMC8207820/ 확보/초록·방법·자료·BTC예측결과읽음.원본은Bloomberg5m/2018.4~2020.6,주식식5/22기간HAR와WLS·MCS;공개Binance2022~26에서새독립검증필요.초록의'분산부호모델best'를BTC전체결과라고오인하지않음:본문전체표본BTC1일/5일best는Model5(부호점프),1개월은Model2.모형/기간에따라결론이다름.
 - 경제기전:같은총변동성이라도하락/상승의분해가미래위험의지속성이다를수있음.수익신호와위험예측을분리하며,단순노출/레버리지확대를수익예측알파로명명하지않음.후속HAR/부호위험규칙을성과전에고정할예정.
 - Q2/OpenAlex 공개PDF없음, Q4 Wollongong/figshare27809493도메타데이터만(files=[]),Q6공개PDF없음.접근한범위명시·유료/권한우회없음.
+
+## 위험 가설 실행 및 Q11~Q12 확장
+- V_SRV 기본/V_HAR·V_RV20 대조는 명세f9cf939 후 30계좌 계산. 주+50.2644068888%·DD11.3478804951%,최근+.8881032876%·DD1.8610122523%;주/최근수익·양수연도·24h지연·주MSE 관문 탈락. 노출감소와 위험감소를 알파로 혼동하지 않음. 기존198계좌 재계산없음. 학습용공식BTC5m21개월만추가,701280봉→2435일을별도RV검산.
+- Q10 인용후속 https://arxiv.org/html/1912.05228v3 (Hu/Kuo/Härdle,first2019-12,원고2021-08,v3등록2021-12-09):초록·서론·RV/jump방법읽음.본문은부호점프의예측가치가주로30일에있고1일HAR가오히려우세라고함.단기예측에항상추가이득이라는해석기각.전체부록/모든수치재현아님.
+- Q11 실제OpenAlex검색 `bitcoin spot futures order flow information price discovery signed volume` → Alexander/Heck,Price discovery in Bitcoin: the impact of unregulated markets,2020-07-30,10.1016/j.jfs.2020.100776. Sussex공개기관API https://api.figshare.com/v2/articles/23308262 → https://ndownloader.figshare.com/files/41093948 원문36쪽확보(SHA76036eec77cacac5288a2ed5312556ecd720ee7607109c9c59cde1d87ee23be6).초록·자료3절·발견결과4절·지연6절·결론7절읽음;다른자산후속제안은연구확대안함.
+- Q11은2019-04~2020-01,coinAPI/Eikon유료1분거래가격과별도OI.파생상품의가격발견이주로선도,현물항상선도라는전제가아님.CME반응4~5분/반대약2분;1h/1d가용지연뒤독립방향알파가남는다고하지않음.논문10%가상충격은당시관측최대1분9%보다큼.2019거래소규제상황을현재사실로옮기지않음.우리BTC현물/선물흐름비교는별도근거필요.
+- 후속실제검색 `bitcoin informed trading spot futures order flow predict returns`, `bitcoin return predictability order imbalance spot futures`, `bitcoin liquidity shocks reversal permanent price impact order flow`(OpenAlex,2026-10-02 05:23UTC).기존Q11중복·무관/다른자산·철회논문은새BTC근거로세지않음.
+- Q12 Farag/Luo/Yarovaya/Zieba,Returns from liquidity provision in cryptocurrency markets,10.1016/j.jbankfin.2025.107411,등록2025-02-22/권호2025-06.저자Birmingham기관초록직접읽음:단기반전수익과위험/유동성제약관계,횡단면인지BTC시계열인지아직확인필요.공개OA로등록된pure-oai PDF403;Southampton/Dundee와현재Birmingham공개링크를추적.전문확보전단순반전규칙을새증거로포장하지않음.
