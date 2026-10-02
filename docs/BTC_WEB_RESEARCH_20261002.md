@@ -249,3 +249,29 @@ RC_TREND 대조를저장원장에대조하자E_SPOT주+52.8387132247115%/DD13.56
 - Q57 Rudd/Porter,A Supply and Demand Framework for Bitcoin Price Forecasting(2025-01-30,10.3390/jrfm18020066),공식mdpi-resPDF23p SHA7e2af9ec7ad4c72bad616545bc0952a8635a506baded95c18650ead522ceff00. 초록/서론/2/3일부/4.1·4.2일부/4.4교정·6.4초반한계읽음. 2024halving시작CES수요·영구보유/손실coin을liquid에서제외,물량withdrawal과logistic수요증가외생가정. 불변발행량과가격에반응하는기존보유자매도공급은다른것. 고정reserve유출하hyperbolic가격은모형artifact가능성저자도인정. 명시거래규칙/비용/실현예측정확도없는장기scenario를우리alpha로안씀.
 - Q58 같은저자후속Bitcoin Supply,Demand,andPriceDynamics(2025-10-08,10.3390/jrfm18100570),29p공식PDF SHAd59a5c82f7bf0b73f14181858a1ba78c27edef827b4844d5729bdd482d2a5e56. 초록/서론/2.1~2.3/3.3대부분/3.4~3.7/5.5한계앞부분읽음. 2024Apr~2025July두끝점교정,주관적범위uniform10000뽑기·수요D10~100/영구보유가정·가격상승구매감소alpha. 2036$5.17M '50%확률'은이범위내조건부시나리오비중이지검증된현실확률아님. MonteCarlo일부는교정시작/끝가격도못맞춘다고명시. 파생/담보재사용·원인식별미포함을인정. 같은저자Q57개정확장이라독립증거2회로안셈. 주소/지갑·유료Analytica수집실행없음.
 - Q58인용Mazur/Polyzos SpotBitcoinETFs fundflows가격형성 및Mohamad ETF가격발견으로실제OpenAlex검색확장중. ETF자금유입이현물장기일방수요일수도있지만선물숏과짝인basis trade일수있다는반증을유지. 아직ETF자료/새명세/새성과없음.
+
+
+## PH50 실제 공개 확인
+- 78파일소켓차단byte동일. pub596ae730842bab6c95e5d07c5d90d653abbd0b74/Pages37002716239 성공,익명7SHA·50행×1280/390·4실제다운로드·오류0/97payload민감정보0. 총새704계좌검산·재현·공개확인완료. tmp/btc-phase-publication/final-verification.json. 연구는ETF정보흐름원문·공식집계가용성으로이어감.
+
+- FINRA資料감사:공개QueryAPI는2024Jan~2026Aug요청에도2025Oct2이후365일만반환(IBIT687/FBTC686/GBTC683facility행),record-total일치가전체기간완결을뜻하지않음. 공식CDN2024Jan12/2025Oct31/2026Aug31 BTC3ETF행확보,후2일facility합계와공식Consolidated행short/exempt/total Decimal정확일치. ShortVolume에exempt이미포함,중복더하기금지;2021guide정수와달리2026현재원자료6자리소수존재→절삭안함.
+- 공식월별색인의year value는연도그자체가아닌2026=0/2025=1/2024=2,month01형식. 초기잘못된2024/1필터의빈응답을자료없음으로확정하지않고실제form값으로수정해2024Jan21파일확인. 32월동시4요청색인수집중17월성공/15월429,원자료수집전중단·캐시보존. 요청속도를월색인1worker4초간격,공식429 Retry-After 준수로낮춰재시도하며우회/인증/유료접근없음. 아직새성과계산없음.
+
+
+## Q59~Q61 ETF 정보흐름의 원문·자료 의미 감사
+- 실제OpenAlex/Crossref 질문 SpotBitcoinETFs effect fundflows Bitcoin priceformation / DoBitcoinETFs lead pricediscovery / ETFflows predictreturns publicationlag. Q59 Mazur/Polyzos(2025-02-21,10.3905/jai.2025.1.239;SSRN5452994동일family)는서지·출판공개경로만확인. SSRN초록/Delivery 직접요청으로전문확보못함,원문검토완료로세지않음. Q58의인용문을Q59전문내용으로대체안함.
+- Q60 Mohamad,DoBitcoinETFsLeadPriceDiscoveryFollowingtheirIntroductionintheBitcoinMarket?(2025-06-06,10.1007/s10614-025-10998-x),Springer공식23p PDF SHAb39af45a64a3aaff0af62d09a6e6b8423eda111b9ca5391b44702ce2bdc679a1. 초록/서론·문헌일부/자료3/방법4대부분/결과5일부/결론·가용성읽음. 2024Jan11~Oct11,Bitstamp5m·LSEGRefinitiv ETF9개(유료제3자자료확보안함). ILS에서IBIT/FBTC/GBTC85%우위,IS·CS는다른ETF/현물우위로지표상충. 85%는미래수익적중률/비용후매매성과아님. 일별ILS는그날전체자료후산출;공통5m시각매칭만명시,DST·openingclose처리/PIT거래규칙감사여지.
+- Q60 Table2일수익ADF강한음수·별표와본문'unitroot존재'문장이상충. 2변수JohansenTable3가r=1도기각하며본문'두cointegration관계'라는데fullrank이면공통확률추세가없어통상rank1 IS/CS해석과충돌. 표의내용/단정의문제이며우리가원자료통계재현한것아님. 종목단순주당가격차이를'비싼/싼ETF'로표현하는문장도NAV비율/보수·1주BTC수량비교와다름.
+- Q61 Onishchenko,BettingAgainstBitcoin:EvidencefromSpotBitcoinETFs(2026-05-17 online,10.1016/j.jbef.2026.101191),Otago공식저장소가배포하는Elsevier최종8p SHA275de2f20f896c4a7e5ce3231c31dd75ab01501c56af82757fb6e4631528ae7d. 초록/서론/자료2/실증3전체·Table1~5/식3·결론읽음,전체참고문헌추적아님. 2024Jan11~2025Oct31 450거래일·11BTCETF,FINRA거래량/Bloomberg가격·유통주식·스프레드/Alternative.me FNG/EPU. 우리는다른주식·다른코인거래/유료자료수집없음.
+- Q61 표4현재shortvol/주식수→t+2~t+6 수익음수관계,단일day대조포함시t−.39유의없음/21일유의없음도보존. 표준오차ETF별11cluster인데BTC공통일충격/겹친수익을독립시계열수천개로해석못함. 공개월별transaction자료를일내집계하나각일18ET에공표하는것은일별volume자료라는시각구분필요. Volume를shortinterest/positions/sharesonloan으로혼용하는본문과달리공식FINRA는다른자료라고명시.
+- Q61 경제가치정렬은shortflow상위규칙이아니라 **FNG>75일의BTCETF숏** 이고,XBX beta조정잔차0.24%/5day·12.10%연율은대차비용제외. beta추정훈련창/실시간재추정범위본문불명. 저자는'실시간구현가능전략이아니라정보내용'으로해석하라고직접명시;이수익을우리BTC단독숏수익으로쓰지않음. 본문gross효과와제안경제메커니즘은구별한다.
+- FINRA 공식 https://www.finra.org/finra-data/browse-catalog/short-sale-volume 및 /short-sale-volume-data/daily-short-sale-volume-files · /monthly-short-sale-volume-files · https://www.finra.org/investors/insights/short-interest 본문전체(내비제외)읽음. Daily는정규시간공개체결의offexchange/TRF·ADF,거래소내체결·공개안되는상쇄buy는제외,상태변화/정방향기관베팅이라고단정불가. 통합CNMS는TRF B,Q,N/ADF합계;개별파일다시더하면중복. 18:00America/New_York까지게시,드물게다음날수정본별도제공;현재자료와과거최초발표빈티지는구분. Monthly는거래별·장외시간도포함하므로같은일18ET가용으로취급불가. 월별GB단위거래자료는이번에수집하지않음.
+- 공식2021layout PDF와API metadata도읽음. 일별파일footer는전체레코드수,ShortVolume에ShortExemptVolume포함. 자료collector는공식전체응답footer검증후IBIT/FBTC/GBTC행만보존하고타종목행은버림;원응답SHA·세행subsetSHA·URL·수집시각따로보존. 주가예측/새성과는아직계산하지않음. 우리질문은이보고된short표시거래압력이BTC가격변동을통제한뒤다음수익에증분정보가있는지이지,순기관shortposition증가를관측했다는주장이아님.
+
+
+## Q62~Q63 거래소분절·동시흐름과 자료수집 체크포인트
+- OpenAlex 실제질문 Bitcoin Coinbase premium return predictability price discovery / Trading and arbitrage in cryptocurrency markets Makarov Schoar / Bitcoin exchange price premium order flow forecasting. 일중모멘텀10.1111/fire.12290은Q7중복. 검색중상위에노출된비BTC/다자산결과를새거래가설로채택안함.
+- Q63 Makarov/Schoar,TradingandArbitrageinCryptocurrencyMarkets,2019-03-19저자accepted/2019-07-11online/2020JFE권호동일family. DOI10.1016/j.jfineco.2019.07.001, LSE공개저자판 https://researchonline.lse.ac.uk/id/eprint/100409/1/Cryptocurrency_Markets_JFE_final_v4.pdf SHAc697e236f50b01724174e6ad2235222f323dbc243302e88a8fac81092a491c8a. 초록/서론앞부분/자료2앞부분/BTC차익4.4/흐름7~7.2대부분/실행8.1앞부분읽음. **다른코인확장6절읽기·자료획득·계산안함**. Kaiko유료자료·개별계좌/자금이동접근없음.
+- Q63 34거래소19국가2017~2018BTC대부분자료. '공통흐름이80%설명'은동시구간가격회귀이지미래방향적중률아님;lag공통흐름음수는일부가격압력의반전해석이지만당기흐름통제·전체분해·비용전결과를실시간예측성과로쓰지않음. 국제premium과미국HP가격잔차관계의HP미래가용성은예측규칙으로별도감사필요.
+- Q63 차익은고·저지역실제매매량을초단위사후맞추고2%괴리/10%이상25BTCinventory확장,부호없는거래소는거래량비례확대해잠재규모추정. 동일사후체결을추가주문이같이받는다는보장은없고,개별계좌수수료/선물funding/자본운송/필요담보의순수익원장아님. 논문8절은실제전송지연·숏불가·사전재고·자본규제제약을명시하므로이를숨긴무위험보증논문이라고도하지않음. 향후BTC동일자산다중현물의미래잔차정보/효율가격구성을검토할연결,새성과없음.
+- FINRA색인재시도26개월확보뒤일부429지속,자체색인요청을정지해웹사이트쿨다운. 이미합법공개색인에서확인한CDN **556일** 파일을요청간격0.5초로받음:오류0·footer검증·BTCETF3종목행만저장. www웹색인요청을다른인증/IP로우회하지않음. 이후남은6개월색인을기존캐시보존상태로순차재시도·완료후독립API/CDN Decimal대조예정. 피처·매매성과아직미계산,새가설명세미고정.
