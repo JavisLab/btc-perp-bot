@@ -58,7 +58,7 @@ def run(out):
      elif key=='mark':rawmarks[t]=tuple(D(rr[j]) for j in (1,2,3,4))
      else:
       rawprice[(key,t)]=(D(rr[1]),D(rr[4]));rawvolume[(key,t)]=D(rr[5])
-      if key=='BS' and t%DAY==23*HOUR and t>=ms('2020-02-01'):spot[t+HOUR]=float(rr[4])
+      if key=='BS' and t%DAY==23*HOUR and t>=ms('2020-01-01'):spot[t+HOUR]=float(rr[4])
  for t,r in marks['BP'].items():assert tuple(D(r[j]) for j in (1,2,3,4))==rawmarks[t]
  for t,r in marks['BS'].items():assert (D(r[1]),D(r[4]))==rawprice[('BS',t)]
  days=list(range(ms('2020-02-02'),max(spot)+1,DAY));daily=np.array([spot.get(t,np.nan) for t in days]);dayidx={t:i for i,t in enumerate(days)}
@@ -66,7 +66,7 @@ def run(out):
  for variant,phase in [('base',0),('rounding_plus',1),('rounding_minus',-1)]:
   rr=independent_predictions(cot,spot,phase);predictions[variant]=rr;recorded=read(out/f'features-{variant}.json.gz');assert len(recorded)==len(rr)
   for e,z in zip(recorded,rr):
-   assert e['report_date']==z['date'] and e['valid']==z['valid'] and e['truth_end']==z['truth_end'] and e['truth']==z['truth']
+   assert e['report_date']==z['date'] and e['valid']==z['valid'] and e['truth_end']==z['truth_end'] and e['truth']==z['truth'],(variant,e['report_date'],{k:e[k] for k in ('valid','truth','truth_end')},{k:z[k] for k in ('valid','truth','truth_end')})
    if z['valid']:
     for k,v in zip(('r','f','o'),z['x']):assert abs(e[k]-v)<1e-13
    for name,p in z['models'].items():
