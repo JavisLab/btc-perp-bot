@@ -162,3 +162,12 @@
 
 ## 2026-10-02 09:40 UTC 비교군 이름 정정 (수치·기각 기준 불변)
 RC_TREND 대조를저장원장에대조하자E_SPOT주+52.8387132247115%/DD13.561952026088653%,최근+0.8908120204031755%/DD1.6833175521597465%의경로가정확동일했다. 앞선frontier/capacity/valuation세페이지에서최근+4.62839056986033%/DD10.450945997063743%의 **E_LS** 기준을E_SPOT이라고통칭한본문오류를발견했다. 원래persistence명세는주E_SPOT/최근E_LS로종합관문을고정했고그숫자는모든새명세에서그대로유지됐다. 해당세페이지본문/생성기와눈에보이는정정문구만수정한다. 원시·원장·대조별bootstrap·사전기준·결과/실패는변경없으며완료자료불필요재계산안함. 기준을최근E_SPOT의낮은수익으로완화하지않는다.
+
+
+## RC_BLEND 36계좌 검산 및 Q39~Q40 관심도 후속
+- RC_BLEND 명세3480c71·구현1ec78bc·9합성검사후계산. 주+68.6887439176%,DD12.8143393433%,연vol13.6806330217%/최근+1.2382755552%,DD1.6849389380%. 주2022−3.0909089113%,2023+28.2233362072%,2024+37.0058865267%,2025−0.9133183609%,양수2/4;추가24h지연최근−0.8843831375%. 주수익/낙폭개선은있으나최근수익·주vol·연도·지연·최근DD의추세대조미열위관문실패. 원사전기준불변/기각. 순핵심구간22/3과양다리종료수를구분,수익증가를가격예측알파라고하지않음.
+- 329rawZIP·10224daily신호/30666자본한계·4415matched목표·4642폐형식수량·27512무거래·61275정산/65971원장이벤트·30672일말/시간DD·분리담보/순핵심구간/노출검산2e−11. 54파일소켓차단byte동일. RC_TREND는양기간저장E_SPOT 일별·return/DD/fee/impact/funding정확동일;이비교로발견한앞선세페이지의최근E_LS명칭오류는b5b1d61/run36991009039 게시성공·3익명SHA확인. 전체사전기준/계좌/실패불변. 총새526검산완료,490공개확인·RC36게시중.
+- Q39 RobertCarver,Skew preferences for crypto degens(2024-01-09),https://qoppac.blogspot.com/2024/01/skew-preferences-for-crypto-degens.html 원문전체읽음. 공개블로그검색q=crypto및공식feedsq=bitcoin실제수행. 과거2010이후BTC거대평균·왜도를미래에유지하는가정과효용/불확실성선호에따른최적비중변화를비판. 이것이특정BTC비중/매년수익/우리캐리배분을증명하는논문은아님. 다자산비교수익/ETH계산확대안함,외부code실행없음.
+- 실제OpenAlex title.search:bitcoin 질문 return predictability liquidity / funding rate trading / trend carry / wikipedia attention page views returns. Q7/Q16/Q21중복은새근거로세지않음. 제목유사새참고Q41 The digital traces of bubbles(2014-08-06,10.1098/rsif.2014.0623),Q42 Social signals and algorithmic trading of Bitcoin(2015-09-01,10.1098/rsos.150288) 확보대기. Q40 ZhuPanpan외,Investor attention and cryptocurrency: Evidence from the Bitcoin market(2021-02-01,10.1371/journal.pone.0246331) PLoS공식XML확보·초록/자료/전체OOS/경제가치/결론읽음.2013-07~2020-05CMC일가격을주평균으로묶은수익,Google월별비중으로일searchindex재조정후주평균변화. 실제체결가능주경계수익과다르고Google역사정규화/최초배포시각PIT미입증.200주창/4lags/1·2·4주,여러비선형모형;긴h의t+h−i는현재미가용값을어떻게예측했는지본문식만으로불명. 현물거래수량/funding원장재현아님.
+- Q40BTCreturn일부모형OOS개선대비 **RV모형전부OOS R²음수** 반증보존. return×attention상호작용1/2주 R²음수,거시대조들도음수;아무attention모형이든효과있다는해석안함. Table12 mean/variance배분γ3/6/9·0/10/20bp비용비교·AR4대조추가를읽음. asymmetry만AR4대비일관우위;VAR는모두아님. zero비용γ3VARturnover .05137 vs비용포함 .5137 자릿수상충,제약/단위추가감사필요. LIBOR현금이우리0이자USDT와같지않음.
+- Wikimedia공식 BTC문서 en.wikipedia.org/all-access/user/Bitcoin/daily API2020-01~2026-08응답성공. 아직성과·가설명세없음. GoogleTrends와동일변수가아니며학습/읽기수요대용의새측정오차를감사할예정.
