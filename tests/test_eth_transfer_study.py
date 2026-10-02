@@ -149,3 +149,20 @@ def test_adapter_does_not_patch_btc_namespace():
     sim(rows())
     assert btc.sized is original
     assert st.engine is not btc
+
+
+def test_future_price_and_flow_perturbation_preserves_completed_history():
+    import random,copy
+    rng=random.Random(20261002);price=100.;bars=[]
+    for i in range(450):
+        old=price;price=max(2,old+rng.uniform(-3,3))
+        bars.append(dict(t=i*4*st.HOUR,o=old,h=max(old,price)+.1,l=min(old,price)-.1,c=price,v=100,buy=rng.uniform(1,99)))
+    before,bt=st.signals(bars)
+    altered=copy.deepcopy(bars)
+    for b in altered[350:]:
+        for k in ('o','h','l','c'):b[k]*=10
+        b['buy']=100-b['buy']
+    after,at=st.signals(altered);cutoff=350*4*st.HOUR
+    assert sum(len([e for e in before[n] if e['source']<=cutoff]) for n in st.IDS)>0
+    for n in st.IDS:assert [e for e in before[n] if e['source']<=cutoff]==[e for e in after[n] if e['source']<=cutoff]
+    for n in (6,10):assert {t:v for t,v in bt[n].items() if t<=cutoff}=={t:v for t,v in at[n].items() if t<=cutoff}
