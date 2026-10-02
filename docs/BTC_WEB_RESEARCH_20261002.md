@@ -34,3 +34,11 @@
 - Q6 Crossref검색으로2021SSRN3910202와2023-10저널10.1016/j.irfa.2023.102712가동일제목/저자Zehua Zhang,Ran Zhao임을확인(별도독립근거2개아님).현재전문미확보;횡단면소트는BTC단일방향수익증거아님.저자/기관·인용문헌을통해semivariance의실제BTC위험예측추가가치근거탐색.
 - 검색장애:DDG일부후속요청은captcha,Google빈결과/Bing무관결과/Yahoo500.이들은해당검색경로실패일뿐전체웹조사중단사유아님.공식Crossref/저자기관/RePEc경로로계속확보.
 - Q7 Shen/Urquhart/Wang(2022) Reading수록2021-09원고:거래량최대구간으로세션시작선택,CME17ET종료;첫정보세션+끝직전30m반전.3.7은무레버리지손익분기3/7/10bp로Bitstamp25bp비용에미달한다고인정.10배레버리지로29/64/96bp가되어수익가능하다는서술은명목비례수수료도함께증가하는단위문제를해결하지못함.기존레버리지금지원칙에따라그부분기각.지역시각/정보흡수기전은별도검증가능하나시각최적값/레버리지결론을채택하지않음.
+
+## Q8~Q10 — 큐 이후 BTC 위험 예측으로 조사 확장
+- 실제학술검색 `bitcoin realized semivariance downside upside volatility forecasting`(OpenAlex search):Q8 Regime-Dependent Good and Bad Volatility of Bitcoin(2020-12-07,10.3390/jrfm13120312),Q9 Forecasting realized volatility of bitcoin returns: tail events and asymmetric loss(2021-04-02,10.1080/1351847X.2021.1906728),Q10 Cryptocurrency volatility forecasting: What can we learn from the first wave of the COVID-19 outbreak?(2021-06-16,10.1007/s10479-021-04116-x)확보.다른자산거래확장없음.
+- Q8 MDPI CDN403,OpenAlex는EconStor handle10419/239398과UWA기관경로를반환.대체원문추적중,전문읽음아님.
+- Q9 Pretoria저자원문 https://repository.up.ac.za/bitstream/2263/84189/1/Gkillas_Forecasting_2021.pdf 확보(SHA5cfdec1209097ccd5d2a161ed234242bf363bb193e75a1ec40e9f1f2294637dd).2020-11원고/2021출판구분.초록·HAR-RV방법·평가/결론읽기:tail추가효과는과소예측을더벌주는비대칭손실/특정창·짧은중간horizon에서주로발생.보편적방향알파아님,많은창중최적값복사안함.
+- Q10 PMC공개전문 https://pmc.ncbi.nlm.nih.gov/articles/PMC8207820/ 확보/초록·방법·자료·BTC예측결과읽음.원본은Bloomberg5m/2018.4~2020.6,주식식5/22기간HAR와WLS·MCS;공개Binance2022~26에서새독립검증필요.초록의'분산부호모델best'를BTC전체결과라고오인하지않음:본문전체표본BTC1일/5일best는Model5(부호점프),1개월은Model2.모형/기간에따라결론이다름.
+- 경제기전:같은총변동성이라도하락/상승의분해가미래위험의지속성이다를수있음.수익신호와위험예측을분리하며,단순노출/레버리지확대를수익예측알파로명명하지않음.후속HAR/부호위험규칙을성과전에고정할예정.
+- Q2/OpenAlex 공개PDF없음, Q4 Wollongong/figshare27809493도메타데이터만(files=[]),Q6공개PDF없음.접근한범위명시·유료/권한우회없음.
