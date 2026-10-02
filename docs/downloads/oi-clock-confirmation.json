@@ -1,0 +1,67 @@
+{
+  "checks": [
+    {
+      "symbol": "BTCUSDT",
+      "date": "2026-09-10",
+      "archive_rows": 288,
+      "api_rows": 288,
+      "compared": 288,
+      "exact_quantity": 288,
+      "exact_value": 288,
+      "missing_api_times": [],
+      "shift_ms": 300000,
+      "archive_url": "https://data.binance.vision/data/futures/um/daily/metrics/BTCUSDT/BTCUSDT-metrics-2026-09-10.zip",
+      "archive_sha256": "a700433bbedae6a7dca6857358021840ad893233fb79360a668c1f970f5ef9db",
+      "api_url": "https://fapi.binance.com/futures/data/openInterestHist?symbol=BTCUSDT&period=5m&startTime=1788998700000&endTime=1789084800000&limit=500",
+      "api_sha256": "46be00342ddcb610c020e70500a3d737dbf2755ac44abd944eef5a3029e0af2d"
+    },
+    {
+      "symbol": "BTCUSDT",
+      "date": "2026-09-20",
+      "archive_rows": 288,
+      "api_rows": 288,
+      "compared": 288,
+      "exact_quantity": 288,
+      "exact_value": 288,
+      "missing_api_times": [],
+      "shift_ms": 300000,
+      "archive_url": "https://data.binance.vision/data/futures/um/daily/metrics/BTCUSDT/BTCUSDT-metrics-2026-09-20.zip",
+      "archive_sha256": "9da18b2948447fc5b80520b465995038d5a360c3e2392224c9c29902f4ab3b37",
+      "api_url": "https://fapi.binance.com/futures/data/openInterestHist?symbol=BTCUSDT&period=5m&startTime=1789862700000&endTime=1789948800000&limit=500",
+      "api_sha256": "699b1ec2297c3c9e439adbd77da161c4ca7a2199cb8c57e3910d6ddf45f86455"
+    },
+    {
+      "symbol": "ETHUSDT",
+      "date": "2026-09-10",
+      "archive_rows": 288,
+      "api_rows": 288,
+      "compared": 288,
+      "exact_quantity": 288,
+      "exact_value": 288,
+      "missing_api_times": [],
+      "shift_ms": 300000,
+      "archive_url": "https://data.binance.vision/data/futures/um/daily/metrics/ETHUSDT/ETHUSDT-metrics-2026-09-10.zip",
+      "archive_sha256": "eb9bd2e2a1bcbf0f4adfc617d6805efc5f9650186536cdd8217751a84448fdcd",
+      "api_url": "https://fapi.binance.com/futures/data/openInterestHist?symbol=ETHUSDT&period=5m&startTime=1788998700000&endTime=1789084800000&limit=500",
+      "api_sha256": "4b63a940cbc6b147cf2c5d898b0ee099297028797f7a364b0e2b099d5982cf8d"
+    },
+    {
+      "symbol": "ETHUSDT",
+      "date": "2026-09-20",
+      "archive_rows": 288,
+      "api_rows": 288,
+      "compared": 288,
+      "exact_quantity": 288,
+      "exact_value": 288,
+      "missing_api_times": [],
+      "shift_ms": 300000,
+      "archive_url": "https://data.binance.vision/data/futures/um/daily/metrics/ETHUSDT/ETHUSDT-metrics-2026-09-20.zip",
+      "archive_sha256": "54c07ed33c80ad47618d0e79faab937fa0e018a24c6c1e9eb1dff852bf5ad0d6",
+      "api_url": "https://fapi.binance.com/futures/data/openInterestHist?symbol=ETHUSDT&period=5m&startTime=1789862700000&endTime=1789948800000&limit=500",
+      "api_sha256": "84d09b262273f4fb13460d769b3954ab06e405dd026d6f25b894739d6d2d6ffa"
+    }
+  ],
+  "all_four_dates_match_288_quantity_and_value": true,
+  "preregistered_shift_ms": 300000,
+  "not_proven": "Historical live publication time, historical-vintage corrections, field semantics of other columns, new OOS performance"
+}

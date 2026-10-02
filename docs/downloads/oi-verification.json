@@ -1,0 +1,3010 @@
+{
+  "all_archive_checksum_and_normalized_hashes_match": true,
+  "daily_archives": 3408,
+  "gap_days": [
+    {
+      "date": "2023-09-12",
+      "missing_times_ms": [
+        1694508000000,
+        1694508300000,
+        1694508600000
+      ],
+      "symbol": "BTCUSDT"
+    },
+    {
+      "date": "2024-02-16",
+      "missing_times_ms": [
+        1708090500000,
+        1708090800000,
+        1708091100000,
+        1708091400000,
+        1708091700000,
+        1708092000000,
+        1708092300000,
+        1708092600000,
+        1708092900000,
+        1708093200000,
+        1708093500000,
+        1708093800000,
+        1708094100000,
+        1708094400000,
+        1708094700000,
+        1708095000000,
+        1708095300000,
+        1708095600000,
+        1708095900000,
+        1708096200000,
+        1708096500000,
+        1708096800000,
+        1708097100000,
+        1708097400000,
+        1708097700000,
+        1708098000000,
+        1708098300000,
+        1708098600000,
+        1708098900000,
+        1708099200000,
+        1708099500000,
+        1708099800000,
+        1708100100000,
+        1708100400000,
+        1708100700000,
+        1708101000000,
+        1708101300000,
+        1708101600000,
+        1708101900000,
+        1708102200000,
+        1708102500000,
+        1708102800000,
+        1708103100000,
+        1708103400000,
+        1708103700000,
+        1708104000000,
+        1708104300000,
+        1708104600000,
+        1708104900000,
+        1708105200000,
+        1708105500000,
+        1708105800000,
+        1708106100000,
+        1708106400000,
+        1708106700000,
+        1708107000000,
+        1708107300000,
+        1708107600000,
+        1708107900000,
+        1708108200000,
+        1708108500000,
+        1708108800000,
+        1708109100000,
+        1708109400000,
+        1708109700000,
+        1708110000000,
+        1708110300000,
+        1708110600000,
+        1708110900000,
+        1708111200000,
+        1708111500000,
+        1708111800000,
+        1708112100000,
+        1708112400000,
+        1708112700000,
+        1708113000000,
+        1708113300000,
+        1708113600000,
+        1708113900000,
+        1708114200000,
+        1708114500000,
+        1708114800000,
+        1708115100000,
+        1708115400000,
+        1708115700000,
+        1708116000000,
+        1708116300000,
+        1708116600000,
+        1708116900000,
+        1708117200000,
+        1708117500000,
+        1708117800000,
+        1708118100000,
+        1708118400000,
+        1708118700000,
+        1708119000000,
+        1708119300000,
+        1708119600000,
+        1708119900000,
+        1708120200000,
+        1708120500000,
+        1708120800000,
+        1708121100000,
+        1708121400000,
+        1708121700000,
+        1708122000000,
+        1708122300000,
+        1708122600000,
+        1708122900000,
+        1708123200000,
+        1708123500000,
+        1708123800000,
+        1708124100000,
+        1708124400000,
+        1708124700000,
+        1708125000000,
+        1708125300000,
+        1708125600000,
+        1708125900000,
+        1708126200000,
+        1708126500000,
+        1708126800000,
+        1708127100000,
+        1708127400000,
+        1708127700000
+      ],
+      "symbol": "BTCUSDT"
+    },
+    {
+      "date": "2024-10-28",
+      "missing_times_ms": [
+        1730132700000,
+        1730133000000
+      ],
+      "symbol": "BTCUSDT"
+    },
+    {
+      "date": "2025-08-29",
+      "missing_times_ms": [
+        1756448400000,
+        1756448700000,
+        1756449000000
+      ],
+      "symbol": "BTCUSDT"
+    },
+    {
+      "date": "2023-09-12",
+      "missing_times_ms": [
+        1694508000000,
+        1694508300000,
+        1694508600000
+      ],
+      "symbol": "ETHUSDT"
+    },
+    {
+      "date": "2024-02-16",
+      "missing_times_ms": [
+        1708090500000,
+        1708090800000,
+        1708091100000,
+        1708091400000,
+        1708091700000,
+        1708092000000,
+        1708092300000,
+        1708092600000,
+        1708092900000,
+        1708093200000,
+        1708093500000,
+        1708093800000,
+        1708094100000,
+        1708094400000,
+        1708094700000,
+        1708095000000,
+        1708095300000,
+        1708095600000,
+        1708095900000,
+        1708096200000,
+        1708096500000,
+        1708096800000,
+        1708097100000,
+        1708097400000,
+        1708097700000,
+        1708098000000,
+        1708098300000,
+        1708098600000,
+        1708098900000,
+        1708099200000,
+        1708099500000,
+        1708099800000,
+        1708100100000,
+        1708100400000,
+        1708100700000,
+        1708101000000,
+        1708101300000,
+        1708101600000,
+        1708101900000,
+        1708102200000,
+        1708102500000,
+        1708102800000,
+        1708103100000,
+        1708103400000,
+        1708103700000,
+        1708104000000,
+        1708104300000,
+        1708104600000,
+        1708104900000,
+        1708105200000,
+        1708105500000,
+        1708105800000,
+        1708106100000,
+        1708106400000,
+        1708106700000,
+        1708107000000,
+        1708107300000,
+        1708107600000,
+        1708107900000,
+        1708108200000,
+        1708108500000,
+        1708108800000,
+        1708109100000,
+        1708109400000,
+        1708109700000,
+        1708110000000,
+        1708110300000,
+        1708110600000,
+        1708110900000,
+        1708111200000,
+        1708111500000,
+        1708111800000,
+        1708112100000,
+        1708112400000,
+        1708112700000,
+        1708113000000,
+        1708113300000,
+        1708113600000,
+        1708113900000,
+        1708114200000,
+        1708114500000,
+        1708114800000,
+        1708115100000,
+        1708115400000,
+        1708115700000,
+        1708116000000,
+        1708116300000,
+        1708116600000,
+        1708116900000,
+        1708117200000,
+        1708117500000,
+        1708117800000,
+        1708118100000,
+        1708118400000,
+        1708118700000,
+        1708119000000,
+        1708119300000,
+        1708119600000,
+        1708119900000,
+        1708120200000,
+        1708120500000,
+        1708120800000,
+        1708121100000,
+        1708121400000,
+        1708121700000,
+        1708122000000,
+        1708122300000,
+        1708122600000,
+        1708122900000,
+        1708123200000,
+        1708123500000,
+        1708123800000,
+        1708124100000,
+        1708124400000,
+        1708124700000,
+        1708125000000,
+        1708125300000,
+        1708125600000,
+        1708125900000,
+        1708126200000,
+        1708126500000,
+        1708126800000,
+        1708127100000,
+        1708127400000,
+        1708127700000
+      ],
+      "symbol": "ETHUSDT"
+    },
+    {
+      "date": "2024-10-28",
+      "missing_times_ms": [
+        1730132700000,
+        1730133000000
+      ],
+      "symbol": "ETHUSDT"
+    },
+    {
+      "date": "2025-08-29",
+      "missing_times_ms": [
+        1756448400000,
+        1756448700000,
+        1756449000000
+      ],
+      "symbol": "ETHUSDT"
+    }
+  ],
+  "independent_decimal_rows_equal": true,
+  "missing_rows": 266,
+  "not_verified": "Economic truth of zero OI, ratio-window semantics, first-published real-time timestamps, archive vintage/revisions, investment edge",
+  "rows": 981238,
+  "zero_oi_observations": [
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646667000000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646667300000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646667600000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646667900000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646668200000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646668500000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646668800000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646669100000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646669400000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646669700000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646670000000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646670300000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646670600000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646670900000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646671200000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646671500000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646671800000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646672100000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646672400000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646672700000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646673000000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646673300000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646673600000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646673900000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646674200000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646674500000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646674800000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646675100000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646675400000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646675700000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646676000000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646676300000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646676600000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646676900000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646677200000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646677500000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646677800000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646678100000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646678400000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646678700000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646679000000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646679300000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646679600000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646679900000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646680200000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646680500000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646680800000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646681100000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646681400000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646681700000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646682000000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646682300000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646682600000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646682900000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646683200000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646683500000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646683800000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646684100000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646684400000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646684700000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646685000000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646685300000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646685600000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646685900000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646686200000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646686500000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646686800000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646687100000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646687400000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646687700000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646688000000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646688300000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646688600000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646688900000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646689200000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646689500000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646689800000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646690100000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646690400000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646690700000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646691000000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646691300000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646691600000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646691900000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646692200000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646692500000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646692800000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646693100000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646693400000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646693700000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646694000000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646694300000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646694600000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646694900000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646695200000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646695500000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646695800000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646696100000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646696400000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646696700000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646697000000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646697300000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646697600000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646697900000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646698200000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646698500000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646698800000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646699100000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646699400000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646699700000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646700000000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646700300000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646700600000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646700900000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646701200000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646701500000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1646723400000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1686050400000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1686050700000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1686051000000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1686051300000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1691548500000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1699740000000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1700472000000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1700472300000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1700472600000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1700472900000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1700473200000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1700473500000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1700711700000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1700712000000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1700959800000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1700960100000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720545900000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720548300000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720551600000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720552500000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720556400000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720557300000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720572300000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720572600000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720573800000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720576200000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720577100000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720582500000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720582800000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720584600000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720589700000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720596900000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720597200000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720597800000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720599000000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720599300000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720602300000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720604400000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720605300000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720608900000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720609200000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720611300000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720614000000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720615200000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720615500000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720617600000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720618500000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720622700000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720623300000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720625400000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720628400000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720629600000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720631400000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720635600000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720636500000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720637400000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720638900000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720641000000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720645800000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720647900000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720648500000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720655400000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720655700000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720658400000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720660200000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720660500000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720663200000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720663500000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720664700000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720665600000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720670100000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720671600000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720675200000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720678500000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720681200000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720681800000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720682400000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720684200000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720690800000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720691100000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720691700000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720692300000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720698000000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720700700000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720703700000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720710300000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720712100000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720712700000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720714800000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720716300000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720716900000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720718100000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720718700000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720719000000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720719300000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720720200000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720725300000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720727100000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720728000000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720728900000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720732800000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720734000000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720737000000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720737300000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720737600000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720737900000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720738500000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720739700000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720740300000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720743900000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720752600000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720756200000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720757400000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720759800000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720764900000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720765200000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720766700000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720776000000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720776300000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720776600000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720777500000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720778400000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720780200000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720780800000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720782600000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720783200000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720787400000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720791600000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720793100000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720793700000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720795500000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720796100000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720800300000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720800900000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720805400000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720805700000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720806300000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720807800000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720812300000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720812600000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720818000000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720819200000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720819500000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720819800000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720820100000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720820400000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720821000000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720821300000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720824600000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720825800000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720826400000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720828500000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720829700000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720831800000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720843200000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720848900000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720849800000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720850700000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720851000000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720852500000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720856400000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720857600000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720858200000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720858500000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720860000000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720860300000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720860600000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720862100000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720865100000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720868100000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720869900000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720871700000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720872000000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720873200000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720875000000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720875300000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720876500000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720877100000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720878000000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720878600000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720881000000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720885500000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720886400000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720889700000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720891500000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720892100000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720893600000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720893900000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720894800000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720895400000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720897800000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720898400000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720899600000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720900800000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720901700000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720902900000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720903800000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720905600000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720905900000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720906500000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720909500000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720909800000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720911300000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720914300000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720915200000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720915500000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720917300000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720917900000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720918800000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720921200000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720922400000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720925700000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720926000000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720926300000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720927800000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720928700000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720929300000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720930200000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720933200000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720935300000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720935900000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720937400000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720938900000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720940400000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720940700000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720941300000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720942200000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720942500000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720942800000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720944600000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720945500000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720947000000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720947600000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720948500000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720949400000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720950000000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720950300000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720950900000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720953600000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720955400000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720956600000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720958400000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720959000000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720959600000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720960200000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720961700000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720962300000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720964400000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720965300000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720967100000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720967400000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720968000000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720968300000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720968900000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720970400000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720971000000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720971600000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720971900000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720973400000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720973700000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720974000000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720974600000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720976400000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720976700000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720977000000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720977900000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720978200000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720979100000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720979400000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720980000000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720980300000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720981500000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720982100000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720982700000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720984200000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720985400000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720985700000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720986900000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720987500000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720988100000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720989600000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720991400000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720992600000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720994400000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720995900000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720996200000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720997100000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1720997700000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1721000700000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1721001600000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1721001900000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1721004000000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1721006100000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1721006400000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1721007300000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1721008200000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1721009700000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1721010000000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1721012400000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1721015400000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1721015700000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1721016000000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1721016900000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1721017500000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1721018100000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1721018400000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1721019300000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1721020800000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1721022000000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1721024100000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1721025600000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1721026200000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1721028600000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1721030700000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1721031600000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1723454700000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1723455600000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1723458600000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1723459200000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1723459800000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1723460400000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1736356500000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1736356800000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1736358000000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1736359800000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1738066200000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1741286100000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1744376100000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1744376400000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1744376700000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1744377000000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1744703400000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1744703700000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1744704000000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1744704300000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1744706100000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1753114800000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1753115100000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1753115400000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1753115700000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1753116000000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1753116300000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1753116600000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1753116900000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1753117200000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "time_ms": 1753117500000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646667000000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646667300000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646667600000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646667900000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646668200000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646668500000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646668800000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646669100000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646669400000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646669700000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646670000000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646670300000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646670600000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646670900000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646671200000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646671500000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646671800000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646672100000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646672400000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646672700000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646673000000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646673300000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646673600000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646673900000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646674200000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646674500000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646674800000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646675100000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646675400000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646675700000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646676000000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646676300000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646676600000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646676900000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646677200000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646677500000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646677800000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646678100000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646678400000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646678700000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646679000000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646679300000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646679600000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646679900000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646680200000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646680500000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646680800000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646681100000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646681400000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646681700000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646682000000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646682300000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646682600000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646682900000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646683200000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646683500000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646683800000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646684100000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646684400000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646684700000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646685000000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646685300000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646685600000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646685900000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646686200000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646686500000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646686800000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646687100000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646687400000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646687700000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646688000000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646688300000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646688600000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646688900000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646689200000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646689500000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646689800000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646690100000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646690400000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646690700000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646691000000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646691300000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646691600000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646691900000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646692200000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646692500000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646692800000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646693100000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646693400000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646693700000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646694000000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646694300000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646694600000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646694900000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646695200000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646695500000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646695800000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646696100000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646696400000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646696700000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646697000000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646697300000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646697600000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646697900000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646698200000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646698500000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646698800000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646699100000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646699400000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646699700000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646700000000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646700300000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646700600000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646700900000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646701200000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646701500000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1646723400000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1686050400000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1686050700000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1686051000000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1686051300000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1691548500000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1699740000000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1700472000000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1700472300000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1700472600000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1700472900000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1700473200000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1700473500000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1700711700000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1700712000000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1700959800000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1700960100000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1720562700000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1720596000000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1720599300000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1720605000000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1720609200000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1720625100000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1720656000000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1720674300000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1720692600000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1720715100000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1720719300000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1720720800000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1720728300000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1720738200000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1720767300000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1720768500000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1720789500000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1720801500000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1720818600000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1720821000000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1720848900000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1720860600000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1720865100000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1720866600000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1720869000000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1720880100000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1720881000000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1720883100000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1720918800000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1720925700000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1720945200000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1720948500000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1720955400000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1720956000000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1720974900000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1720976100000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1720994400000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1720999200000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1721006400000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1721007900000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1721010000000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1721015400000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1721017500000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1721026800000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1721031300000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1723454700000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1723455600000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1723458600000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1723459200000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1723459800000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1723460400000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1736356500000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1736356800000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1736358000000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1736359800000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1741286100000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1744376100000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1744376400000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1744376700000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1744377000000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1744703400000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1744703700000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1744704000000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1744704300000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1744706100000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1753114800000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1753115100000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1753115400000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1753115700000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1753116000000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1753116300000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1753116600000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1753116900000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1753117200000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "time_ms": 1753117500000
+    }
+  ]
+}

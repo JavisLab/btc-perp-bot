@@ -1,0 +1,133 @@
+{
+  "day": "2026-09-30",
+  "results": [
+    {
+      "symbol": "BTCUSDT",
+      "endpoint": "openInterestHist",
+      "field": "sumOpenInterest",
+      "archive_column": "sum_open_interest",
+      "api_timestamp_to_archive_shift_ms": 0,
+      "matched_rows": 288,
+      "exact_matches": 0,
+      "matches_within_0_00005_ratio_rounding": null,
+      "max_abs_difference": "1178.9960000000000000",
+      "first_api_timestamp": 1790726400000,
+      "last_api_timestamp": 1790812500000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "endpoint": "openInterestHist",
+      "field": "sumOpenInterestValue",
+      "archive_column": "sum_open_interest_value",
+      "api_timestamp_to_archive_shift_ms": 0,
+      "matched_rows": 288,
+      "exact_matches": 0,
+      "matches_within_0_00005_ratio_rounding": null,
+      "max_abs_difference": "191463161.7176200000000000",
+      "first_api_timestamp": 1790726400000,
+      "last_api_timestamp": 1790812500000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "endpoint": "takerlongshortRatio",
+      "field": "buySellRatio",
+      "archive_column": "sum_taker_long_short_vol_ratio",
+      "api_timestamp_to_archive_shift_ms": 0,
+      "matched_rows": 287,
+      "exact_matches": 4,
+      "matches_within_0_00005_ratio_rounding": 106,
+      "max_abs_difference": "0.00078200",
+      "first_api_timestamp": 1790726100000,
+      "last_api_timestamp": 1790812200000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "endpoint": "takerlongshortRatio",
+      "field": "buySellRatio",
+      "archive_column": "sum_taker_long_short_vol_ratio",
+      "api_timestamp_to_archive_shift_ms": 300000,
+      "matched_rows": 288,
+      "exact_matches": 0,
+      "matches_within_0_00005_ratio_rounding": 0,
+      "max_abs_difference": "3.08491700",
+      "first_api_timestamp": 1790726100000,
+      "last_api_timestamp": 1790812200000
+    },
+    {
+      "symbol": "BTCUSDT",
+      "comparison": "API taker volumes vs official 5m kline at SAME opening timestamp",
+      "matched_rows": 287,
+      "exact_buy_matches": 160,
+      "exact_sell_matches": 165,
+      "max_buy_difference": "5.1090",
+      "max_sell_difference": "22.9490"
+    },
+    {
+      "symbol": "ETHUSDT",
+      "endpoint": "openInterestHist",
+      "field": "sumOpenInterest",
+      "archive_column": "sum_open_interest",
+      "api_timestamp_to_archive_shift_ms": 0,
+      "matched_rows": 288,
+      "exact_matches": 0,
+      "matches_within_0_00005_ratio_rounding": null,
+      "max_abs_difference": "15909.1450000000000000",
+      "first_api_timestamp": 1790726400000,
+      "last_api_timestamp": 1790812500000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "endpoint": "openInterestHist",
+      "field": "sumOpenInterestValue",
+      "archive_column": "sum_open_interest_value",
+      "api_timestamp_to_archive_shift_ms": 0,
+      "matched_rows": 288,
+      "exact_matches": 0,
+      "matches_within_0_00005_ratio_rounding": null,
+      "max_abs_difference": "100741474.7039200000000000",
+      "first_api_timestamp": 1790726400000,
+      "last_api_timestamp": 1790812500000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "endpoint": "takerlongshortRatio",
+      "field": "buySellRatio",
+      "archive_column": "sum_taker_long_short_vol_ratio",
+      "api_timestamp_to_archive_shift_ms": 0,
+      "matched_rows": 287,
+      "exact_matches": 0,
+      "matches_within_0_00005_ratio_rounding": 114,
+      "max_abs_difference": "0.00191300",
+      "first_api_timestamp": 1790726100000,
+      "last_api_timestamp": 1790812200000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "endpoint": "takerlongshortRatio",
+      "field": "buySellRatio",
+      "archive_column": "sum_taker_long_short_vol_ratio",
+      "api_timestamp_to_archive_shift_ms": 300000,
+      "matched_rows": 288,
+      "exact_matches": 0,
+      "matches_within_0_00005_ratio_rounding": 0,
+      "max_abs_difference": "3.87996200",
+      "first_api_timestamp": 1790726100000,
+      "last_api_timestamp": 1790812200000
+    },
+    {
+      "symbol": "ETHUSDT",
+      "comparison": "API taker volumes vs official 5m kline at SAME opening timestamp",
+      "matched_rows": 287,
+      "exact_buy_matches": 153,
+      "exact_sell_matches": 152,
+      "max_buy_difference": "175.7330",
+      "max_sell_difference": "278.6940"
+    }
+  ],
+  "interpretation": [
+    "The API range returned taker opening timestamps one 5m step earlier than OI snapshots; direct timestamp-set equality failed and is not assumed.",
+    "Shift comparison is a data-clock diagnostic only; raw timestamps retained and no account performance calculated.",
+    "Single-day agreement is not proof every historical day has identical semantics or real-time publication availability.",
+    "Deprecated official connector notes 30-day history; actual public API response was checked, not assumed from old documentation."
+  ]
+}

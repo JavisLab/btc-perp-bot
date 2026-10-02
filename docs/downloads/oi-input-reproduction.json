@@ -1,0 +1,11 @@
+{
+  "byte_equal_files": 3,
+  "files": {
+    "BTCUSDT.jsonl.gz": "76acc5bba07b27e50f2c780eb58e557e1c003c35a7cf2cacc69024c19c695b0f",
+    "ETHUSDT.jsonl.gz": "cec27fe29222c4e36f77965064548e412cb5833c645a7225752869ccf1f8a4fe",
+    "manifest.json": "df56dbc8b0955f03fd3e09eb27aad57b7e6e2088b17063f01d5cad7c13d1efa1"
+  },
+  "independently_rechecked_input_rows": 981238,
+  "interpolation_or_forward_fill": false,
+  "network_socket_denied_and_probed": true
+}
