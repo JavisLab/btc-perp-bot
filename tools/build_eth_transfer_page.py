@@ -50,6 +50,7 @@ page=f'''<!doctype html>
 <body><a class="skip" href="#findings">자료 결과로 건너뛰기</a><header><a class="brand" href="./">BTC <b>RESEARCH</b></a><nav aria-label="연구 탐색"><a href="structure-lab.html">BTC 5후보 결과</a><a href="#downloads">검증 자료 ↓</a></nav></header>
 <main><section class="hero"><p class="eyebrow">CONTINUING RESEARCH 006 <span>2026.10.02</span></p><h1>ETH로 옮기기 <em>전에.</em></h1><p class="lead">전략은 그대로.<br>새 시장의 자료부터 검증했습니다.</p><div class="stage" id="stage">자료 감사 완료 · ETH 전략 성과 미계산</div>
 <p class="boundary">기존 BTC 5개 구조 규칙과 통과 기준을 바꾸지 않았습니다. 이번 결과는 <strong>자료의 검증 상태</strong>이며 수익률이나 전략 통과를 뜻하지 않습니다.</p></section>
+<div class="notice" id="latest-results"><h3>후속 계좌 검증 완료 · 2026.10.02</h3><p>이 페이지는 성과 계산 전 자료감사 기록입니다. <a href="eth-results.html">80개 ETH 계좌의 전체 성과·탈락·상충 노출 검산 결과 보기 ↗</a></p></div>
 <section class="cards" aria-label="자료 감사 핵심 수치"><article><p>공식 ZIP · 체크섬 대조</p><strong data-metric="archives">{v['counts']['verified_archives']:,}</strong><small>기존 240 + 신규 월별59 · 일별10</small></article><article><p>5분봉 · 2021.10–2026.08</p><strong data-metric="bars">{n['rows_5m']:,}</strong><small>시각 공백0 · 보간0 · 무거래36</small></article><article><p>1시간봉과 집계 대조</p><strong data-metric="hours">{n['hours_compared']:,}</strong><small>시각 공백0 ≠ 모든 거래 기록 완전</small></article><article><p>상충 시간 · 전부 보존</p><strong data-metric="conflicts">{n['remaining_conflict_hours']}</strong><small>무거래 가격차1 + 거래량 미해결5</small></article></section>
 <section id="findings"><p class="eyebrow">WHAT THE SOURCES SAY</p><h2>체크섬이 맞아도,<br>자료끼리 다를 수 있습니다.</h2><p>5분봉을 시간봉으로 합친 값과 기존 공식 시간봉을 전수 대조했습니다. 차이가 생긴 5일은 일별 1분·5분 원본까지 확인했고, 사전 복구 조건을 만족하지 않아 <strong>원본을 바꾼 시간은 0개</strong>입니다.</p>
 <div class="notice"><h3>2024.10.28 21시 UTC · 무거래 봉의 영향</h3><p>첫 두 5분봉은 거래량0인데 이전 가격 2,503.77을 시가·저가로 갖고 있었습니다. 거래가 있는 봉만 진단 목적으로 집계하면 시간봉의 시가 2,518.92·저가 2,516.54와 같아집니다. 원본은 유지하고, 무거래 봉에서는 체결을 만들지 않습니다.</p></div>
@@ -65,6 +66,8 @@ page=f'''<!doctype html>
 '''
 (DOC/'eth-transfer.html').write_text(page)
 md=f'''# ETH 전이 · 공식 원자료 감사 (2026-10-02 UTC)
+
+> 후속 80계좌 성과·검산 완료: [ETH 전이 결과](eth-results.html). 아래는 성과 계산 전 감사 시점의 기록입니다.
 
 **성과 계산 전 자료 관문 완료. ETH 전략 성과는 미계산이며, 실전채택·전진가동·실거래 없음.**
 
