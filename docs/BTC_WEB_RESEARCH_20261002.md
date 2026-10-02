@@ -20,3 +20,17 @@
 ## Q1 실행/검산 이력
 - 기본40계좌계산완료. 첫synthetic 최소금액검사는1%목표가비용후수량0으로내림되는데minimum event를기대한테스트오류(IndexError). 테스트를3%목표(양의수량이지만50USDT미달)로고치고0수량은무거래로별도해석. 연구규칙/계좌성과변경없음. 최초셸이테스트실패후실험을계속한이력도보존;이후검사는실패즉시중지형으로실행.
 - 첫독립검산은40계좌의수량/원장/DD숫자가통과했으나12정산의mark원시월자료없음에서정지. 기존공식daily복구4일을검산기에서빠뜨린것을확인,기존파일만연결하여원시검증재시도(원본가격/성과수정없음).
+
+## Q3 — 가격통제 주문흐름 (2026 출판 / 2025 학위논문)
+- 실제검색 `"Order flow and cryptocurrency returns" Anastasopoulos pdf` → EFMA2025발표PDF,SSRN5020002,Guelph학위논문,RePEc. EFMA TLS issuer오류(검증끄지않음),ScienceDirect403/API429. RePEc에서 DOI10.1016/j.finmar.2026.101047과5저자·초록확인.
+- 대체저자원문 https://atrium.lib.uoguelph.ca/server/api/core/bitstreams/bae607b2-3fff-401a-8412-c34569fd5f98/content (200,120쪽,SHAfbc12baa484ceba15c1a233f9ea008fb551be9d8f45c09a841eb5ef66758f908), Alexia Anastasopoulos,2025-12. 최종저널판과같다고단정하지않음. 실제읽기:자료1.2,가격통제1.3,학습2.4,잔차포트폴리오2.5,BTC/횡단면차이3.3.
+- CMC700+거래소가격과CryptoCompare300+거래소11통화signedvolume,2018~2022 균형84코인.전기간생존/양의거래조건,일표본은주말·미국공휴일제외. Binance단일BTCperp에그대로대입불가. Log buy/sell,30일std(현재완료일포함),당일가격통제잔차는확장OLS.초기훈련/검증각1년·월간롤링. OF자체daily t=.62→가격통제후2.58,일잔차포트폴리오alpha t1.65로headline ML3.63Sharpe와다름.누적세계흐름의BTC예측/동시효과구분필수.
+- 새기전:동시가격반영분을제외한비정상체결압력이후속BTC방향을예측하는가. Q3자체OF_RES/OF_RAW/PF_REV/OF_NEG 사전명세후검증;다른코인·유료데이터를추가하지않음.
+
+## Q2/Q4/Q5/Q6 상태 갱신
+- Q2 Wen DOI등록:2022-11,저자Zhuzhu Wen/Elie Bouri/Yahua Xu/Yang Zhao. 직접출판사403;Crossref text-miningURL은200이지만`full-text-retrieval-response`이름과달리coredata만있고전문없음.기존초록/서론preview와현재전문미확보를구분.30분창최적화전재현가능규칙필요,관련Q7저자기관전문은확보됨.
+- Q4 실제검색정확제목으로Wiley/UNIVPM기관/RePEc발견.Wiley·기관403,RePEc초록확인(2022,42(3),492–524):perpetual의여러u-shape·계절성·분기선물spillover;cash-and-carry는시장불균형때주로존재.이는perp방향수익보장이아니며이미실패한확정funding규칙의재실행근거아님.다음인용7건/기관공개판검토.
+- Q5 Crossref공식등록초록 https://api.crossref.org/works/10.2139/ssrn.6697060 (Boon Chuan Lim,2026)를직접확인.18개월5코인pooled RV예측은있으나 **BTC계수는essentially zero**, 강한HAR-RV기준에는OOS개선없음.기존큐의'BTCbasis예측정보'전제가과도했음을정정.방향전략근거로기각,이논문만을위한대량premium수집안함.다른BTCbasis가설가능성을전체부정하는것아님.
+- Q6 Crossref검색으로2021SSRN3910202와2023-10저널10.1016/j.irfa.2023.102712가동일제목/저자Zehua Zhang,Ran Zhao임을확인(별도독립근거2개아님).현재전문미확보;횡단면소트는BTC단일방향수익증거아님.저자/기관·인용문헌을통해semivariance의실제BTC위험예측추가가치근거탐색.
+- 검색장애:DDG일부후속요청은captcha,Google빈결과/Bing무관결과/Yahoo500.이들은해당검색경로실패일뿐전체웹조사중단사유아님.공식Crossref/저자기관/RePEc경로로계속확보.
+- Q7 Shen/Urquhart/Wang(2022) Reading수록2021-09원고:거래량최대구간으로세션시작선택,CME17ET종료;첫정보세션+끝직전30m반전.3.7은무레버리지손익분기3/7/10bp로Bitstamp25bp비용에미달한다고인정.10배레버리지로29/64/96bp가되어수익가능하다는서술은명목비례수수료도함께증가하는단위문제를해결하지못함.기존레버리지금지원칙에따라그부분기각.지역시각/정보흡수기전은별도검증가능하나시각최적값/레버리지결론을채택하지않음.
