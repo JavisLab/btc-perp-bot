@@ -1,0 +1,33 @@
+{
+  "all_outputs_byte_identical": true,
+  "harness_note": "Initial replay failed before data loading because socket was replaced before ssl import. Pre-imported stdlib ssl/urllib, then disabled sockets before executing collector; source/results unchanged.",
+  "network_disabled": true,
+  "output_files": [
+    {
+      "bytes": 167267,
+      "file": "audit.json",
+      "sha256": "a3b8cb29c3749b2684aa15562ca0143356b7a462925386d3ec07087be3741771"
+    },
+    {
+      "bytes": 23693475,
+      "file": "bars-monthly.json.gz",
+      "sha256": "d5f7dc942e09e3c0e775cc51743356e143368cffcb611dfb0be615b9922e9b30"
+    },
+    {
+      "bytes": 23693475,
+      "file": "bars-repaired.json.gz",
+      "sha256": "d5f7dc942e09e3c0e775cc51743356e143368cffcb611dfb0be615b9922e9b30"
+    },
+    {
+      "bytes": 2888662,
+      "file": "hourly-ohlcv.json.gz",
+      "sha256": "232b8201bc46030ec5a2357bc8b72b4b7e9f33bb58124a277b1cb3d746ec6abc"
+    },
+    {
+      "bytes": 1629066,
+      "file": "mark-funding.json.gz",
+      "sha256": "1efae498165f49b671edb3c7acd0f3a1b078b75b8502ca7d054ad6734cd5f8e2"
+    }
+  ],
+  "strategy_performance_computed": false
+}
