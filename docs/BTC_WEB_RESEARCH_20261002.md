@@ -211,3 +211,12 @@ RC_TREND 대조를저장원장에대조하자E_SPOT주+52.8387132247115%/DD13.56
 - Q50 추가로5.1/5.2.3을읽어 **거래비용전부제외** 문장확인(일부거래소무료였다는사유),펀딩/실제호가/수량계좌아님. hybrid는subjectivity≥30일MA면sentiment배율,아니면vol배율;배율0~2과큰DD를우리비용후알파로인정안함. paidFactiva자료필요성은기타무료공개BTC연구중단사유아님.
 - Q49방법3전체읽어공분산고유함수/90%변동설명선택/AR1또는ETS/전훈련재계산확인. 단순일종가이외경로의잠재정보를우리의 **종점제거면적A** 한변수로시험한다. 종가수익r/실현분산RV를통제,다음24시간곡선을예측하고예측값만으로미리시각선택;원논문FPCA/5m재현이라고안함. 사전명세e613e5c 고정,아직본모형/성과계산없음.
 - 실제OpenAlex 검색 bitcoin intraday return path reversal information arrival,필터title.search:bitcoin. 2026 Time-Varying Skewness–Kurtosis Dynamics DOI10.1002/fut.70117,Bitcoin Runs on a Clock SSRN6977940/arxiv2607.26188 발견. 아직메타데이터만,동일SSRN/arxiv를두근거로안셈;전문감사후채택여부판단.
+
+
+## IC_PATH40 검산·오프라인 재현 완료
+- 명세e613e5c·구현2da7cf7·12합성검사이후40계좌. 기본주−40.3791846663%·DD44.4606804383%,최근−15.9682989488%·DD18.4757362886%,보유구간758/92. 2022−15.93054%,2023−17.90480%,2024−0.98028%,2025−12.75910%. 주수수료321.11486+impact72.76612,funding+10.26515;최근수수료42.83838+impact12.40260,funding+1.41246. IC_PRICE −36.26903%/−6.84460%보다열위,기각. IC_MEAN최근무거래0을승격안함.
+- 공통24h곡선MSE 주IC_PATH .0003399926790324881 >IC_PRICE .0003386141826461881,최근 .00028688188107054324 >.00028653694615659203. 추가정보관문양기간실패. 실제사후extrema선택/새OOS성과로포장안함.
+- raw329ZIP·2418완전일경로·6333별도비중심24응답회귀/151992예측값(최대3.34e−16)·13632의사결정·13624구간선택·18508release목표·24380폐형식수량·21882무거래·9668실제펀딩·34048이벤트·34080일말/연속시간DD/노출/마진/구간 검산최대2.30e−11. 81파일소켓차단byte동일. 총새654검산·614공개,새40게시중. 기준/규칙/기존198불변.
+- Q51검색의10.1002/fut.70117은이미읽은Q15동일논문임을확인,신규독립근거아님. 반감기Q52 JoshMolnar,Bitcoin Runs on a Clock(저자June2026/arxiv2607.26188v1 2026-07-28,SSRN6977940동일계열) 공식PDF확보. 초록/서론/자료·방법4/한계7/예측8일부/DataCode부록읽음,BTC부분만감사·ETH자료/코드수집실행없음. 세maturecycle의사후45%DD고점,마지막미완성35%별도조건·warmup첫cycle제외비대칭을저자가공개. nulltest는패턴관측뒤설계,36셀FDR0/rotationnull p=.21로power-law상관의유의성근거소멸을직접인정. 2026Oct5~Nov16저점예측은현재미래사건이지이미검증성과가아님.
+- Q52 causalexpanding lnPrice~ln(days since2009Jan3) 최소365관측·잔차expandingz,실제계좌규칙일부는아직읽는중. 표본Bitstamp2011Aug~2026June10/CM2010July~2026May23,첫출판vintage/매크로최초수정빈티지검증은본문동일공급자분기값대조로대체불가. 저자원고는공개저장소링크추후라고하나실제GitHub검색으로 https://github.com/BitcoinDaily/bitcoin-runs-on-a-clock 발견,메타데이터부터감사중·무심코실행안함.
+- 실제인용검색 Bitcoin power law Santostasi Perrenod→Description Without Prediction(2026-04-27,Zenodo19975700/19975701동일family),Price Power Law Decomposed(2026-07-09,Zenodo19411139/21270485),Activity-Warped Power Laws(2026-02-12,10.21203/rs.3.rs-8845008/v1) 메타데이터확보. 정반대비판원문우선확보중,새목록끝은종료조건아님.
