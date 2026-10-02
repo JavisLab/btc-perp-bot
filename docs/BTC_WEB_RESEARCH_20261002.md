@@ -95,3 +95,4 @@
 - Q23옵션자료별도감사: CFTC TFF Combined dataset yw9f-hn96에서동일BTCcode133741만352주확보(SHA78400a9a963b3e0ba14957842cfbd2157512b68fd940410f0fdade15a8dd655f),선물only352주와완전join. 다른자산추가없음. assetmanager 순차이0이아닌250주,첫2021-05-11. gross롱차이는2026-02-03에−2이므로단순차이를literal옵션롱계약수라하면틀림.
 - 공식 https://www.cftc.gov/MarketReports/CommitmentsofTraders/ExplanatoryNotes/index.htm 직접읽기:옵션은거래소delta환산futures-equivalent,call/put·매수매도에따라long/short환산,spread는동일양다리순액과다름. 순(롱−숏)의결합−선물차이를대용값으로사용할수있지만새거래량/총옵션계약수/감마노출은아님. 가격변화만으로delta노출변화가능,가격통제가중요. FAQ와함께span/spread정보손실보존.
 - combined개별9항합과OI 차이는18방향관측에서±2,최대2;공식총reportable+nonreportable은모든704양면0오차. 원인확정아니지만개별환산정수반올림과양립(9항+OI각반올림오차수학상최대5). 무심코0으로수정/행제거안함. 처음합계점검은비대칭API열이름short에_all이없는것을놓쳐KeyError,원시메타데이터의정확열로고쳐별도감사저장. 아직옵션성과계산없음.
+- COT40 소켓차단 재현63파일이모두바이트일치했다. OP_INC 옵션추가정보56계좌는명세bca57cf이후구현. 성과전7개가용라벨/미래교란/비대칭비용/만료/반올림검사와352주raw잔고감사통과. 독립검산구현첫실행은목록닫힘괄호누락 SyntaxError로정지했으며성과계산전수정·재검사했다. 규칙/자료/기준변경없음.
