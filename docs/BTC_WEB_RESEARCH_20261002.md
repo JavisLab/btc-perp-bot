@@ -659,3 +659,32 @@ Q159 [NVT](https://www.blockchain.com/explorer/charts/nvt)는시총/최근24h US
 - 실제 OpenAlex BTC 세미분산/역레버리지/비대칭위험 검색3건은429. 결과 확보나 원문 읽기로 세지 않으며 반복요청하지 않았다. 공개 Crossref 다른 색인에서 BTC 관련 제목·DOI를 확보했다.
 - Q9 tail/asymmetric loss(10.1080/1351847X.2021.1906728)는 이미 읽은 동일 원문이고 Q8–10의 부호분산 가설은 V_SRV30에서 검증·기각했다. 새 논문 제목 하나로 동일 가설의 창/부호를 바꿔 재실행하지 않는다.
 - 새 후보 메타데이터: Zahid/Iqbal 외2022 inverse-leverage HAR-GARCH(10.17576/jsm-2022-5103-25),Petkova2023 Extrapolative Beliefs About Bitcoin Returns(SSRN4410748),Shanaev/Vasenin/Stepanov2023 Turn-of-the-candle effect in bitcoin returns(10.1016/j.heliyon.2023.e14236). SSRN4090044/4192424는 후자와 같은 제목 family이며 독립근거2개로 세지 않는다. 원문/실제 비용/시각은 후속 감사 중이다. 다른 자산 결과로 연구를 확대하지 않는다.
+
+## Q163–170 · BTC 정보 도착·기대 형성의 근거와 반증
+
+### Q163 역레버리지와 측정오차: 위험 예측은 순익이 아님
+- Zahid/Iqbal/Raziq/Sheikh2022, DOI10.17576/jsm-2022-5103-25. [공식 UKM PDF](https://www.ukm.my/jsm/pdf_files/SM-PDF-51-3-2022/25.pdf)14쪽 SHA9cc4f4815e25def6d718f638bff1e28ebaa05cd93f9fc9f373547f7ab864c663. 1–6/8/10–13쪽 선별감사,원표/모든 증명 재현 아님.
+- Bitcoincharts 반시간 가격2013-02-28–2020-05-31,2648일/48관측·127105prices. 이후 rollingtotal2225/train1500/예측725일(2018-06-06–2020-05-31)과423일 차이는 읽은 범위에서 설명 못했다. 초기중앙값 시간×요일×월 제거는 in-sample로 명시하므로 무조건 전체평가 누수라고 단정하지 않는다.
+- HAR의 종속변수는 sqrtRV,7일 lag; RQ 측정오차/잔차GARCH·FIGARCH·EGARCH·점프/연속부를 비교했다. inverse leverage의 RV_P=RV×I(그날수익>0)는 상승 장중수익 제곱만 합친 semivariance와 다르다. 원문에 DM/MCS/OOS 검정이 있지만 실제 수량·비용 후 연속 계좌는 없다. 추출한 식의 문자인식 오류를 원식 오류로 단정하지 않는다.
+- 4.02%가1.11%의28%라는 본문 산술과 Table1 숫자는 맞지 않는다. 725일을 successive30일로 나눈다는 설명에 Table6 rejection41/MCS survival49가 있어 분할 정의가 명료하지 않다. 해당 표를 그대로 재현했다고 주장하지 않는다. 기존 V_SRV30 실패의 창/위험을 다시 조정할 근거로 채택하지 않았다.
+
+### Q164 기대 형성: 설문과 가격 대용치를 구별
+- Petkova2023 SSRN4410748=FRL56 DOI10.1016/j.frl.2023.104069 동일family. SSRN403/우회없음,Elsevier API200/1791B는 coredata만(body0),SemanticScholar200은 CLOSED/공개PDF URL없음. 미확보 전문을 읽었다고 하지 않는다.
+- [RePEc 출판사 제공 초록](https://ideas.repec.org/a/eee/finlet/v56y2023ics1544612323004415.html) 실제 확보, q169-repec-extrapolation.html SHA6c1237842eb0d9d99476616192a337255353b06f92f58e76f0408fe0d2bb16e1. Sentix 상승/하락/중립 설문으로 과거수익의 지수감쇠 가중 기대를 추정하며,개인의 외삽이 기관보다 강하고 단기 예측 설명력은 작다고 한다. 원 계수·표본·설문 최초게시·순수익 미감사. EMA를 그 설문과 동일하다고 할 수 없다. 개인응답·유료·원설문 자료는 수집하지 않았다.
+- RePEc의 옛 GET htsearch 응답은 결과없는 일반 shell이었고,실제 양식 POST htsearch2를 확인한 뒤 정확제목 검색1건과 위 공개서지로 연결했다. 유효한 검색과 HTTP200 껍데기를 구별했다.
+
+### Q165 15분 캔들 경계: 수수료0 경로와 작은자금 파산
+- Shanaev/Vasenin/Stepanov2023 Heliyon DOI10.1016/j.heliyon.2023.e14236,SSRN4090044/4192424 동일family. [Europe PMC](https://europepmc.org/articles/PMC10015199) 공식 공개 fullTextXML200/107404B,CC BY,SHAe1aa93dd5c18d0669fbaf92f14518c2d6a6e2740bb07c7784ba40fe63ebfe7d2. Sections1–5/자료가용 및 표1–7 읽음,코드/원가격 재현 아님.
+- 7거래소 BTC 1분봉~2021,0/15/30/45분 평균0.58bp(2021 Bitfinex). 매월 구조변화 탐색과2021강한 부분을 전략평가로 선택했다. 2022.01–08 통계검정은 추가기간 효과계수이지 같은 비용 계좌의 검증은 아니다.
+- 순익은 **Bitfinex30일 거래량750만달러 도달 후 수수료0** 경로에 의존한다. 원문 표5의 초기1000/2000/3000달러는 −100%;5000달러 +74.18%에도DD51.78%,10000달러 +213.88%에도DD31.80%. 자기보고 PSR100%는 사후 규칙·거래소·달력구간 선택을 해소하지 않는다.
+- 정확 maker/taker 주문·수동호가 체결·원시 spread시계·실제 지연은 본문으로 검증하지 못했다. 우리 고정 spot10bp+impact1.5bp 편도(왕복약23bp),1000USDT 및1h여유와 호환되는 선행순익 증거가 아니다. 비용을 낮추거나 자금·레버리지를 키워 구제하지 않고 불필요한 분봉 대량수집도 하지 않았다. 15분 봇 정보도착 기전은 저자도 추측으로 남긴다.
+
+### Q166–169 정보의 연속성과 BTC 충격 연구: 상반된 해석 보존
+- 실제 Crossref BTC+information discreteness/frog 검색은 주로 일반 행동이론을 반환했고 BTC 직접 검증으로 세지 않았다. Bing 정확제목 RSS200도 동물 frog 결과뿐이어서 유효한 논문검색이라고 하지 않는다.
+- **Meng/Goodell/Shen2023**, Information shocks and investor underreaction: Evidence from the Bitcoin market,DOI10.1016/j.frl.2023.104109. [출판사 제공 RePEc 초록](https://ideas.repec.org/a/eee/finlet/v56y2023ics1544612323004816.html) 확보 SHAe1c5ae1fe210f3e93e496782b792cb44b742ac025ae8850f75e62a65317f345a. 큰 점프를 정보충격 대용치로 쓰고 BTC 큰 충격에도 과소반응,주의가 많으면 과소반응이 줄어든다고 한다. 전체방법·비용·점프시각/주의지표는 전문 미확보라 미감사. 큰 변화는 항상 즉시 반영된다는 보편주장에 대한 반증으로 남긴다. 출판사 구독제한 링크를 우회하지 않았다.
+- 과거 Q17 metaorder 미래흐름 사후분류/개인거래식별자와 다르지만,이번에 점프 크기·발동 창을 조정해 기존 충격 전략을 다시 돌리지는 않는다.
+
+### Q170 공개 학술 요약의 연속 정보 측정법과 자체 BTC 질문
+- [CFA Institute 2015 Digest](https://rpc.cfainstitute.org/research/cfa-digest/2015/03/frog-in-the-pan-continuous-information-and-momentum-digest-summary) HTTP200/완전본문5858자, q170-cfa-fip-response.json. **원논문 전문이 아닌 공개 2차요약**이며 일반 행동기전/측정식만 참고한다. 다른 자산 데이터·거래·원횡단면 결과는 연구하지 않는다.
+- 같은 누적가격변화라도 작은 동부호 변화가 이어지면 최소주의 문턱에 못 미쳐 반영이 지연될 수 있다는 가설. 요약의 정확 기본식 ID=sign(누적수익)×(음수일비율−양수일비율),작은ID는 연속적 정보이다. 한 설명문이 discrete를lowID라 부르는 부분은 마지막 정확식/앞단락과 모순하므로 그 문장을 코드 규칙으로 쓰지 않는다.
+- 원방법은12개월 형성/여러 종목의 모멘텀이고 BTC4주 시계열 예측의 입증이 아니다. Q164 설문·Q167 큰충격 반증과 함께 **같은 BTC 누적수익에서 동부호 변화의 일수 구성이 후속 수익에 추가 정보를 주는가**라는 자체 단순화 질문을 검정할 수 있다. 실제 주의·뉴스·정보를 관측한 것으로 명명하지 않는다. 기존 IC_PATH의 다음날24h곡선 극값 예측이나 반감기/과거실패 위험창 조정과 구별한다.
