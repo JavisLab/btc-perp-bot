@@ -313,3 +313,10 @@ RC_TREND 대조를저장원장에대조하자E_SPOT주+52.8387132247115%/DD13.56
 - 새공개 [거래소 가격정보 검증](btc-venue-research.html), 이전198/외부764계좌불변. API전체원자료는로컬보존,공개ZIP은파생피처/모형/계좌/검산과원문URL/SHA. 현시점재다운로드동일빈티지보장없음.
 - Q69 `On the Intraday Behavior of Bitcoin` 재검색결과는Q25동일PDF SHA351ba0506a7f5683b92f632cc7f4d63afd8fe07d99bba81622962688946c8a11,독립근거중복계수안함. Q70 DOI10.24136/oc.2022.022 저자표시공식호스트TLS호스트명불일치,검증끄기/보안우회안함. OpenAlex초록2016–2021Kraken시간별사후유의창선택만확인,전문미확보.
 - Q71 Cheah/Luo/Zhang/Sung `Predictability of bitcoin returns`, accepted2020/published2022, DOI https://doi.org/10.1080/1351847X.2020.1835685 , Dundee공식저자판 https://discovery.dundee.ac.uk/ws/files/123385346/1374791_Cheah.pdf SHA70171b64926854c4d389747a8c6bf91dff4d4fbfe8b1cb9e18d687e0882c3ca0/51쪽. 초록·표본/회귀·할당11–12·결과16–18·변수32–33/비용표42–43읽음. 2011-10~2019-01BTC/33예측자·14년이후확장학습,TSMSV/일별EPU/월별Jurado금융불확실성표제정보; CER이계좌누적수익아님.7/14일효용개선·21/28일EPU비용후CER음수도보존.2012전bidask결측을전체표본평균대체한미래정보/비용proxy제약,정확한공표시계미확인. FRED공식일별EPU/ALFRED빈티지와저자금융불확실성재개정·가용범위를후속조사중. 새불확실성성과아직없음. Q69추출첫venv pypdf없음→기존workspace/tmp/btc-pdf-lib재사용,외부코드실행없음.
+
+
+## Q71 공식 자료의 시계·빈티지 확인 및 새 UP_INFO 명세
+- FRED https://fred.stlouisfed.org/series/USEPUINDXD 뉴스기반일간비계절Index/수정가능명시. 실제ALFRED2022-01-04빈티지와01-05빈티지에서01-03값218.29→152.24,12월과다른1월값도변함. 최근2026-09-01빈티지8월31일까지존재확인. 과거발표날짜빈티지형컬럼을검사하며현재최신값을소급사용하지않는다. 원문 data/btc-uncertainty-20261003/epu-probe-*.csv.
+- https://www.sydneyludvigson.com/macro-and-financial-uncertainty-indexes 공식설명읽음:매년보통2회갱신·현재1960:07–2026:06, COVID2020/21spikes사후purge,별도GoogleDrive빈티지링크존재. 자료가월별이라고그달에알았다고하지않으며이번가설에FU를사용하지않음. 공개ZIP코드실행없음.
+- EPU홈페이지200은gzipwire를처음텍스트로읽어해석실패. raw4100바이트보존후gzip해제22690문자정상HTML·방법링크확인. 추정us_daily.html404는확보로세지않음. 접근제약우회·SSL검증해제없음.
+- [새사전명세UP_INFO](EXPERIMENT_BTC_UNCERTAINTY_20261003.md):주간당시금요일ALFRED빈티지의최근7일/직전28일EPU평균비율,월요일가용·가격7/28일통제·양계수추가정보/104주학습·1주purge/최소52주. 다음7일BTC예측·일간위험배분. 5규칙×6조건×2기간60계좌,원래수익/위험/최근기준유지. 자체주간단순화·원문복제아님. 현재349개안팎의고정금요일빈티지수집중, 피처/계좌수익미계산.
