@@ -42,3 +42,7 @@ INFO는β_shock<0,LEVEL은β_level<0이어야 위험회피가설 매매가능. �
 검사:두공식CSV 별도Decimal재파싱/주말·휴일·중복/시계·stale/6관측/5간격·log단위/미래교란·BTC29일완료·RV정의/0로그/lag7·동일학습행/104/52/purge/HAC틈/rank·계수음양0·cost+SE+delta·INV정확사건·주방향/일risk/회계. 별도정규방정식·독립BTC raw329ZIP가격·Decimal수량/실제funding/무거래/계좌/CI/선정/저장TREND검산. 과거VIX옵션산식·원문순익복제를주장하지않음.
 
 공식원문PDF/전체CBOE·FREDCSV는공개ZIP미포함;출처CBOE/FRED 링크·SHA·자체변환과계좌를기록. 공식원시입력이별도로필요한재현자료임을명시. 공개자료/오프라인계좌만,실전승격·주문·다른자산매매/ETH/개인자료/하위에이전트없음. 한가설기각/게시완료로연구종료하지않음.
+
+### 성과 전 입력 동결
+
+기존공식2응답을재수집없이정규화·별도Decimal검산했다. CBOE전체9286행,선택1958=FRED비결측1958,전값일치/현재범위무효0·최대4일간격·FRED빈행41개별도보존. 정규화SHA **2531b2d4b51c4fe775dafbeac152ff579875b25d3a709c2d60250f7ab43ba82b**, prepare-audit **6070ac61b95902d421400737a528686f783415d3594be55025a24a37c6a15049**, independent-audit **9fcb6dc8324862c28ff82ac64310b9dca713c24b8d592b4ab848b687fdc74e9e**. 두배포본은독립경제원천/최초빈티지증명이아니며,새BTC결합피처·회귀·수익미계산.
