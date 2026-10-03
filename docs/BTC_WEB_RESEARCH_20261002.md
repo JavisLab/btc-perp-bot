@@ -569,3 +569,20 @@ Q145 Bouri/Gupta/Lau/Roubaud/Wang2018 `Bitcoin and global financial stress: A co
 - 9×3분위/최대60lag/1000bootstrap에서꼬리의존·일부지연선행관계를주장하지만중앙.5/.5는거의모든lag비유의,초록도방향예측제한명시. 높은스트레스후큰손실과큰이익의빈도증가를함께설명하므로항상상승/안전자산매수공식아님. 결론60일safehaven을단일사전거래규칙으로간주하지않음. 이번연구에서분위/60일중유리한조합선택안함.
 
 Q146 Che/Copestake/Furceri/Terracciano2023 IMF WP163 `The Crypto Cycle and US Monetary Policy`, DOI10.5089/9798400245411.001. 실제OpenAlex초록은기관진입과주식상관·Fed긴축의위험감수경로를주장한다. 현재 eLibrary공식PDF405,표준IMF공개자산URL403이므로전문미확보·접근제한우회없음. 단일crypto factor80%가BTC단독시계열알파라는주장을하지않는다. 아직새거시가설/성과계산없음.
+
+## Q147–149 · 미국 위험회피 정보와 BTC · 공식 VIX 정의/시계 감사
+
+Q147 BTC–VIX 실제 OpenAlex 검색은 EPU/Q69,Untethered·attention 등 중복과 BTC 변동성/불확실성 논문 메타를 반환했다. `Bitcoin volatility, stock market and investor sentiment` DOI10.1016/j.frl.2019.101399, `Can uncertainty indices predict Bitcoin prices?` DOI10.1016/j.najef.2019.03.019은 이번 전문 미확보이며 독립 검증근거로 세지 않는다. Q146 RePEc 레코드는 IMF 공식 랜딩만 가리켰고, 추측 저자 도메인 DNS실패·Google200 JS껍데기·Bing200의 무관한 문법검색 결과는 원문 확보/유효 본문검색으로 세지 않는다. IMF403/405 우회 없음. 한 원문 접근한계로 연구를 끝내지 않는다.
+
+Q148 [CBOE 공식 종가 안내](https://www.cboe.com/tradable-products/vix/vix-historical-data)와 [공식 CSV](https://cdn.cboe.com/api/global/us_indices/daily_prices/VIX_History.csv)(공식 cdn-api.cboe.com으로 redirect), [FRED VIXCLS](https://fred.stlouisfed.org/series/VIXCLS)를 실제 확보했다. CSV SHA6edc3e3928c4b164b9e4ed1ec874e0ed53c7d52997557adebb7d6b7451db565a,9286행1990-01-02–2026-10-02. 연구 입력 후보 범위2019-01-01–2026-08-31의1958종가는 FRED 별도다운로드 SHA84f279d69e35eacf918b939875bf0ed7e0ad78d176cd289b24f2ebf364221510의1958비결측과 날짜/Decimal값 전부일치. 이는 같은CBOE원천의 배포 일관성이지 독립 옵션산식 재구성/최초빈티지 검증이 아니다. 41 FRED평일공백을 관측값으로 보간하지 않는다. 47개의1992–2006 원시OHLC범위이상은 연구범위밖이며 보존;2019+해당이상0,주말관측0,날짜간격최대4일. 가격예측/모형/순익은 아직계산하지 않았다.
+
+Q149 CBOE 공식 문서:
+
+- [VIX Methodology](https://cdn.cboe.com/resources/indices/Volatility_Index_Methodology_Cboe_Volatility_Index.pdf),26쪽,version6.0 revised2026-02-26, SHA5e0e8dd278a5e4c2e0315ff573b60a314d31946841e6fc67eac784dfba729622. 본문3–10쪽·권리문구24–26 선별읽음;전체옵션 예제 재계산 아님.
+- [Mathematics Methodology](https://cdn.cboe.com/resources/indices/Cboe_Volatility_Index_Mathematics_Methodology.pdf),21쪽,version5.0 revised2026-02-26, SHA036e624327f65ece28d04b4e5f304df518a755edef2a85bc83869bbe68d11460. 목차/산식/배포필터·변경기록선별. 원시 SPX 옵션 수집·거래 없음.
+- 30일 미국주식 기대변동성,SPX/SPXW옵션 C1 midquotes와 미재무부금리/두만기 보간의 지수다. **BTC IV/물리위험 정답/직접 매수 가능한 자산/옵션정산가(SOQ)가 아니다.** VXO/OEX 구방법과 혼동하지 않는다. 현행기준 RTH09:31–16:15ET,GTH03:15–09:25ET,15초산출,단축휴일가능. 16:15ET는 여름20:15/겨울21:15UTC지만 CSV는 날짜만 있고 역사 최초파일 게시·수신시각은 없다.
+- 지수값 계산불가시 직전값 재공표,하향이상치 필터 및 정기 재검토가 있다. 수학문서2025-02-10부터 bid뿐 아니라ask0도 제외;2025-08-25는 series-level필터의 문서편입이다(그날VIX에새적용됐다고 단정하지 않음). 최신문서 설명을 전체역사 동일방법이라고 주장하지 않는다. VIX개별방법문서본문의'nonzero bid'요약과수학문서'ask0제외'차이도 보존한다.
+- CBOECSV는 이번2026-10-03에10-02값까지있지만FRED공식화면은10-01값/10-02 08:37CDT업데이트/다음10-05를표시한다. 같은관측일과서로다른배포시계다. CBOE 날짜D를D+2일00UTC에가용하다고 두는 것은 **자체지연가정**이지FRED가그때배포했다는주장이아니다. 추가7일지연도 과거최초빈티지문제를해결하지않는다.
+- FRED는Daily,Close/NotSeasonallyAdjusted,Copyrighted:CitationRequired·CBOE허락하에배포라고표시한다. CBOE도지수/방법권리를보유하며CC라이선스아님. 원논문PDF나 전체원시CBOE/FRED아카이브를Pages에재배포하지않고,정확출처/해시·자체변환/자체계좌를명시한다. 출처가공개라는이유로다른자산매매범위를넓히지않는다.
+
+Q145의꼬리관계/중앙예측제한은안전자산/위험자산단정모두의반증이다. Q146은기관수요경로의초록만확보했으므로본문재현이라고하지않는다. 다음질문은BTC자체가격/위험이설명하는부분을넘는 **외부위험회피 변화의음의추가선행정보**이고,유료GFSI복제·FOMC당시surprise·기존BTC DVOL분산예측과구별한다. 단순롤링모형으로검정하되부호/대조/기각기준을결과뒤바꾸지않는다.
