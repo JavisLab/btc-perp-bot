@@ -292,3 +292,13 @@ RC_TREND 대조를저장원장에대조하자E_SPOT주+52.8387132247115%/DD13.56
 - FINRA 661원시일·API687종목일 Decimal 합계, 329 BTC ZIP, 4,779독립 모형·8,264수량·43,076무거래·12,178이벤트·51,120일말 및 시간DD/노출/담보 검산. 최대 회계차2e-11USDT·적합차4.27e-15. 14경계검사·105소켓차단 파일 동일. 재현은 이전 모델 중단 직후 완료됐고 현재 SHA 대조도 부모가 완료했다.
 - marked-short volume은 short interest/기관 순매도/ETF 순유출 아님. 현재 보관본의 최초공표 빈티지·3대형ETF 선택·원문 Bloomberg 단위와의 차이·겹친7일목표 한계를 유지. D18ET+24h 가용/7일 추가지연, 훈련label+1일purge, 달력 HAC와 비용 필터를 성과 뒤 바꾸지 않았다.
 - [최소 결과 페이지](btc-etfshort-research.html)에 모든60계좌·비용·펀딩·연도·불확실성 및 다운로드 공개. 독립 검산은 전략 성공과 별개다. 다음은 BTC 거래소 분절·가격발견·전송지연 원문과 공식 공개 BTC 자료를 검토한다. BTC-only·실거래/ETH추가/하위에이전트 없음.
+
+
+## Q63–Q68 · 2026-10-03 · BTC 거래소 가격발견/분절 근거 감사
+- Q63 Makarov/Schoar, JFE2020 DOI https://doi.org/10.1016/j.jfineco.2019.07.001 : LSE저자판 https://researchonline.lse.ac.uk/id/eprint/100409/1/Cryptocurrency_Markets_JFE_final_v4.pdf . 서론·자료·4.4/7.1/8.1 읽음, 다른코인 분석은추가연구안함. 4.4는2017-11~2018-02초당체결량의사후잠재차익/2%스프레드와25BTC재고제약·환전/반출/시간리스크, 실행가능한소액순수익아님. 7.1은14장소공통흐름·동시수익설명, Binance는2017후반시작이라제외. HP추세/전체표본요인선택을실시간피처로가져오지않음. 공통수요와거래소별분절메커니즘만 새가설 출발점.
+- Q64 공식 https://docs.cdp.coinbase.com/api-reference/exchange-api/rest-api/products/get-product-candles / https://docs.cdp.coinbase.com/exchange/rest-api/rate-limits / https://www.bitstamp.net/api/ . 문서보관과실제2021-07 BTCUSD/USDTUSD/BTCUSD API표본200, Coinbase는역순25행·Bitstamp정순24행/동시start,end는end우선. CB300상한·무틱구간미게시·요청시작전행가능/10reqs, BS1000상한·현재봉제외/400reqs·10분1만. 원문수집≤4reqs. USD/USDT환산필수, F는USD/USDT이므로 BTCUSDT가격에곱한다. USDT매매전략이나ETH연구가아님.
+- Q65 Alexander/Heck2020 DOI10.1016/j.jfs.2020.100776은Q11과동일논문·figshare41093948동일파일. q65HTTP202/0byte는확보아님; 기존q11 36쪽PDF를재사용하고독립근거중복계수하지않음. 분단위선물선도·현물후행은우리가제안하는현물정보가치에대한반증가능성.
+- Q66 OUP https://doi.org/10.1093/rof/rfae004 공식PDF403 접근실패를우회하지않음. 원문방법을읽었다고주장안함. OpenAlex검색에서관련SSRN초고표제만확인, 새독립성과증거아님.
+- Q67 Giudici/Pagnottoni2019 https://doi.org/10.3390/risks7040111 , 공식PDF https://mdpi-res.com/d_attachment/risks/risks-07-00111/article_deploy/risks-07-00111.pdf SHA fa1c8a61c4d12bc9571285174ef07b85a80f06b77b663523ffed9af405ed8696. 18쪽중방법·자료·표3–5·실증/robustness·결론읽음. 2017-07~2018-06 8,750시간, CDD5거래소, VECM2lag/VAR3,336h일방향창/12h분산분해; h=4cointegration은전체표본검정. TSI72.24–79.79%는적중률/수익이아님. Bitstamp/Gemini대체로선도하지만2017말Coinbase/Kraken으로바뀜. 비용차감매매·다음시기검증없음. 초록/도입부Bitfinex언급은실제Bitstamp표와불일치; 표1기간2019오기는본문2017–18과불일치. Bittrex USDT를USD공통단위로보는위험. 현대Binance에그대로옮기지않음.
+- Q68 2025 `Price Discovery in Bitcoin Spot or Futures? The Jury Is Out` DOI https://doi.org/10.1002/fut.22560 . 실제OpenAlex후속검색·초록확인, 공식WileyPDF403으로전문미확보. 초록은1초sampling/소음보정/모형창·거래소선택이선도판정차이를낳는다고설명하고선물대체로선도하지만일별변동을보고. 원문세부표/유료원시자료확보주장안함.
+- 다음 새명세 [VX_INFO](EXPERIMENT_BTC_VENUE_20261003.md): 두USD장소의같은시각환산괴리24h평균이양수/음수로합치할때가격·호가통화대조를넘는BTC다음1일정보가있는지검증. 우리자체저빈도단순화이지VECM·원문차익복제가아님. 아직성과미계산.
