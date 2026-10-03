@@ -1,0 +1,43 @@
+# BTC 현물 순체결흐름의 선물 대비 추가정보 · 성과 전 사전명세
+
+## 독립 경제 질문과 원문 한계
+
+현물에서 BTC를 즉시 매수/매도하려는 압력과 레버리지·헤지·차익거래가 가능한 무기한 선물의 압력은 같지 않을 수 있다. **완료된 BTC 현물 순체결 압력이 선물 압력과 이미 발생한 가격 변화를 통제한 뒤 다음 주 BTC 수익에 추가 정보를 주는가?** 현물이 반드시 선도하거나 매수 압력이 반드시 지속한다고 가정하지 않는다. 원문은 이 가설의 성공 증거가 아니라 질문과 반증의 근거다.
+
+- Q102 McIntyre/Harjes2016 `Order Flow and the Bitcoin Spot Rate`, DOI10.11114/aef.v3i3.1574, 출판사 공개12쪽 PDF(SHA dbe4357ce8406cafabdc072941179d0c037bae107a06960130fc806181bcd66a). 2011Jun27–2013May23 USD/BTC 499일, 당일 Δs_t~ΔX_t+fundamentals, GMM/lag4·여러 금리/추세 명세. 표본40–43% 설명력·당일100만USD 순매수/2.7%는 미래 수익이 아니다. USD flow AR1 .170은 지속성 질문이지 거래전략 성과가 아니다. 거래소 전체 고객/진짜 수요로 단정한 초기시장 가정은 현재 사용하지 않는다. 타통화/개별거래 자료 수집·재현하지 않는다.
+- Q11/Q65 Alexander/Heck2020의 분단위 파생상품 가격 선도는 현물 우월 가정에 대한 반증이다. Q100 arxiv2109.02776v2는 옵션 call/put net-buying-pressure를 분해하지만 **당기** IV 변화의 전체 연별 회귀이며 저자도 인과 식별이 아니고 일간 결과가 같지 않다고 한다. 옵션 흐름을 현물 흐름으로 동일시하거나 이 논문의 유의성을 다음 주 알파로 옮기지 않는다.
+- Q99 Edinburgh 공식 초록의 관심/노이즈 연결만 확인; 기관 PDF403으로 전문 없음. Q101 wash-trading 논문은 초록/서론 앞만 읽고 유출 개별거래 원자료를 수집하지 않았다. 익명 체결 집계가 정보거래자·외부 자금 유입·진짜 수요임을 식별하지 못한다.
+- Q103 PLoS2021 `Trade informativeness and liquidity in Bitcoin markets` DOI10.1371/journal.pone.0255515 공개 XML의 자료/모형/결과/결론/논의 읽음. 정보가 많은 짧은2020Aug 구간 선택, 32h+2h 표본들, LOB GMM은 방향 예측이 아니다. 본문92,804,000 trades/18,943,200 orders는 표3의 orders/trades와 거꾸로이고, 8h 표기는 실제21:47–00:05의 약2.3h다. J검정의 유의성을 모형 지지로 쓰는 해석도 주의한다(귀무는 과식별제약 성립). 우리는 이 전문을 근거로 고빈도 순익을 주장하거나 LOB·개별거래를 수집하지 않는다.
+
+기존 OF_RES는 **선물만**의 당일 flow~가격 잔차/1σ 규칙, VI_INT는 선물 **무부호 거래량×수익**, CAPACITY는 이전 premium×flow다. 이번은 현물과 선물의 부호 압력을 분리해 현물 추가정보를 직접 검정한다. 기존 실패의 창·문턱·레버리지 조정이 아니며, 기존 주간104/52/7일 목표·비용/위험/원장 공통 골격을 유지한다. 논문 복제가 아닌 자체 탐색, 이미 본 역사이며 새 OOS가 아니다.
+
+## 자료 · 선행 동결 · 오류/가용 시계
+
+기존 체크섬 검증된 `data/archive-1448/{spot,perp}` 및 `data/archive-1458/BTCUSDT/{spot,perp}`의 **BTCUSDT 1h klines만** 재사용. 전체 재수집 없음. 2020-01-01~2026-09-01 배타끝의 집계. Q104 공식 Binance public-data README가 spot2025Jan1 이후 μs, UM선물 ms, 열0/6시작·끝, 5base BTC volume/7quote USDT volume/9taker buy base/10taker buy quote/8거래건수를 명시한다. COIN-M/다른코인·개별trade endpoint·uiklines 사용 금지. 공식 spot REST는 기본 UTC·끝 ms, 최대1000/weight2지만 새 성과 자료는 동결 원시 아카이브를 쓴다. futures HTML은202/0byte로 확보하지 못했으며 README의 UM 정의로 범위를 한정한다.
+
+별도 일별 정규화에 각24개완료1h와 base/quote/buy-base/buy-quote/건수 합·누락/오류 이유를 보존한다. Decimal 독립 원본 검사·시계 정규화·월 중복/헤더·고유성·OHLC·비음수/유한·0≤buy≤total·양수 volume/quote·정수 count·각종비율 확인. 현재 공급자 아카이브는 사후 수정될 수 있어 checksum은 정확 최초 빈티지를 증명하지 않는다.
+
+- 기존 spot3개 zero-volume 시간(`btc-venue-20261003/masks.json`)은 그날 flow 무효. 기존 `data/structure-1471/resolution.json`의 unresolved 중 volume_errors 절댓값>1e−3인 선물 시간도 그날 무효(기존4개); 원인 숨김/5m값으로 수선 없음. 가격만의 다른 불일치는 새 volume 오류로 확대하지 않는다. 새 오류/불완전24h는 해당 일 무효, 양시장 동일 유효 주를 모든 예측 모형에 적용한다. 계좌 기간 자체 삭제 없음.
+- 성과 전 고정 공식 **1d archive 표본**: 2020Jan1,2022Jan1,2023Mar24,2025Jan1,2026Aug31, 현물/UM 각각. 원본+공식CHECKSUM보존, 24시간 합과 OHLC/거래건수 비교. base/buy-base 오차≤max(1e−8BTC,|native|×1e−8), quote/buy-quote≤max(1e−6USDT,|native|×1e−8), 정수 건수/시계/OHLC 정확일치. 해당 표본 불일치는 두 공급원 원형 보존하고 그 날짜 해당시장 무효; 유리한 새공급원 재구성 금지. 전체값/SHA·오류일은 성과 전에 동결한다.
+- 일 D 집계는 완료 뒤 하루 여유인 **D+2일00UTC** 가용 가정. 월요일 T의 기본 최신일D=T−2일, 입력은 D−6..D. `data_delay7`은 두 flow 모두7일 더 늦춰D=T−9일, 가격/위험은 현재 완료값 유지. 원문의 당기 설명을 미래 flow로 쓰지 않는다. 파일이 당시 바로 배포됐다는 뜻이 아니라 집계 feed 가용 가정이며 정확 첫 수신시각/빈티지 미복원. 하루 여유·7일 추가 지연으로 이 문제가 해결됐다고 하지 않는다.
+
+## 피처·학습·동일 주간 정보 관문
+
+7일 모두 두 시장이 유효해야 한다. 시장 j의 B_j=Σtaker-buy quote, Q_j=Σtotal quote, **F_j=(2B_j−Q_j)/Q_j**,−1≤F≤1. 단위는 비율, BTCUSDT의 USDT는 USD가 아니며 당기 가격을 한 번 더 곱하지 않는다. 0≤B≤Q,Q>0이면 F=−1/0/+1도 유효, log(B/S)와 달리 일방향 거래도 임의 제거하지 않는다. 공급자 총 turnover 규모차이를 BTC현물/선물 외부자금 유입차이로 해석하지 않는다. 원시 B/Q와 비율을 모두 보존한다.
+
+매월요일00UTC T에 r7=log(C_T/C_(T−7d)),r28=log(C_T/C_(T−28d)), y_T=log(C_(T+7d)/C_T). C는 완료된 BTC spot 마지막1h 종가이며 기존zero mask는 가격도 제외. 104달력주 U=T−105w..T−2w, label-end≤T−1d, 최소52유효주. 현재U와 미래 target 제외, 아래4모형 모두 같은 행. 중심화 SVD OLS, 모든 계수 **무제약**; 표준오차는 달력1주 HAC/Bartlett.5·n/(n−k), 결측 주를 이어붙이지 않는다. 비유한/랭크부족은 모형 무효.
+
+- CF_INFO: 1+r7+r28+F_perp+F_spot.
+- CF_PERP: 1+r7+r28+F_perp (현물 추가정보의 주 대조).
+- CF_SPOT: 1+r7+r28+F_spot (선물의 독립 기여와 단독 현물 분리).
+- CF_PRICE: 1+r7+r28.
+
+예측 μ의 |μ|>SE+log1p(.0023 if μ>0 else .0013)가 비용·한SE gate. INFO는 추가로 δ=μ_INFO−μ_PERP와 μ_INFO 동부호(δμ>0,|δ|>1e−12)일 때만 signμ로 core 추세를 바꾼다. 개별대조는 각자 gate, **CF_INV**는 기본과 같은 발동 주 반대, **CF_TREND**는 E_SPOT core. 모형/자료무효·gate미달 core, 위험준비부족 계획보류. 같은 주의 방향만 고정, 매일 완료20일 변동성(ddof1×√365)으로 위험량min(1,.20/vol),risk10 .10. core의20/60/120 momentum와EMA8/32·16/64·32/128 부호평균 max(0,s) 그대로. 평가시작이 주중이면 이전 월요일의 이미 작성한 방향만 사용한다.
+
+## 72계좌·회계·성공 판정 (성과 전 고정)
+
+6규칙×6조건(base,cost_x2,delay1,delay24,risk10,data_delay7)×주/최근=**72조건계좌**. 주2022–2025(1461일),최근2026Jan1–Sep1배타끝(243일),각1000USDT. 실계좌/주문 없음. 기존 `btc_target_ledger.py` 불변: t+1h 시가, 지연1/24h 당시목표고정, spot10/perp5bp+불리impact1.5bp, 실제funding×hourmarkopen proxy, postcost12회·.00001/.001step·5/50USDT최소(선물축소예외),5%p밴드·atomic전환·종료dust비용·gross≤1/무차입/양다리없음. 시간DD·불리한시간극값 margin5% 검사. 실제호가/부분체결/역사규정/순간청산/세금·운영비 미복원.
+
+기본 주순익>52.838713%,DD≤13.561952%,vol≤13.343621%,Sharpe≥.8,4년중3양수,보유구간≥20;최근순익>4.628391%,DD≤10.450946%,vol≤16.520409%;두기간담보위반0. base/cost_x2/delay1/delay24/data_delay7 각각 두기간순익>0. **기본INFO순익이 PERP/SPOT/PRICE/TREND 모두를 양기간 넘고,DD≤PERP 양기간,공통목표MSE<PERP 및 PRICE 양기간**이어야 한다. 공통예측0개는실패. 대조/지연/위험조건 사후승격 금지. 순일수익 및 네대조 대비차7/14/28일 원형블록2000회95%CI,다중개발/빈티지문제를해결하는독립입증아님.
+
+자료동결→인과(미래volume/target불변)·단위/스케일/양시장비율·buy0/buy=total·zero/missing/conflict·완료/lag·104/52/purge/4동일행/무제약·주방향/일위험·수량/펀딩/지연 경계검사→구현커밋→성과. 별도 Decimal 원시집계와 정상방정식/HAC/폐형식수량/무거래/Decimal원장/연도/관문/추세항등/CI검산,신규72만소켓차단바이트재현·최소Pages게시. 실패·한계전부보존,이 실험의 종료/기각이 전체BTC연구 종료는 아니다.
