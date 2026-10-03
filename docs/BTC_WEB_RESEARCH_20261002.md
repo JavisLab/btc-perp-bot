@@ -516,3 +516,19 @@ Q123 계약설계 후속은 아직초록/공식메타범위: Ackerer/Hugonnier/J
 - 공식사용조건: 출처를자료옆에명시,원공급자로오인되는서비스금지;출처명시조건상업적이용허용. 공개페이지/CSV/JSON/ZIP에Alternative.me표시·정확원주소/동결시각·자체변환구분. 데이터사용조건은논문PDF재배포허락이아님.
 - **Q132 Bourghelle/Jawadi/Rozin2022**, [Do collective emotions drive bitcoin volatility? A triple regime-switching vector approach](https://doi.org/10.1016/j.jebo.2022.01.026), HAL2024Jan23배포[14쪽공개판](https://hal.science/hal-04412029v1/file/Articledef2.pdf) SHA99206aaaebb37a1cf60a50fe9aa78f2dec2d71e4c975bed1c18c5b265b5b6258. PDF1–2/5/7–9/11–13쪽선별읽음,모든그림/appendix수치복제아님. 2018Feb1–2021May25daily,절대수익/Parkinson/GK와logFGI,거래량·COVID대조. 전체자료linearVAR/3체제모형선택·BFGS/Marquardt·robustSE,미래실시간체제확률/rolling계좌검증없음. **저자가forecastingperformance검정을향후과제로명시**한다.
 - Q132본문'항상양방향Granger'서술은표2와일치하지않음:FGI→절대수익p.1960,Parkinson→FGIp.0553은5%기각아님. proxy관계·전체표본모형개선은수익방향알파가아니며FGI에vol이미포함된기계적관계도고려해야한다. 본문의거품형성/붕괴체제명칭을과거에알수있는매매조건으로이식하지않는다. 자체단순선형week예측은논문복제가아니다.
+
+### Q132 후속 FG_INFO: 감정 합성지표72 결과·검산
+
+[사전 명세](EXPERIMENT_BTC_SENTIMENT_20261003.md) `f70f4c5` → 입력 `91a98fd` → 18합성검사·구현 `cb998de` → 별도검산 `bbd9852`. [72조건 전체 결과·다운로드](btc-sentiment-research.html). 기존 실험 무변경 재실행 없음.
+
+기본 주 +70.6208594460% / DD14.7024694340% / 연변동성14.6671178211% / Sharpe0.9831472717, 최근 −3.8989298719% / DD14.4902414987%. 기존 주/최근 위험·최근 수익 기준 미달. cost2/1h/24h/추가자료7일의 최근은 각각 −4.6701/−4.5119/−9.0061/−10.8321%, risk10도 −2.0294%. 기본·위험목표 변경 없고 기각.
+
+MKT/SENT/PRICE는 주43.0989/45.0352/38.2522%, 최근 −18.3996/−17.9003/−4.4498%. 반대 INV는 주 −21.6158/최근 +2.6325%; TREND는 기존 E_SPOT52.8387132247/.8908120204 항등. 유리한 대조 승격 없음. INFO 공통132/34주 MSE .0044239104214/.0052734171215는 MKT .0043658411923/.0047115416568, PRICE .0041677048493/.0043636276065보다 모두 큼. 모든 시장통제를 제거한 순수 감정 효과가 아니라 선택한7통제 너머 합성지표 정보 검정이다.
+
+독립 Alternative.me 원시값·누락 달력·별도10일 겹침,329시장ZIP과2,435일 quote합,696피처주·1,340정규방정식/HAC,30,672일판단·8,773폐형식 수량·52,745무거래·7,771펀딩·16,595이벤트·61,344일말과 시간DD/연도/노출/관문/180블록구간을 검사했다. 계좌최대차2e−11, 모형차8.9306340101e−13. 121파일 네트워크 소켓 차단 재현 동일. 공급자 비공개 합성식과 과거 첫 공표는 미검증이며 검산성공≠전략성공.
+
+Fear & Greed Index 원자료 출처 [Alternative.me](https://alternative.me/crypto/fear-and-greed-index/), [API](https://api.alternative.me/fng/?limit=0&format=json), 2026-10-03T09:02:43Z. 현재 사후빈티지/D+2 가용 가정,2024-10-26누락 보존. 다운로드 옆과 ZIP/JSON에 출처와 자체변환을 구분했다.
+
+### Q135 실제 인터넷 후속 검색: 중복·철회 확인
+
+OpenAlex의 BTC 유동성/가격충격·위키주의 검색3응답 `q135-search-1/2/3.json`을 보존했다. Wikipedia는 이미 Q40–42와 AT_INFO48에서 검정한 계열이다. Digital traces of bubbles / Social signals·Q72 unchained·Q21 predictability 등 중복을 새 독립 근거로 세지 않았고 재실행하지 않았다. `Datestamping the Bitcoin and Ethereum bubbles` DOI10.1016/j.frl.2017.12.006은 검색상 RETRACTED라 새 근거로 채택하지 않았다. 다른 자산 연구·데이터 확장 없음. 출력 보조기가 meta 배열에 .get을 호출한1회 오류는 실제3검색 응답 보존 이후 표시 오류이며 연구자료 수집실패가 아니다.
