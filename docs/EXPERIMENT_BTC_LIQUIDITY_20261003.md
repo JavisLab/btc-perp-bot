@@ -59,3 +59,9 @@ CS는 실제 bid/ask나 시장깊이가 아니다. Binance BTCUSDT에서 이번 
 ## 검증 순서
 
 기존SHA→日집계/독립rawOHLC·정확24/23시간·mask감사→미래두번째봉교란/완료·결측·가격단위/불변0·비중첩7/28·RV정의·0로그·T−1/+7·104/52/purge/HAC틈·β正/0/負·increment·週方向/日risk·수량/무거래/funding/遅延합성검사→구현커밋→새72성과. 별도정규방정식/HAC·원시highlow·폐형식수량/Decimal회계·가용시각·비용·실제funding·선정/원저장TREND항등·불확실성검산→새결과만소켓차단재현→최소Pages/익명값·다운로드. 공개자료와오프라인가상검증만,실전승격/주문없음.
+
+### 성과 전 일집계 동결·별도 원시 검산
+
+2,435일/2,419유효일,기존16무효일 그대로. 새 `daily.json.gz` canonical SHA **2b7c5a957845d2df07c1d71f7cefb0da2c536cdeec598478e34a3340f5703c3b**, gzip SHA **52fcd1b1b9bbb03a372951f1c72af419ceaf081d87fb84bcc65480bacbea1970**. independent-audit SHA **9ef9e7e9d4d3d0d670be8d27fee9f61a11476cb96804264ebe0c4728a1307a40**, prepare-audit SHA **837628e7073f97fe6ee342ce6cb4c275b682ed6529b6e0b5ab4464865fad847e**. 기존80현물ZIP 체크섬·58,408정규화OHLC의원시일치·58,056유효일시간봉·55,637인접쌍을별도Decimal log/exp/원형CS식으로검산했다. 최대절대오차1.2738626072e−13,CS0경계모호0개. 미래성과계산없음.
+
+초기독립검산이2020-12-21의진단명차이를검출했다. 원시에는무거래이면서종료시각이틀린14UTC봉이있고,기존정규화에는그봉이제외돼있어missing으로보인다. 양쪽모두그날무효. 원시/정규화진단을각각전수대조하고차이를영수증에보존했으며입력값·16일mask·가설은변경하지않았다. 초기로그 `btc-liquidity-data-audit.log`와`...-diagnosis.log`를보존,보강검산`...-normalized.log`통과.
