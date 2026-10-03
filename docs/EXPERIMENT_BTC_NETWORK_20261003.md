@@ -23,7 +23,7 @@ Q89 Wheatley외2018 arxiv1803.05663v1의네트워크수요기전과주소≠사�
 표준오차 Newey–West **달력1주 lag/Bartlett.5**,n/(n−자유열수)보정; 결측주를연속행으로압축안함. 제약활성자유열재계산. 전체날짜·35관측·자료가용가정·훈련주·label끝·계수·covariance·rank·μ/SE를보존. 한SEgate는통계유의성/보장아님.
 
 ## 여섯 규칙·72조건계좌
-가격core=max(0,s)*w, s=기존20/60/120momentum+EMA8/32,16/64,32/128여섯부호평균; w=min(1,risk/완료20일로그수익std(ddof1)×sqrt365),기본risk.20/risk10.10,0vol→0,위험준비부족계획보류.
+가격core=max(0,s)*w, s=기존20/60/120momentum+EMA8/32,16/64,32/128여섯부호평균; w=min(1,risk/(완료20일로그수익std(ddof1)×sqrt365)),기본risk.20/risk10.10,0vol→0,위험준비부족계획보류.
 주간gate=|μ|>SE+ln(1+.0023)(양수BTC현물롱)또는SE+ln(1+.0013)(음수BTCperp숏). 비용2배도gate불변·미래펀딩으로신호개선없음.
 - **NA_INFO** INFO/ACTIVITY유효, INFOgate通過,δ=μ_INFO−μ_ACTIVITY와μ_INFO가동부호且|δ|>1e−12면sign(μ_INFO)로override. 제약활성δ=0. 그외core.
 - NA_ACTIVITY/NA_PRICE/NA_RAW:각자모형gate통과시그방향,그외core.
@@ -41,3 +41,6 @@ Q89 Wheatley외2018 arxiv1803.05663v1의네트워크수요기전과주소≠사�
 
 ### 이미보유한거래건수 원본 지문
 `data/btc-mining-20261002/n-transactions.json` SHA 50756100c7848fe2a7715d39705d7de55338ffc4a9aa4db18a1e990ef7b93adb. 새활성도 수집·독립감사 뒤두계열 정규화SHA를성과전추가동결한다.
+
+## 성과 전 자료 동결 · 사전명세 c53a5f3 뒤
+정규화 `data/btc-network-20261003/network-daily.json` SHA **7a2b322ec2b2c0d4e297eb0c3afa6204f5beaa3d15dcf0531b4b61e2abdeb44a**. 2433달력일,활성주소2425/거래건수2430관측. 활성14공식청크·13겹침일일치,기존거래2463일byte재사용·8일공식표본동일,기존활성8일표본동일. 활성8개누락은 2020Mar13/May22,2025Nov13–15,2026Apr16/Aug19/Aug23. 5개짧은공식구간재조회(18개정상관측)에서도같은누락확인;빈값은그대로보존. Tx누락은2025Nov13–15,양계열0없음. 개인주소/지갑/거래세부조회없음. 독립Decimal정수/단위/UTC/범위/중복/원본재사용/공식표본과정규화전행감사. 현재과거조회이므로D+2가정은최초빈티지증명이아님. 새네트워크피처·모형·성과계산전동결.
