@@ -41,3 +41,22 @@ INFO는 **β_share>0**,예측|μ|>SE+log1p(.0023long/.0013short),δ=μ_INFO−μ
 ## 순서
 
 명세커밋→2日집계응답수집/기존공급SHA·별도Decimal·시각/표본/항등/결측감사·동결→인과합성검사/구현커밋→새성과→독립raw329ZIP·별도normal/HAC/폐형식qty/무거래/Decimal계좌·funding·관문·CI·E_SPOT항등→새파일소켓차단재현→최소Pages/익명값·다운로드. provider추정필터자체의독립블록체인검증은하지않고한계를명시한다. 한실험/후보실패/게시완료/단일자료접근한계로전체연구종료하지않음.
+
+## 성과 전 입력 동결 · 2026-10-03 11:06 UTC
+
+사전명세 aeb13cc 이후 두 공개 일집계만 조회했다. adjusted 2026-10-03T10:54:06.460033Z/2428원시행/94430B, raw 10:54:07.444825Z/2434원시행/95315B. 두 응답의 Sep1행은 평가입력에서 제외. 2435일 중2425일 유효, adjusted 누락8일(2021-12-11/21/24,2023-07-14/11-14,2024-06-30/11-18,2025-06-24), raw 누락2일(2025-11-14/15). 기존 다른 지표의 누락마스크를 옮기거나 빈 날을 채우지 않았다. 사전8일 표본16값과 각각 정확일치, 최대 A/O=.4799278762581416.
+
+공급은 사전고정 CM API SplyCur 2435일이다. 60자리 Decimal에서 CapMrktCurUSD=PriceUSD*SplyCur 전부 정확일치하나 이는 공급자 산식검사이지 독립 발행량 증명이 아니다. 이전 GitHub 공개배포본과 겹치는2335일은 **현재 API가 전부 정확히100 BTC 높다**. 이전 MVRV 비교가 공급량까지 동일함을 증명한 것으로 해석하지 않는다. Q160 공식 정의는 UTXO의 미사용 출력가치 합계이며 해당100BTC 차이의 원인/변경시점은 설명하지 않는다. BIP30/빈티지/계산법 차이를 원인으로 단정하지 않고, 두 배포본을 합치거나100을빼서 맞추지 않는다. 명세의 공급량 입력은 유지하고 차이목록을 보존한다. 공급량 계열의 최초빈티지/독립체인 복원은 검증하지 못했다.
+
+초기 공급 산식검사는 Decimal 기본28자리 반올림 때문에 실패했다. 입력을 바꾸지 않고 정밀도를60자리로 고쳐2435항등을 검산했다. 초기/최종 로그보존, 피처/모형/성과계산 전 수정이다.
+
+| 파일 | SHA256 |
+| --- | --- |
+| data/btc-turnover-20261003/raw-adjusted.json | 40d8396ab66e7550a5dbd725c0a5aaee8789f2e8bbb73b74017f8b6e0733575c |
+| data/btc-turnover-20261003/raw-raw.json | 891bb8a56244c2c9f57a5f2e0cd1a4876605509e8d4a04de8a1ac3ccc9c18225 |
+| data/btc-turnover-20261003/source.json | c5ca6afa23a87cd29d262bf0ac938946876032ccf6b64bad9f0dd79a4b1d93cd |
+| data/btc-turnover-20261003/daily.json | dd175183838fb123c6bed86adca795e20d28ecaacdc9797b15e3c18b04003040 |
+| data/btc-turnover-20261003/prepare-audit.json | f63745adaa097902fe4515ef48591a87861a9e942f5665f55150bd0bb4823cc7 |
+| data/btc-turnover-20261003/independent-audit.json | 2b9bf64c8a1d4967ec6442fe5824d036429de8511feac7d6bc7a9971cc1eac57 |
+| data/btc-valuation-20261002/coinmetrics.json | db696818880b69e8320e192c60eb5429a40db0ecf5845ece194a01b0524d4a61 |
+| data/btc-mining-20261002/btc-community.csv | 06495ff8e643432e6948b7b4686ce44fc106217287dabdc1b38351d9ddec46c3 |

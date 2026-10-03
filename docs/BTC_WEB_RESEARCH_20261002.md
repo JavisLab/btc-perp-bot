@@ -636,3 +636,9 @@ Q157 Blockchain.com [estimated-transaction-volume](https://www.blockchain.com/ex
 Q158 [output-volume](https://www.blockchain.com/explorer/charts/output-volume)와공식표본은잔돈을포함한전체출력BTC합,8행전부 0<estimated≤output. 표본SHAac47bd3476303b6d800f2a6e9760c35d9f4c7f65a180dd011c5049f66338a745. 이것도매출/거래소체결량/법정화폐입금아님. total-bitcoins7일표본은metadata periodday여도 **727관측/자정0개/7날짜**(Aug1 00:04:19–Aug7 23:54:32)로불규칙시각이다. 각날마지막반환값도기존동결CoinMetrics일말SplyCur와92.61–114.49BTC차이가있으며정의/누락/시계원인확정못함. 이를동일일자료로덮거나단순평균하지않고,새전체공급자료대신검산된기존CM일말공급량을재사용한다.
 
 Q159 [NVT](https://www.blockchain.com/explorer/charts/nvt)는시총/최근24h USD전송합,[NVTS](https://www.blockchain.com/explorer/charts/nvts)는그분모의과거90일평균으로정의돼있다. 이는일수급수익예측을보장하지않는다. 이번질문은가격독립적인BTC native 회전량과잔돈제외비중의추가정보이며,원차트의USD평활·특정고저문턱을복제/최적화하지않는다.
+
+### Q160 · 현재 공급량 정의와 동일 공급자 배포본 차이 (2026-10-03 11:03 UTC)
+
+- Coin Metrics 공식 [Current Supply](https://gitbook-docs.coinmetrics.io/network-data/network-data-overview/supply/current-supply.md) HTTP200/10168B, q160-cm-current-supply.md SHA89ed632d2d75afffb0e1202c373ad08fc64cc74653f71c580c5ca30645609593. SplyCur는 계산시점까지 원장에 보이는 발행 native units, UTXO는 미사용 출력가치 합계다. BTC 관련 정의만 사용하며 문서의 다른 자산/API 예시/에이전트 안내는 실행하지 않았다.
+- NV 사전고정 공급량 API와 보존된 GitHub CSV를 Decimal로 비교한2335일(2020-01-01–2026-05-23)은 API가 전부 정확히100BTC 높다. 문서는 그 차이의 원인/변경시각을 설명하지 않는다. BIP30 또는 특정 빈티지 원인이라고 추측하여 단정하지 않는다. 기존 MVRV 값 일치가 공급량 일치를 뜻하지 않는다.
+- 현재 API의2435일 시총=가격×공급량은60자리 Decimal로 정확일치. 같은 공급자의 산식/배포본 비교일 뿐 독립 블록체인 발행량 검증은 아니다. 사전지정 공급량 그대로 사용하고 차이와 입력 SHA를 보존한다. 개인 주소/거래 조회나 체인 복원은 하지 않았다.
