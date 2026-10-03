@@ -598,3 +598,41 @@ Q145의꼬리관계/중앙예측제한은안전자산/위험자산단정모두�
 - 독립CBOE9286원행/연구1958=FRED1958 Decimal값·329BTC ZIP·58056유효시간RV·696주피처·1908normalfits/HAC·30672일판단·9274폐형식수량·52281무거래·7056funding·16367events·61344일말/180CI. 최대계좌2e−11,fit2.2079560402e−13,feature4.7282001546e−15,RV8.3266726847e−17. 검산초회통과/차단121일치. 과거CS/AR/구계좌재실행없음.
 
 [모든72계좌·다운로드](btc-riskoff-research.html). 공식원시VIX CSV/정규화종가표와논문PDF는공개재배포안함;자체파생피처·계좌·검산·해시·출처만포함. 완전독립환경아님. 검산성공은전략성공아님.
+
+## Q150–159 · BTC 화폐 회전율·잔돈 제외 전송 가치의 근거와 반증
+
+Q150 실제 OpenAlex3검색 중2개는 정상, NVT 정밀검색은429여서 즉시 반복하지 않았다. Biais Equilibrium Bitcoin Pricing는 이미 Q74에서읽은76쪽과동일family라 재확보/독립근거추가하지않았다. 기존 DA_FLOW는비조정이동량7일/직전28일증가대조이며 이를승격하거나재실행하지않는다.
+
+### Q151 Kristoufek2015 · 장기 연관과 선행 신호는 다름
+
+What Are the Main Drivers of the Bitcoin Price? Evidence from Wavelet Coherence Analysis, DOI10.1371/journal.pone.0123923, [PLoS 공식15쪽](https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0123923&type=printable), SHA0ce7c1fa20b3af2a3ace51fe0dfed0574f8c18267336dbde1571280f0a6ebe28. PDF1–9/11–14 선별감사,전체원시/그림재현아님. 결과의기간2011-09-14–2014-02-28과방법/서론의Apr2014기술차이를보존한다.
+
+- CoinDesk다중거래소평균 BTCprice와Blockchain의추정전송량/건수·trade/exchange비율. 전체시계열을균등분포분위로변환하고 양방향Morlet적분/평활·AR1MonteCarlo유의영역·cone of influence를사용한다. 위상화살표가선행처럼보여도그당시가용정보만으로롤링예측·비용후계좌를구성한것이아니다.
+- 128일등긴척도의사용-가격관계와통화수량설해석을제시하지만 trade/exchange장기관계는5%유의하지않고뚜렷한leader없음. 거래가치는2012년초엔가격이선행하는음관계,나중엔부호/leader불안정;건수효과도2013년부터유의하지않음(본문7–9쪽). 짧은유의영역은noise가능성을저자도인정한다.
+- 평균거래크기를 price level로쓴것은상품CPI와다르고,온체인이동을모두실제상거래로간주할수없다. 거래소비율의가격거래/실물사용정의도현재Binance한곳/전체BTC네트워크와동일하지않다. 전체결론의기초가치주장을확정적일별매매부호로이식하지않는다.
+
+### Q152 Pagnotta2021 · 수량설의 구조적 반증
+
+Decentralizing Money: Bitcoin Prices and Blockchain Security, DOI10.1093/rfs/hhaa149. SMU링크200/212B는Incapsula도전HTML이지PDF아니다. 도전을우회하지않고별도의정상Imperial저자기관기록에서 [공식42쪽](https://spiral.imperial.ac.uk/bitstreams/6a91aade-a5c6-4060-aa0b-76e081190c61/download)을확보, SHA387239cf8f62410041c49b11e43c02dee5dd62be6efdf3ed2b239b8250c6f816. PDF1–4/8/21–25/29–30선별감사,전체증명/InternetAppendix보정재현아님. 초록메타2020과실제advanceaccess2021-01-20을구별한다.
+
+유한예산공격자/이익추구채굴자·이용자·내생보안의균형모형. 같은기초변수에도가격/보안복수균형이있고,발행감소의희소성효과와채굴보안유인감소가반대라가격반응은비단조적일수있다. 그림은부록보정과모형예시이지이후BTC비용후거래성과가아니다. 공급/전송비율하나가유일한내재가격이나매수바닥을결정한다는가정의반증이다. 첫반감기를2012Nov11로쓴각주18은기존검증블록의Nov28과다르므로이원문의날짜를사실입력으로채택하지않음.
+
+Q153 Baur/Dimpfl2021 DOI10.1007/s00181-020-01990-5는SpringerPDF요청200이지만유료previewHTML로redirect,초록만. PMC공개주소도200 reCAPTCHA문서로전문미확보·도전해결안함. 극단변동성/장기가치저장초록주장을별도수익근거로세지않는다.
+
+### Q154–155 공식 NVT와 조정 전송량 정의
+
+[CoinMetrics valuation](https://gitbook-docs.coinmetrics.io/network-data/network-data-overview/economics/valuation.md), [transfer value](https://gitbook-docs.coinmetrics.io/network-data/network-data-overview/transactions/transfer-value.md), [velocity](https://gitbook-docs.coinmetrics.io/network-data/network-data-overview/transactions/velocity.md) 실제공식문서200·응답보존. 앞2문서출력은말미가잘렸지만이번NVT/조정정의부분은온전히확보했다. 다른자산자료/샘플코드실행없음.
+
+- NVTAdj는native supply/adjusted transfer value로당일같은가격을쓰면가격이상쇄된다. 반면NVTAdj90은현재USD시총/과거90일USD전송가치평균이라가격경로가혼입된다. 두식/단순NVT평균/가격독립회전율을혼동하지않는다. VelCurAdj1yr는과거1년전송합/현재공급량,일비율과창이다르다.
+- CoinMetrics조정에는1시간이내재지출제외·출력정밀도잔돈추정·selfchurn·cold-wallet shuffle·과거앱noise제거가있다. 하루끝출력의1시간미래재사용확인과사후라벨·방법변경의가용성이문제다. 개인주소/지갑/체결/UTXO를조회하지않았으며공개집계정의만읽었다.
+- Q155 **무료BTC API8일표본** TxTfrValAdjNtv/TxTfrValNtv/NVTAdj/NVTAdj90각403,키/유료자료/우회·전체재수집없음. 기존무료BTC CSV6351행에는이열들이없고2026May24에서끝나므로최근기간을줄여대체하지않는다.
+
+### Q156–159 원저자·다른 공식 제공자의 실제 자료
+
+Q156 WillyWoo Introducing NVT Ratio (Bitcoin’s PE Ratio), use it to detect bubbles [원문](https://woobull.com/introducing-nvt-ratio-bitcoins-pe-ratio-use-it-to-detect-bubbles/),2017Oct5/Forbes초출Sep29, SHAe2d1396ddd0a5c2611b77f7f865efcc314ecc4df7ab56fb85fa7e1a2a91b7b33. BTC정의·기전·사례·각주를읽었다. 원저자도가격고점전에bubble예측은불가하고고점뒤consolidation/crash구별이라고한다. 정상범위·2011/13사례는수익전고정된전체계좌검증이아니다. 연결된Woobull chart는HTTPS526실패·TLS약화/우회안함. 따라서그차트평활을현재14일미래평균이라고직접확인했다는주장을하지않는다.
+
+Q157 Blockchain.com [estimated-transaction-volume](https://www.blockchain.com/explorer/charts/estimated-transaction-volume) 공식정의는잔돈반환을제외한BTC추정전송일합이다. 정확잔돈휴리스틱/방법변경/최초공표시계는명시돼있지않다. CoinMetrics와동일조정이아니고실제상거래·순매수·소유권이전식별이아니다. 2026Aug1–8표본8행00UTC/periodday/양수성공 SHAfb2d16f22dfcf34092e3aa7f941b2c41a3e943266cb8eae379ce6d477a3aa99e.
+
+Q158 [output-volume](https://www.blockchain.com/explorer/charts/output-volume)와공식표본은잔돈을포함한전체출력BTC합,8행전부 0<estimated≤output. 표본SHAac47bd3476303b6d800f2a6e9760c35d9f4c7f65a180dd011c5049f66338a745. 이것도매출/거래소체결량/법정화폐입금아님. total-bitcoins7일표본은metadata periodday여도 **727관측/자정0개/7날짜**(Aug1 00:04:19–Aug7 23:54:32)로불규칙시각이다. 각날마지막반환값도기존동결CoinMetrics일말SplyCur와92.61–114.49BTC차이가있으며정의/누락/시계원인확정못함. 이를동일일자료로덮거나단순평균하지않고,새전체공급자료대신검산된기존CM일말공급량을재사용한다.
+
+Q159 [NVT](https://www.blockchain.com/explorer/charts/nvt)는시총/최근24h USD전송합,[NVTS](https://www.blockchain.com/explorer/charts/nvts)는그분모의과거90일평균으로정의돼있다. 이는일수급수익예측을보장하지않는다. 이번질문은가격독립적인BTC native 회전량과잔돈제외비중의추가정보이며,원차트의USD평활·특정고저문턱을복제/최적화하지않는다.
