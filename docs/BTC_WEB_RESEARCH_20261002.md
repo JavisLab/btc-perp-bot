@@ -447,3 +447,16 @@ USD 목표 공통1459/242일 MSE INFO .0007543828373/.0006180906951 vs PRICE .00
 - **Q113 Sieber2021, Presence of price clustering and psychological barriers in Bitcoin market**, [공식 DOI](https://doi.org/10.36007/acta.2021.10.2.8), DOI가 출판사 HTTP PDF로 연결,11p SHA `71dd8b9c5d1397064222401863b531d3b8a8109ea6ab607e04b8d7f1368f8520`. PDF1–8 방법/결과/결론 앞부분 읽음. Bitstamp/TradingView2020Nov1–2021Nov1 4h 극값끝자리의 χ²/KS분포검사. **2191관측 설명 vs 빈도표2132관측**, 끝자리 소수점 처리 불명확, χ²10범주에서 본문df10이라고하나통상df9, 독립연속분포KS를이산/연속시간 관측에 그대로 쓰는 한계가 있다. 고점9/저점0의 많은 출현을 장벽으로 해석하지만 장벽 이후 미래수익·돌파체결·손익을 검정한 것이 아니다. 사후완성고저를 봉중 매매시점으로 쓰면 미래정보가 된다.
 
 따라서 군집 존재만으로 임의 $1000 단위·시각·문턱을 택해 수익실험을 강행하지 않는다. 이 세 원문은 현재 **순수익 전략을 새로 고정할 근거 부족**으로 기록하고, 별도 경제 질문인 BTC 장기보유 공급의 이동/휴면 관련 실제 문헌으로 조사를 넓힌다. 후보 접근·반증은 연구 전체 종료 사유가 아니다.
+
+
+## Q114–118 · 휴면 코호트·집계 출처·실제 배포 지연 (2026-10-03)
+
+Q114 실제 공개검색에서 기존 Q21/Q71 Predictability 및 Q57 supply-demand framework의 중복을 확인했다. 다시 새 근거로 세지 않았다. Q115 demand drivers 기관PDF는45초 timeout으로 전문 미확보다. Q116 CoinMetrics active supply 공식정의는 확인했지만 BTC SplyAct1yr/SplyAct30d 공개 probe403으로 데이터 확보 없음; 권한 우회/유료자료 없음. 기존 CM community CSV에는 새 연령 필드가 없다.
+
+Q117 Smith2018 평균 dormancy 원정의(arxiv1712.10287v2)와 Q118 Llanos2026 공개BTC집계(arxiv2607.03124v1/Zenodo21156871)를 선별 읽었다. D/B는 이동한 코호트의 평균 연령이며 전체재고/이용자/실제 매도량이 아니다. 원문 장기 가격그림·선정 하위표본의 동시 상관은 선행 순익 근거가 아니다. Q118 raw spent value는 change·자기전송 포함, Smith의 추정 경제거래량과 다른 분모다. 외부 코드는 텍스트만 읽고 실행하지 않았다. 모든자료는 공개 일별집계이고 개별거래·지갑·주소·노드 조회 없음.
+
+정확한 OBM commit ab99e2609a257dfc0e1e4c7ec21708930909ec19에서 CDD/이동량/dormancy/블록/거래 5CSV를 확보했다. 초기 공개 tar.gz는 Zenodo MD5 일치, 5CSV의 현재와 중복6386/6388행 개정0. GitHub release링크는404임을 구별했다. 하지만 release_version 문자열0.1.0은 rolling CSV의 빈티지 증명이 아니다. 최신5개commit 및 최초July3배포 모두 종료관측이 게시일−5일로, D+2가용을 재사용하지 않고 **D+6** 및 추가7일로 고정한다. 2026July3 이전 CSV는 당시 존재했다고 주장하지 않는 재구성 탐색이다.
+
+기존 Blockchain.com BTC 일별거래2460공통일 중2438정확일치,22일은 인접11쌍의 이틀합 일치. 경계시계 차이와 양립하지만 원인을 증명하지 못하여 해당22일과 외부누락일은 이번35일피처의 공통무효로 사전제외한다. CM BlkCnt는2700일 동일이지만 CM TxCnt는Coinbase제외를 반영해도2699일 불일치, 원인 미해결·정상화문서403우회 없음. CM거래량을 새분모로 섞지 않는다. OBM자체2019이후2828일 ratio오차≤5.12e−13이나 이는 같은 indexer의 항등식 검사일뿐 독립체인검증이 아니다. 초기2009작은분모 오차1.85e−9도 보존하며 이번2020이후범위와 구별한다.
+
+새 자체 질문은 **이동 물량의 연령 변화가 이동량·가격을 넘어 다음 주 BTC 수익에 주는 정보**다. 규칙/대조/35일창·공개시계·무효정책·비용·기간·기각기준은 [사전명세](EXPERIMENT_BTC_DORMANCY_20261003.md)에 성과 계산 전에 고정한다. 현재 새 모델/성과 미계산. [OBM](https://github.com/diegorllanos/open-bitcoin-metrics), [원문](https://arxiv.org/abs/2607.03124), [고정배포](https://doi.org/10.5281/zenodo.21156871)의 데이터/문서 CC BY4.0 출처를 유지한다.
