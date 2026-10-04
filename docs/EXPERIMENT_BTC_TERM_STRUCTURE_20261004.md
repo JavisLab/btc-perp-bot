@@ -50,3 +50,9 @@ INFO override는 β_K<0, |μ_INFO|>SE_INFO+ln1p(.0013), δ=μ_INFO−μ_FUND, |�
 ## 순서
 
 이 명세+Q191–203노트 커밋→신규만기 raw수집·독립Decimal입력감사/SHAs고정→합성인과·계약선택/만기/funding실제ms·HAC/purge/단위/대조/양방향검사·구현커밋→최초72계좌→독립원자료피처/정규방정식HAC/계좌원장·수량·비용·펀딩·마진·선정·CI검산→소켓차단byte재현→승인 연구Pages만 최소공개/실제값·다운로드→다른새근거조사계속. 단일 실험 실패나 게시완료는 전체목표 완료/종료 사유가 아니다.
+
+## 입력 동결·최초 성과 전 구현 증거
+
+사전명세 aa65557 이후공식26계약/173ZIP+checksum,108842시간 중 valid108409/invalid433. 별도Decimal원시재구성 exact,고정current-list 누락0. canonical SHA5a398450cb7522e2ae8d6ead313ccfb6195f152f8e732eef08d6f61999da30c1,gzip73447f59f4be8119cf1efe42021ed3340bddd09eed5fb7a76a50df4d9bd536c8. prepare-audit/independent-audit receipt는data/btc-term-20261004. 초기상대출력path 오류로그보존후절대path정규화만수정,수집자료·규칙불변.
+
+20합성검사 통과. 기존market funding row[0]은명목버킷,row[3]은실제ms시각임을3표본과offset으로확인;시그널은row[3]으로그룹·cutoff 적용하고현재정산을배제. 회계는기존모형의nominalhour+실제observed_time 보존. 성과전β통계는공통label-valid쌍으로,coverage분모는기간안label종료유효판단주로 고정. 발동주는기간내1일이상영향을주는직전월요일까지포함. 저장TP_TREND와순수선물baseline항등만비교하고옛계좌를재실행하지않는다.
