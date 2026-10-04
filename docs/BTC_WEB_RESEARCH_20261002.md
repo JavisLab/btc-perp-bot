@@ -897,3 +897,25 @@ Q307 Binance공식public S3 `data/futures/cm/monthly/fundingRate/BTCUSD_PERP/`�
 - **Q318 Giagkiozis/Said2024**, [Reconciling Open Interest with Traded Volume in Perpetual Swaps](https://ledger.pitt.edu/ojs/ledger/article/download/325/263),15p SHA0cab5531c90112c43390126622e9cd9d8c3f1f86b680c37b6684ceae233ac552. pp1–6/12–13선별읽음,전체표·tick원자료재현아님. 역선물은BTC담보/손익,선형은quote담보/손익설명;BinanceBTCUSD/USDT둘명시. 2023Jan와Jul–Sep 7거래소의**proprietary**tick/OI/청산수집이며해당원자료요청/수집안함. |ΔOI|≤같은단위거래량의회계경계와timestamp/지연문제를진단,과거전체기간기관선정·설명이다. 위반만으로OI조작/청산누락중하나를식별못하며원문도명시한다. 사후event선택·거래소순위는미래방향/cost계좌아님. 기존OI실패를수정할근거로사용안함.
 - **Q312 Haghani/White2026**, SSRN7059779메타/초록SHA9f117ad67c18c1cb39ef015492e5dbe42eb147a6e60047a77664175571533c58. Q313SSRN403이지만Q317공개저자검색→[Q320저자정상원문HTML](https://elmwealth.com/perpetual-futures/)200/SHAfa59ce84855fb913c447ceb94ad875e6794724ab630851b43d57dda1a8f8f673확보. 현재본문공식·기전/2020–25집계표까지읽음,아래평가/각주전부·PDF는아직읽지않음. 표의연율/현재cap/복리예시는고정과거carry·다음기간예측·비용계좌근거아님. Q31기존논문을인용하며crowding설명은투기적해석이다. closed메타/SSRN403을전체원문미확보로단정하지않음. 글의다른자산역사는신규매매연구로확대하지않는다.
 - 새 **CD72**는같은BTC coin-vsUSDT계약settledfunding차이의조건부음의예측이라는자체반증이다. coin시장실체결/헤지차익이아니라BTCUSDT순수perp만. 같은거래소여도담보인과효과식별아님. 사전명세EXPERIMENT_BTC_COLLATERAL_20261004.md에규칙·공통학습·현재F와staleD분리·실제ms/결측·기간·비용/양방향·고정관문을동결. 현재계수·계좌계산0.
+
+### CD_INFO 담보계약별 펀딩 차이72 · 기각·독립검산
+
+사전5a49448→원시80月/25합성검사·해시7c67acf 뒤첫성과. canonical3e1d84cab09c870ffab32a0a2b6ea4a4b1bb866df4ad0bc6878ea608e091cf22/gzip7abda77646df8ced24bb87d12484d4651348b3899d8b072f0cdc588f189cda3c. 6,636rate·전부Regular,2020Jan–Jul7빈月/2026Jun30 08UTC 1bucket누락/중복0/실제nominal편차0..94ms보존. 초기local경로/state갱신오류후첫2응답재사용·중복network0. 初2요청정확instant별도로그없음/최종session77요청min2.0000746초,공식Q3191응답재사용. 현재원자료빈티지가최초발표증거아님.
+
+INFO主−17.8645753499%/DD32.1005774996%/vol18.3998825883%/Sharpe−.1753994169/60episode,최근+2.4957188520%/DD10.4303560706%/vol16.8750142622%/Sharpe.3028139204/7episode. 펀딩−40.2151565395/+5.6523738202USDT. 주연2022−18.5626557267,2023−9.4102547167,2024+13.9226220754,2025−2.2722514832%. 기존절대관문·지연·정보추가관문미달로**기각**.
+
+FUND2.4033205008/−2.5030812367,COIN−11.2493892962/−4.3151874449,PRICE−21.3654826175/−2.4309076735,INV−3.1854875366/+21.3479468970,TREND23.8828734947/+4.6283905699%. INV최근수익은사후승격안함. INFOcost2−20.5250204487/+1.4208954234,delay1−19.4478082601/+1.8593006040,delay24−29.4824579463/−5.9491121852,risk10−6.6245688118/−.3307761302,lag7+23.8828734947/+2.0360193596%;모든조건보존/더유리한lag7로주규칙교체안함.
+
+common208/33주(coverage100/97.0588235294%),MSE INFO.0053228038801/.0045238751461 vsFUND.0051430304221/.0044836196595,PRICE.0049069988897/.0044403856018으로둘다악화. βDmedian−.026685102598/−.175464874659,음147/208·24/33,발동44週308日/4週22日(최근5週미달),최근1週자료누락7日은모형무효7日과중복. 검산통과≠전략성공.
+
+독립80新원시응답/696피처·예측/2084정규방정식HAC/30672日판단/14816폐형식qty/46516무거래/173826funding/188714event/61344日말/180CI/선정. max계좌2e−11·fit2.8754776337791554e−14·feature2.749536709423239e−16. 옛329시장/80perp원시감사영수증SHA재사용,무변경전체재검사안함. pureBTCUSDTperp체결만·코인계약펀딩이중회계0. 새차단재현/실제공개확인영수증은별도단계.
+
+## Q320·Q322–332 후속 · 근거 반복을 제외하고 다음 정보 탐색
+
+- Q320저자HTML의나머지비용/목적/각주까지읽음. 코인담보inverse의cap이더넓다는각주와8h→1h변화가능성명시;이를전체역사고정공식으로대체안함. 'minimum funding'서술은앞의negativefunding허용식과구별해야하며0.01%는항상양수하한아닌중심값. 저자도기전스토리를추측/가설이라고명시하고그사이트문구상실제·가상Elm운용성과아님. Q31인용재다운로드없음. PDF는같은글normalURL있으나HTML로본문확보했으므로재수집안함.
+- Q322–324실제검색:Q284Loi/Q295tradingpatterns/Q14조건부왜도/Q275종합예측/Q278withdrawal/기존intraday·다자산coskew중복·범위밖제외. 새관측을확보하지않고창/부호만바꾸어재실험안함.
+- **Q329 Saleemi2021**, [공식PDF](https://journalfmv.com/resources/revista/2021/1/FMV___2021___1___1COVID.pdf),11p SHAaa6e7d1563a5b70a03859164c8e26671228299adea3be2ab64c21069f2093ed0,pp1/3–9선별읽음. ES=2|Close−(High+Low)/2|/midpoint는실제bid/ask체결spread가아닌당일범위위치proxy. CBML도전일range와당일high/low/close차이,가정상informedbuy/sell확률. BR_t~SP_t+SP_(t−1)전체회귀·통제없음,당기SP를미래피처로쓸수없음. pre2014Mar10–2020Mar10,post문단은2014Mar10–2021Apr21로써진기간모순을임의2020으로고치지않음. Table3lagES p=.0333이나모형F p=.09675/adjR².006602,lagCBML p=.4162. 비용·funding·OOS계좌없음. 기존LQ위험보상/단순proxy교체로재시험하지않음.
+- Q326/327광역달러자금검색은비BTC레포/DeFi/금융자산논문다수로직접BTC근거없음. Q330/331Bitcoin제목한정후Q72unchained/Q57supply/기존security중복,새 `Flight to Bitcoin`SSRN3278469,Derivatives on Spot10.1287/mnsc.2023.4900,MoneySupply10.3934/qfe.2023012메타를확인. 아직원문/새거래가설미확정. BTC매매정보후보일뿐다른자산전략으로확대안함.
+- Q328 [NYFed SOFR공식정의](https://www.newyorkfed.org/markets/reference-rates/sofr)200/SHA04c8ffe35d5a7d9d75b60729489a18a2cdf417f4e535039b1ecbbfa62109bdba:국채담보overnight현금조달비용,volumeweightedmedian,매영업일약08ET공표. Q332공식public2026Aug24–31소량JSON200/SHA c7c66ce1bd35a20c0eee7f8566dd408ab96776d509f26835d4a1a222d1624b40. effectiveDate와실제publication/revision을구분해야하며전체historical빈티지확인·수익계산없음. 새경제질문으로성립하는지공식공표정책·원문부터후속감사.
+
+CD새121파일소켓차단byte일치확인. lag7의주기간계좌가TREND와같아도주override1週/7日이므로무발동0주라고단정안함(대상노출/회계항등). 최근lag7도1週7日만발동. 이를새정보성공으로승격하지않음.
