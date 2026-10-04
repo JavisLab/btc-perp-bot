@@ -47,3 +47,7 @@
 새daily canonical **b7bcc90d73a29cf1f2d84dcd752025a6034d356ab337d7ce48eab82f09869d5f**, gzip9529f16033f2229e9ebaff6333e9bb0a4d8becab180eb737a8a834b9b065add7. 80공식perp ZIP/58,440시간,2435일중2431유효·이전4무효일 유지. 신규zero execution시간1730145600000. 별도Decimal원시집계/시계/원본필드/CF일합·valid mask전수일치,출력float대exactDecimal비교오차0.
 
 초기float합산의작은signed Quote 상쇄오차4.72e−14(상대)가3e−14 내부검산한계를넘었다. 검산허용치를넓히지않고집계를Decimal60자리로바꾸어동일경제식의정밀도를수정했다. 초기daily/prepare를data하위initial-float-cancellation에보존,초기·최종로그workspace/tmp/btc-pressure-data*에보존. 결과/모형학습전 수정이며원시자료·mask·가설·관문불변.
+
+### 성과 전 구현 검증
+
+19개합성검사 통과:시간별상쇄G vs 일N/규모·부호불변·0/1경계,정확22RV·29flow·현재일제외분모,7일flow만지연,미래flow/목표교란불변,missing·0RV·G<N·미완료시계,365달력/300공통학습·미래라벨제외,무제약음수계수·반대위험,rank/overflow/floor,방향불변·BS항상0·보유유지,롱/숏실제funding부호·원시시각·종료비용·수량최소·고정지연·무체결봉·롱low/숏high담보. 기존공통log-fit함수만재사용하며요일모형/옛계좌를실행하지않는다. 구현커밋뒤새72계좌첫역사성과를계산한다.
