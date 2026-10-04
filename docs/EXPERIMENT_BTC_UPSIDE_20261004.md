@@ -38,3 +38,7 @@ INFO는β_A>0,|μ_INFO|>SE_INFO+ln1p(.0013),δ=μ_INFO−μ_COUNT,|δ|>1e−12,�
 절대관문 main수익>52.838713%/DD≤13.561952%/vol≤13.343621%/Sharpe≥.8/양수年≥3/보유episode≥20;recent수익>4.628391%/DD≤10.450946%/vol≤16.520409%;margin0양기간。INFO base/cost2/delay1/delay24/data_delay7각양기간순익>0。COUNT/SEMI/PRICE/TREND각각양기간순익초과,DD≤COUNT양기간,commonMSE<COUNT&PRICE양기간。commonforecast≥52main/20recent·coverage≥80%,β_A중앙>0양기간,INFOoverride≥20週main/5週recent. 전부통과해도역사후보일뿐미사용/전진·실행증거아님. 대조승격·창/주기/부호·기준완화없음.
 
 모든실패/대조/계수/무효/연도/비용·funding/롱숏/노출·발동저장,기본일수익및4대조차이7/14/28일원형block2000회95%CI。선정편향없어진OOS라고안함. 명세커밋→합성인과/同rRVQ異A·단위·0/누락·7日delay·fundingactualms·purge/calendarHAC·양방향검사/입력SHA고정구현커밋→최초72→독립이미감사된원시hours에서Decimal피처·다른OLS/HAC·원장수량/일말·선정/CI→socket차단byte재현→승인Pages새결과만최소공개/실제값·다운로드→다음근거. MI수집과독립적으로수행하고어느단일완료/45분도전체종료사유아님.
+
+## 최초 성과 전 구현 동결
+
+사전명세861cf94뒤22합성검사통과. 기존공식80개월원시의독립영수증SHA67d0cf710240cfd75409d31300fcb35f4c1502c2289bb1657f7abe55e9fd7250를재사용,58440시간중새명세양수volume/정확hour資格58439·무효1(既知1730145600000),전체옛ZIP재감사없음. 새원자료유효성receipt data/btc-upside-20261004/input-audit.json. 원문은1h/168개분해와동일하지않으며미래상태/전체표본threshold를사용하지않았다. 이단계까지실제계수/UV계좌성과0。
