@@ -833,3 +833,18 @@ INFO 주·최근 cost2+11.6194800431/+.7266329057%,delay1+11.5568379284/+3.21364
 독립700원자료분선택+696피처·696예측주·2,328정규방정식/HAC·30,672일판단·15,354폐형식수량·45,978무거래·173,235funding·188,661event·61,344일말자산·180CI/선정검사. 최대계좌差2e−11USDT/모형2.8754776337791554e−14/피처2.749536709423239e−16. 원329시장/80개월BTC perp 아카이브는 고정SHA 영수증 재사용, 무변경 전체 재감사0. 새121파일 socket차단 byte동일. 검산 통과는 전략 성공이 아니며 반복 개발 이력은 미사용 OOS가 아니다.
 
 [MI72 전체 결과](btc-margin-research.html) · 공개는 변경된7파일 및 새결과 묶음에 한정. 논문PDF·개인정보·비밀 재배포 없음. 기존198계좌/273파일 보존,외부누적2,094조건은 독립전략 수가 아니다. 실거래/상시 모의서비스 미시작, 다음 새 BTC 근거 조사 계속.
+
+
+## Q287–303 · BTC 거래건수·정보도착의 독립 질문 (2026-10-04)
+
+Q287Wiley정식전문403/Q288Crossref초록200(SHA070987faf90eb1839c0693c0a71130fe012d2578a1fe69c8b3caa7ec97fdd899)/Q289다른판본검색. *Return trajectory and the forecastability of bitcoin returns*10.1111/fire.12420은TDABM/RF/logit의방향정확도초록만확인. 창/분할/비용/원문미확보,기존PATH창을바꿔성공주장하지않음. Q290가격발견검색은당기리더십후보, Q294tradingactivity10.1016/j.jempfin.2021.03.001은대학서지landing뿐/초록full미확보. ETF/타자산결과로연구범위확대0.
+
+Q291–293 및Q296–300실제공개학술검색:Q103PLOS0255515,Q22COT,Q72unchained,Q1222025MDH는이미감사한중복으로표시,재다운로드0. Q295Trading patterns10.1080/1351847X.2023.2241883 Cardiff정식PDF403. 초록의1%사용자95%거래량/사용자cluster를집계count의기관신원증거로쓰지않음;개별사용자/주소/trade자료수집0. Q298COVID정보거래MDPI403/우회0. 무관한타자산·불법시장·개인자료검색결과는후속연구배제.
+
+**Q301 Barjašić/Antulov-Fantulin2021**, [Time-Varying Volatility in Bitcoin Market and Information Flow at Minute-Level Frequency](https://www.frontiersin.org/journals/physics/articles/10.3389/fphy.2021.644102/pdf),12p SHA `548709f44f935acf4d43ae2e22ce06c784408623bb758b68ad82145e5d677897`. pp1–8 서론/자료/방법/주요검증/논의감사(뒤부록全재현/그림픽셀검사아님). 2019Apr18–May30 Bitfinex1분midquote·VWAP,58,000관측(50,000fit/8,000test). 전1분volume/spread/tweet를GARCH외생입력,raw비정규화·최대상관lead1분. transferentropy는예측방향의통계관계이지구조인과아님;가장큰방향은squaredreturn→volume. R²/PCC와NLLH/LR,100개의1000train/1000test blockbootstrap KS,추가2019두구간검사. 본문cGARCH KS개선주장과그림7/8caption의cGARCH유의없음은표현상불일치이며코드/그림전체숫자미재현. 비용·funding·방향계좌없고자료는저자연락요청형;연락/비공개원자료요구안함. count나우리일별HAR를직접검증한논문이라고하지않는다.
+
+**Q299/302 Schnaubelt·Rende·Krauss2019**, [Testing Stylized Facts of Bitcoin Limit Order Books](https://open.fau.de/bitstreams/3b735bb3-e3a8-4235-be75-38f9acf925ee/download),30p SHA `a072f79d539a76c4c8f1cff593bb1df0e39a8abcc04cb21b17994d7dd4780fe9`. 舊OPUS URL은정상200HTML이전landing이므로PDF확보라고하지않았고citation_pdf_url의정식公開링크를따라확보했다. pp1–3/10/24–25 trade통계정의·주요관찰·결론읽음/모든LOB표미재현. 거래수·총량·평균크기를분리하고tick가격음의자기상관·크기양의상관/약10%일중건수주기·다수작은거래관찰. 원문도낮은빈도수익무상관·설명통계범위를명시한다. 큰거래가낮은유동성비용때나오는것은내생시점선정이며'큰거래=양의미래수익'이아님. count는matching prints로실제인원/주문/정보사건수아님. 개별trade/LOB수집0.
+
+Q303 *Bitcoin Price Risk—A Durations Perspective*10.3390/jrfm13070157의EconStor정식landing200,PDF링크만확인(아직전문미확보/미독). 다음후보자료로보존.
+
+현재새TC72질문은**동일위험·총거래대금·순/절대flow에서체결건수의다음날위험추가정보**다. 기존raw에서새경제적구성정보를분리하며기존TP/PS/VI창을변경하지않는다. 동일Q에異N합성반례/신규count만7일늦추는clock대조·FLOW/COUNT/HAR/INV/TREND·pureperp비용·엄격기각을성과전에별도명세로고정한다. 사후최대수익/부호교체없음,주문/실서비스없음.
