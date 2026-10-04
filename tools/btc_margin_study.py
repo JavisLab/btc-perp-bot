@@ -8,7 +8,7 @@ from btc_persistence_study import Market,PERIODS
 import btc_target_ledger as ledger
 WEEK=7*DAY;FIRST=ms('2020-01-06');END=ms('2026-09-01');ZERO_HOUR=1730145600000
 IDS=('MI_INFO','MI_LONG','MI_SHORT','MI_PRICE','MI_INV','MI_TREND');MODELS=IDS[:4];CONTROLS=('MI_LONG','MI_SHORT','MI_PRICE','MI_TREND');COLS={'MI_INFO':('r7','r28','funding','long_growth','short_growth'),'MI_LONG':('r7','r28','funding','long_growth'),'MI_SHORT':('r7','r28','funding','short_growth'),'MI_PRICE':('r7','r28','funding')};FEATURE_COLS=('r7','r28','funding','long_growth','short_growth');SCENARIOS={'base':{},'cost_x2':{'multiplier':2},'delay1':{'delay':1},'delay24':{'delay':24},'risk10':{'risk_target':.1},'data_delay7':{'margin_lag':7}};GATE=math.log1p(.0013);ledger.LABELS.update({n:n for n in IDS})
-DATA_SHA='UNFROZEN';GZIP_SHA='UNFROZEN';MINUTE=60000
+DATA_SHA='ca8297231a0c8863a8eb278acc27aed859f0acfd5672dac69b23c153a3fbcdfd';GZIP_SHA='7ed10bb3546ca22e7ed9a07e199a8b01d496b76f1cd7683dd2ec2a7eb236ed6d';MINUTE=60000
 def inputs():
  p=ROOT/'data/btc-margin-20261004';b=(p/'snapshots.json.gz').read_bytes();assert sha(b)==GZIP_SHA and sha(gzip.decompress(b))==DATA_SHA;a=read(p/'independent-audit.json');assert a['canonical_sha256']==DATA_SHA and a['raw_rows_exact'] and a['selection_exact_last_minute'];return read(p/'snapshots.json.gz')['snapshots']
 

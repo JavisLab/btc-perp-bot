@@ -9,7 +9,7 @@ import numpy as np
 from btc_perp_bot.research.archive import DAY,HOUR,ms,utc,canonical,sha
 ROOT=Path(__file__).resolve().parents[1];D=lambda x:Decimal(str(x));KEYS=('BS','BP');getcontext().prec=60;WEEK=7*DAY
 IDS=('MI_INFO','MI_LONG','MI_SHORT','MI_PRICE','MI_INV','MI_TREND');CONTROLS=('MI_LONG','MI_SHORT','MI_PRICE','MI_TREND');COLS={'MI_INFO':('r7','r28','funding','long_growth','short_growth'),'MI_LONG':('r7','r28','funding','long_growth'),'MI_SHORT':('r7','r28','funding','short_growth'),'MI_PRICE':('r7','r28','funding')}
-DATA_SHA='UNFROZEN';PRESSURE_SHA='b7bcc90d73a29cf1f2d84dcd752025a6034d356ab337d7ce48eab82f09869d5f';PERIODS={'main':(ms('2022-01-01'),ms('2026-01-01')),'recent':(ms('2026-01-01'),ms('2026-09-01'))}
+DATA_SHA='ca8297231a0c8863a8eb278acc27aed859f0acfd5672dac69b23c153a3fbcdfd';PRESSURE_SHA='b7bcc90d73a29cf1f2d84dcd752025a6034d356ab337d7ce48eab82f09869d5f';PERIODS={'main':(ms('2022-01-01'),ms('2026-01-01')),'recent':(ms('2026-01-01'),ms('2026-09-01'))}
 def read(p):return json.loads(gzip.decompress(p.read_bytes())) if p.suffix=='.gz' else json.loads(p.read_text())
 
 def independent_fit(X,y,dates,current,constrain):
