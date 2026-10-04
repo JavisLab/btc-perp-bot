@@ -919,3 +919,11 @@ common208/33주(coverage100/97.0588235294%),MSE INFO.0053228038801/.004523875146
 - Q328 [NYFed SOFR공식정의](https://www.newyorkfed.org/markets/reference-rates/sofr)200/SHA04c8ffe35d5a7d9d75b60729489a18a2cdf417f4e535039b1ecbbfa62109bdba:국채담보overnight현금조달비용,volumeweightedmedian,매영업일약08ET공표. Q332공식public2026Aug24–31소량JSON200/SHA c7c66ce1bd35a20c0eee7f8566dd408ab96776d509f26835d4a1a222d1624b40. effectiveDate와실제publication/revision을구분해야하며전체historical빈티지확인·수익계산없음. 새경제질문으로성립하는지공식공표정책·원문부터후속감사.
 
 CD새121파일소켓차단byte일치확인. lag7의주기간계좌가TREND와같아도주override1週/7日이므로무발동0주라고단정안함(대상노출/회계항등). 최근lag7도1週7日만발동. 이를새정보성공으로승격하지않음.
+
+## Q333–343 · BTC 외부 자금조달 압력의 별도 입력과 발표시계
+
+- Q337 SMU Flight to Bitcoin 공개링크200은212B IncapsulaHTML,PDF아님/우회0. Q334/Q342는Yu/Zhang/SSRN3278469metadata만·초록없음. 자료실패를연구전체장애로보지않음.
+- **Q338 Augustin/Rubtsov/Shin2022Jun30저자판**, [공식EconStor52p](https://www.econstor.eu/bitstream/10419/262362/1/1813797528.pdf), SHA dda489a98dbda20dc87f52eedf697fb60f5525430e22225773225827a5619dd1. 최종ManagementScience10.1287/mnsc.2023.4900과같은family. PDF1–6/10–12/14–15/26–27/29–31선별읽음,전체표/부록재현아님. 2016Jul–2018Dec22거래소/10BTC통화/46쌍,2017futures도입DiD로동조·유동성·vol설명. anticipation기간제거·90d중첩/빈도별robustness·반대가설/식별설명있어단순당기무통제회귀와구별한다. 하지만월CHL의η_(t+1)고저가·전체비교·시장rank는미래BTCdirection계좌아님. 데이터Kaiko/CryptoCompare·개별cross-exchangeflow및다른자산대조는수집안함. short제약/transferclock·segmentation완화기전은동기일뿐SOFR금리차의예측부호증명아님.
+- Q333NYFed정책SHA8af5b769cb46a6d38991fdfa975506e00782fbf82816481ca2370bd58d2c2359:EFFR09ET전영업일/Fedholiday다음영업일,SOFR08ET/SIFMAfullclosure. 14:30ET같은날1bp초과정정(SOFRsame-dayonly/EFFR비상예외),별도분기지연수정통계와일별공표데이터구별. 주말관측시점=가용시각으로삼지않음.
+- Q339/340공식2019Dec16–22 SOFR/EFFR各5행과Q332/336최근各6행정상. 연율% percentRate와effectiveDate/revisionIndicator확인. Q341APIHTML은renderer이고그안에서정상명시한 [Q343YAML](https://markets.newyorkfed.org/static/docs/markets-api.yml)200/SHA5dbb331d86b91bfc115be9b5fe9c46735833a4f7280d33e4327e8acf7ad30d2b을별도로확보했다. 문서percent필드와실제percentRate이름차이를기록,공식schema만맹신하지않음. 비밀/APIkey/금융계좌접근없음.
+- 새 **DF72**는SOFR−EFFR시장조달차이가은행금리수준·BTC자체F·가격이상음의추가정보인지묻는다. 기존FOMC정책변경M_RATE/코인vsUSDT정산차이CD와정보원·경제질문을구별한다. **BTC만거래**,거시reference rates외다른상품가격/채권거래없음. 관측주완료뒤7日buffer와추가7,양쪽날짜집합완전일치/3..5일·불명footnote무효,전체공통학습·원장·고정관문은EXPERIMENT_BTC_DOLLAR_FUNDING_20261004.md에성과전동결. 현재새전체history/피처·fit·성과0. currentvintage·buffer가완전PIT를증명하지않으며기전은자체가설이다.
