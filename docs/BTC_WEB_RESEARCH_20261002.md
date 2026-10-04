@@ -927,3 +927,23 @@ CD새121파일소켓차단byte일치확인. lag7의주기간계좌가TREND와같
 - Q333NYFed정책SHA8af5b769cb46a6d38991fdfa975506e00782fbf82816481ca2370bd58d2c2359:EFFR09ET전영업일/Fedholiday다음영업일,SOFR08ET/SIFMAfullclosure. 14:30ET같은날1bp초과정정(SOFRsame-dayonly/EFFR비상예외),별도분기지연수정통계와일별공표데이터구별. 주말관측시점=가용시각으로삼지않음.
 - Q339/340공식2019Dec16–22 SOFR/EFFR各5행과Q332/336최근各6행정상. 연율% percentRate와effectiveDate/revisionIndicator확인. Q341APIHTML은renderer이고그안에서정상명시한 [Q343YAML](https://markets.newyorkfed.org/static/docs/markets-api.yml)200/SHA5dbb331d86b91bfc115be9b5fe9c46735833a4f7280d33e4327e8acf7ad30d2b을별도로확보했다. 문서percent필드와실제percentRate이름차이를기록,공식schema만맹신하지않음. 비밀/APIkey/금융계좌접근없음.
 - 새 **DF72**는SOFR−EFFR시장조달차이가은행금리수준·BTC자체F·가격이상음의추가정보인지묻는다. 기존FOMC정책변경M_RATE/코인vsUSDT정산차이CD와정보원·경제질문을구별한다. **BTC만거래**,거시reference rates외다른상품가격/채권거래없음. 관측주완료뒤7日buffer와추가7,양쪽날짜집합완전일치/3..5일·불명footnote무효,전체공통학습·원장·고정관문은EXPERIMENT_BTC_DOLLAR_FUNDING_20261004.md에성과전동결. 현재새전체history/피처·fit·성과0. currentvintage·buffer가완전PIT를증명하지않으며기전은자체가설이다.
+
+### DF_INFO 外部달러 조달 압력72 · 기각·독립검산·차단완료
+
+사전bf1ca9f→162원응답/25인과검사·해시30286cc→첫72→독립→121소켓byte동일. 输入canonical e5070c9d570d7af17c093b5a4dbbc075e07b90cbb816c4ad44baf3243d3e2a33/gzip5ab1df19eddd1f92480b4cd629c487c375851a6a3e65f4b1989a4d25f59617d4. SOFR1685/EFFR1695일/기존4probe22행fullfield일치/162req최소2.000067949초. 10EFFR-only날짜와불명footnote1행씩을사전정책대로보존/주전체무효. 동결명세의무효행0은**문서오기**로각1행정정,actual코드·input·mask·성과는변경0. SOFR2021Aug5footnote2/EFFR2023Jul25footnote1,revisionIndicator는둘다빈값. 현재vintage≠당시firstpublication.
+
+- main INFO return_pct=22.5786674308, max_drawdown_pct=22.7578276215, realized_vol_pct=17.019105757, sharpe=0.383731290247, funding=-72.583705818, round_trips=49. 年 2022:-0.852126201637%, 2023:9.73491698616%, 2024:13.5098912087%, 2025:-0.744874325944%
+  대조return% DF_BANK:28.4637829891, DF_GAP:24.2303432422, DF_PRICE:-4.34000638721, DF_INV:17.8224723592, DF_TREND:23.8828734947; 主조건% cost_x2:14.7462159783, delay1:18.7521683839, delay24:9.34647017708, risk10:12.3086570146, data_delay7:32.0533658623
+  공통202/208週 coverage97.1153846154%; MSE DF_BANK:0.00633593649371, DF_GAP:0.0051094359714, DF_INFO:0.00629291857127, DF_PRICE:0.00511853532699; βMmedian0.00259414434658, 음70/202,발동10週/70日,피처·모형무효각42日(중복)
+- recent INFO return_pct=1.97613871744, max_drawdown_pct=10.3204922369, realized_vol_pct=17.2697798171, sharpe=0.256069388016, funding=6.4128990854, round_trips=8. 年 2026:1.97613871744%
+  대조return% DF_BANK:4.62839056986, DF_GAP:-4.11256059064, DF_PRICE:-2.50308123671, DF_INV:7.66206784277, DF_TREND:4.62839056986; 主조건% cost_x2:1.40071688036, delay1:3.39780342968, delay24:-2.41487826552, risk10:0.662627664161, data_delay7:4.62839056986
+  공통32/34週 coverage94.1176470588%; MSE DF_BANK:0.00453627064656, DF_GAP:0.0048926532027, DF_INFO:0.00485654063139, DF_PRICE:0.00458182015937; βMmedian-0.000821438882024, 음30/32,발동1週/7日,피처·모형무효각14日(중복)
+
+主βM중앙양수/INFO MSE는BANK대비主개선하지만최근악화,PRICE양기간열위. 발동10/1週로20/5주기준미달. 주수익·DD·vol/최근수익·vol/24h최근손실등기준미달로**기각**. lag7최근+4.62839056986%는INFOoverride0/243日fallback,새거시정보증거아님. BANK최근도βE음수0/32라추세상속. 사후부호·delay·대조승격없음.
+
+독립 raw_feature_weeks=696, independent_model_fits=2232, raw_daily_decisions=30672, independent_target_quantities=15373, no_trade_decisions=45959, raw_mark_funding_events=171489, events=186934, daily_equities=61344, return_block_bootstrap_checks=180, max_numeric_error=2e-11, max_fit_numeric_error=2.8754776337791554e-14. 옛329시장/80perp원시감사영수증SHA재사용/무변경전체재감사0. 새121파일소켓byte동일,검산성공≠전략성공. 최소공개확인은별도영수증단계.
+
+## Q344–346 다음 실제검색 · 집중도·호가정보
+
+- BTC CFTC집중도검색에는다른상품집중도·무관확산논문이많아BTC증거로받지않았다. Q244거래소차익/Q72/Q14/기존정보거래논문중복은재다운로드하지않음. 새SSRN7546659 24/7선물논문·10.1016/j.frl.2024.106182 hacking/traderbehavior·10.1007/s10203-026-00570-z Hawkes/LOB메타를찾았으나전문·시계·성과는아직미감사. 다른코인/개별식별자원자료는추가수집안함.
+- 기존공식CFTC TFF schema q22-cftc-dataset-metadata의**gross/net 최대4·8명 집중도**열을새목적으로확인. 완료COT가설의cohort순포지션과다른분포정보일가능성만검토중이며새집중도피처/모형/명세/성과0. raw본존재·수량단위·비밀보호/suppression·공표시계·기전중복확인후결정,과거COT원장재실행0.
