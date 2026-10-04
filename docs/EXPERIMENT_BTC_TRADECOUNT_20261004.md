@@ -44,3 +44,10 @@ INFO count계수의사전경제부호는양수이지만추정치를제약하거�
 ## 검증·공개 순서
 
 명세/문헌노트commit→새건수일집계·별도Decimal원필드감사/SHA동결→합성(동일Q異N/단위/整數·0/중복·현재분모제외/새c만7일/미래교란/365달력·300공통·라벨시계/음수계수·smearing/floor/양방향costfundingqtydelaymargin)·구현commit→최초72→독립원시문자열/별도정규방정식·손실/선정/Decimal원장·폐형식수량/CI→소켓차단新전체byte一致→승인Pages변경결과만최소공개·익명값/다운로드→次근거。계좌검산≠전략성공。한실험·한source실패·45분으로연구끝내지않음.
+
+
+## 성과 전 입력·구현 동결
+
+사전663c473 이후 기존58,440원시시간문자열에서2,435일count를집계,독립Decimal합과정수합전체일치(差0). 유효2,431일/기존품질무효4일유지,새원자료수집0. count canonicalSHA `406d87fc310fa521473050f36ab1f6e8b9c04d476af71796b42db7268b9d1e77`,gzip `fe7c0dcc2916317371e9bc73803ff03fb5e46c21baee8869c536ec2e6d854172`. 원80ZIP/329시장/RV검산영수증재사용,미사용OOS/PIT확보아님.
+
+25합성검사첫시도통과:동일Q·flow에서異N구분/단위불변/整數·0·NaN·중복·누락·종료ms/현재count분모제외/새count만7일·현재flow/RV유지/미래count·flow·target교란불변/365달력300공통·label+1ms배제/정확ablation열·음수계수·독립normal equations/smearing/floor/rank·overflow/양방향perp·실fundingms·수량·지연·無체결·不利margin. 실제피처/역사회귀/성과계산은이구현동결커밋뒤최초실행.
