@@ -704,3 +704,21 @@ Q159 [NVT](https://www.blockchain.com/explorer/charts/nvt)는시총/최근24h US
 - 실제 Q167 RePEc 참조·피인용 링크에서 **Bitcoin wild moves: Evidence from order flow toxicity and price jumps**(2026 Research in International Business and Finance81,PII S0275531925004192) 초록확보. [서지](https://ideas.repec.org/a/eee/riibaf/v81y2026ics0275531925004192.html),q171-btc-toxic-flow.html SHA8aa6ec5ee0747cd3a3589f0fbe8f51d96e6c07f9d2487474f9685d57ce4ecd13. VPIN과가격점프 VAR·양의자기상관·시간대/요일 주장. 아직 전문/거래분류·volume bucket 시계·비용·BTC 방향수익 관계 미감사. 점프 위험 예측을 순익 방향 예측으로 읽지 않는다.
 - Q172 Do risk preferences drive momentum in cryptocurrencies?(2025FRL73,PII S1544612324015605) 초록은 생존편향없는 여러종목·시총/거래량 별로 모멘텀차이를 연구한다. BTC 단일방향계좌 근거가 아니므로 새다자산분석/원시수집 안함.
 - Q173 Investors’ Beliefs and Cryptocurrency Prices(2024ReviewofAssetPricingStudies14(2),197–236) 초록은 개인수준 설문과 여러자산 구조수요·도구변수를 사용한다. 원개인설문/응답/다른자산자료는 수집하지 않는다. 일반 기대형성 결과를 BTC 실시간 신호라고 주장하지 않는다. 새 후속은 Q171BTC미시구조 원문부터 확인한다.
+
+## DM1519 재개 · Q174–186 BTC 주문흐름 원문 감사 (2026-10-04)
+
+- CT72까지 외부1806조건계좌/기존198계좌·273파일 보존,채택0. 중단 전 Q180 PDF는 이미 확보돼 있었으며 재다운로드하지 않았다. 아래는 새 성과가 아니라 저장 원문 감사와 후속 실제 인터넷 조사다.
+- Q174–180: Kitvanitphasu/Kyaw/Likitapiwat/Treepongkaruna, *Bitcoin wild moves: Evidence from order flow toxicity and price jumps*, DOI10.1016/j.ribaf.2025.103163. 공식 [NVA](https://hdl.handle.net/11250/5321697)의 공개 DownloadFileButton→`/filelink/` 경로,14쪽 PDF SHA f278fba74a8a6f06e79ec7ee8a1507ac8cbfd5900c1860f7c26a607992707a7f. 이전 추정 `/file/` 403와 Elsevier metadata-only는 전문 확보 실패와 별도로 보존; 접근제한 우회 없음. 이번 본문1–8/10/12–14쪽 읽음,9/11의 그림 픽셀 전수검증·원자료 재현은 아님.
+- Binance tick가격·수량 2020Apr18–2022Dec30,약21.29억체결/985일. 1분 마지막초 VWAP,UTC00/08/16의8시간블록,16 volume buckets. **본문은 버킷 j..j+n을 VPIN_j에 쓰고 시작 버킷이 속한 시간블록에 평균한다고 설명**한다. 완성시점 대신 시작시점에 기록하면 미래 자료가 들어갈 수 있다. 버킷 V의 사전추정창·정확 매수매도분류·경계분할·마지막버킷 이용시각·거래쌍은 본문에서 충분히 명세되지 않았다. 따라서 실제 코드의 누수를 확정했다고 하지 않으며 실시간 구현 가능성도 입증되지 않았다. n=16인데 j..j+n 서술의 포함경계도 불명확하다.
+- JumpSize는 jump-test 통과블록의 `sign(블록 내 최대절댓값 1분수익)×sqrt(abs(RV−BV))`. BNS/LM08/JO와 양·음 분리이며, **8시간 종가수익/실행가능 방향수익과 다르다**. 최대값·RV·BV는 블록완료 후만 알 수 있다. 공식초록의 Granger 예측을 비용 후 알파나 구조적 인과로 바꾸지 않는다. 평균 VPIN .157을 정보거래자 비율16%라고 부르는 원문 표현은 실거래자 유형을 식별한 값이 아니다.
+- 전체표본에서 lag15까지 AIC/FPE/HQ/SBIC를 비교하고6을 채택(표3 일부 SBIC7); 분리된 순차 학습·미사용 계좌·수수료/펀딩·체결·지연 결과 없음. 매년12월31일을 비유동성 이유로 제외,985×3과2947관측의 차이 및 추정표2893 관측의 전체 탈락경로는 본문만으로 재구축 못함. Table4와 본문 일부 lag부호/Granger 방향 해석도 완전히 일치하지 않아 가장 유리한 요약문만 선택하지 않는다.
+- 기전 구별: OF_RES=가격에 당기 부호flow 잔차,VI_INT=총량×수익 방향,CF=현물 추가 부호압력,LQ=가격범위 유동성→보상. **완료시간별 무부호 체결압력의 미래위험 추가정보**는 별개 질문이나 원 VPIN 확률·동일복제라 부르지 않는다.
+
+### Q181 · 2016 Order Flow and the Bitcoin Spot Rate
+- Q176의 저장된 공식랜딩 `citation_pdf_url`에서 [공개PDF](https://redfame.com/journal/index.php/aef/article/download/1574/1596)12쪽 신규확보, SHA dbe4357ce8406cafabdc072941179d0c037bae107a06960130fc806181bcd66a,DOI10.11114/aef.v3i3.1574. 본문1–6과9끝–10결론 및 USD표2를 확인;다른 quote통화별 표를 새 실험으로 확장하지 않았다.
+- Mt.Gox BTCUSD2011Jun27–2013May23,499일. 당일 Δlog가격~당일 순체결가치+금리,백색/자기상관4 GMM,USD R² .41–.43은 **당기 설명**. flow자기상관 .170이 있어도 미래 비용수익 계좌의 입증은 아니다. 초기시장 결과는 성숙시장에 달라질 수 있다고 저자도 명시. 원 개별 거래/개인 식별자료는 수집하지 않았다.
+
+### Q182–186 · 인용 연구와 반론을 실제 조회
+- Crossref 정확제목 검색으로 Wang외2022 *Can investors’ informed trading predict cryptocurrency returns? Evidence from machine learning* DOI10.1016/j.ribaf.2022.101683 확인. [출판사 제공 RePEc초록](https://ideas.repec.org/a/eee/riibaf/v62y2022ics027553192200071x.html) SHA3684345314cbb1c233ce055b5dbbf28faac4a1489cf5fcaf525faf0706eac4a7:일부 종목 도움이나 시장평균 예측정확도 유의개선 없음. BTC별 결과/비용·학습시계는 전문 미확보로 미감사. OpenAlex CLOSED·Bilkent handle11693/111364만 공개 위치. 다른 코인 분석/자료수집 안함.
+- Q183 실제 OpenAlex 인용반론 검색→Q184 Andersen/Bondarenko *Reflecting on the VPIN dispute*,DOI10.1016/j.finmar.2013.08.002,[공식 Aarhus 저자원문](https://pure.au.dk/ws/files/83819068/rp13_42.pdf)14쪽 SHA447ac8ef22c404f6c449bd028181d2adad0e52d0e17567dcdbea313e233bb8f8. 초록·1/2/3.4/3.5/4절 읽음. **통계방법 반증만 참고**,주식/다른 선물 자료·매매 연구로 확대하지 않았다.
+- 반론 요지:가격변화로 매수매도를 대체분류하면 변동성 지속성이 VPIN 예측력처럼 나타날 수 있다. 현재위험·거래량 대조가 필요하고 고분위 경보의 비교기준·독립성·사후16000조합선택을 구별해야 한다. 이는BTC에서 자동 성립하는 실증결론이 아니라 이번 추가정보 대조 설계의 이유다. 공급자 BTC taker 집계를 쓰더라도 정보거래자 신분/진실성을 검증한 것은 아니다.
