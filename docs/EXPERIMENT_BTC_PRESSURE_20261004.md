@@ -41,3 +41,9 @@
 각기본순일수익·4대조차 및INFO대NET/HAR MSE/QLIKE차에7/14/28일원형블록2000회95%CI. 중복연구·비용모형·빈티지한계해결아님. 롱/숏수량·펀딩·gross/net·비용·연도·invalid·원시G/N·계수/예측/순손익전체보존.
 
 순서:이명세커밋→새집계/Decimal감사동결→인과/경계합성검사·구현커밋→성과→별도정규방정식/피처/수량/Decimal양방향펀딩·원시·선정/CI검산→새결과소켓차단바이트재현→승인된연구Pages최소게시·실값/다운로드→다음가설. 이전실험을재실행하지않고이실험실패·게시완료를전체연구끝으로삼지않는다.
+
+## 성과 전 입력 동결
+
+새daily canonical **b7bcc90d73a29cf1f2d84dcd752025a6034d356ab337d7ce48eab82f09869d5f**, gzip9529f16033f2229e9ebaff6333e9bb0a4d8becab180eb737a8a834b9b065add7. 80공식perp ZIP/58,440시간,2435일중2431유효·이전4무효일 유지. 신규zero execution시간1730145600000. 별도Decimal원시집계/시계/원본필드/CF일합·valid mask전수일치,출력float대exactDecimal비교오차0.
+
+초기float합산의작은signed Quote 상쇄오차4.72e−14(상대)가3e−14 내부검산한계를넘었다. 검산허용치를넓히지않고집계를Decimal60자리로바꾸어동일경제식의정밀도를수정했다. 초기daily/prepare를data하위initial-float-cancellation에보존,초기·최종로그workspace/tmp/btc-pressure-data*에보존. 결과/모형학습전 수정이며원시자료·mask·가설·관문불변.
